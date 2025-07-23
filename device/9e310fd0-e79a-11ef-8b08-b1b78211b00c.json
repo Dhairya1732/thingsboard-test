@@ -1,0 +1,78 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "4c7e7e40-a201-11ef-8b08-b1b78211b00c"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "05acafd0-9cbd-11ef-8b08-b1b78211b00c"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "9e310fd0-e79a-11ef-8b08-b1b78211b00c"
+    },
+    "label" : null,
+    "name" : "VCB4",
+    "softwareId" : null,
+    "type" : "SLR140C"
+  },
+  "credentials" : {
+    "credentialsId" : "aUnokY6nDq08M1ojnzSD",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1739184297853,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1739184297853,
+      "longValue" : 1739184297852,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastFaultTimestamp",
+      "lastUpdateTs" : 1753262423528,
+      "longValue" : null,
+      "strValue" : "1"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ss_lastFaultTimestamp",
+      "lastUpdateTs" : 1753262430627,
+      "longValue" : null,
+      "strValue" : "1"
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

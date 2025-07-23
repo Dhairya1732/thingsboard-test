@@ -1,0 +1,214 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : false,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "4c7e7e40-a201-11ef-8b08-b1b78211b00c"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "e37ea540-9cbb-11ef-8b08-b1b78211b00c"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "9ce6dc90-e79a-11ef-8b08-b1b78211b00c"
+    },
+    "label" : null,
+    "name" : "VCB1",
+    "softwareId" : null,
+    "type" : "SLR140"
+  },
+  "credentials" : {
+    "credentialsId" : "MsQKEzxG7Kg2kuiSzzVS",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Reset",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1739184297853,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "entityName",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : null,
+      "strValue" : "SLR140_1"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "entityType",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : null,
+      "strValue" : "DEVICE"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1739184297853,
+      "longValue" : 1739184297852,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastFaultTimestamp",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ss_lastFaultTimestamp",
+      "lastUpdateTs" : 1753262312194,
+      "longValue" : null,
+      "strValue" : "1"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userEmail",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : null,
+      "strValue" : "admin@meshnetelectronics.com"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userFirstName",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : null,
+      "strValue" : "Admin"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userId",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : null,
+      "strValue" : "39a3b450-4853-11ef-9869-85cbc512a09a"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userLastName",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : null,
+      "strValue" : "Meshnet"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userName",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : null,
+      "strValue" : "admin@meshnetelectronics.com"
+    } ],
+    "SHARED_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Reset",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "entityName",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : null,
+      "strValue" : "SLR140_1"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "entityType",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : null,
+      "strValue" : "DEVICE"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastFaultTimestamp",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userEmail",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : null,
+      "strValue" : "admin@meshnetelectronics.com"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userFirstName",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : null,
+      "strValue" : "Admin"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userId",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : null,
+      "strValue" : "39a3b450-4853-11ef-9869-85cbc512a09a"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userLastName",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : null,
+      "strValue" : "Meshnet"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userName",
+      "lastUpdateTs" : 1743863116658,
+      "longValue" : null,
+      "strValue" : "admin@meshnetelectronics.com"
+    } ]
+  }
+}
