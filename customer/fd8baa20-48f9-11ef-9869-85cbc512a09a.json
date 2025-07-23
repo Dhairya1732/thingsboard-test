@@ -2,27 +2,25 @@
   "entityType" : "CUSTOMER",
   "entity" : {
     "additionalInfo" : {
-      "description" : "",
-      "homeDashboardId" : null,
-      "homeDashboardHideToolbar" : true
+      "isPublic" : true
     },
     "address" : null,
     "address2" : null,
     "city" : null,
     "country" : null,
-    "email" : "prasiddh.y@stelmec.com",
+    "email" : null,
     "externalId" : {
       "entityType" : "CUSTOMER",
-      "id" : "4c7e7e40-a201-11ef-8b08-b1b78211b00c"
+      "id" : "fd8baa20-48f9-11ef-9869-85cbc512a09a"
     },
     "id" : {
       "entityType" : "CUSTOMER",
-      "id" : "4c7e7e40-a201-11ef-8b08-b1b78211b00c"
+      "id" : "fd8baa20-48f9-11ef-9869-85cbc512a09a"
     },
-    "name" : "Stelmec",
+    "name" : "Public",
     "phone" : null,
     "state" : null,
-    "title" : "Stelmec",
+    "title" : "Public",
     "zip" : null
   },
   "relations" : [ ],

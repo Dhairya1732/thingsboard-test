@@ -2,27 +2,27 @@
   "entityType" : "CUSTOMER",
   "entity" : {
     "additionalInfo" : {
-      "description" : "",
+      "description" : "Demo customer for client via internal tenant",
       "homeDashboardId" : null,
       "homeDashboardHideToolbar" : true
     },
     "address" : null,
     "address2" : null,
-    "city" : null,
-    "country" : null,
-    "email" : "prasiddh.y@stelmec.com",
+    "city" : "Mumbai",
+    "country" : "India",
+    "email" : "meshnetelectronicsllp@gmail.com",
     "externalId" : {
       "entityType" : "CUSTOMER",
-      "id" : "4c7e7e40-a201-11ef-8b08-b1b78211b00c"
+      "id" : "4e4e50c0-9c65-11ef-8b08-b1b78211b00c"
     },
     "id" : {
       "entityType" : "CUSTOMER",
-      "id" : "4c7e7e40-a201-11ef-8b08-b1b78211b00c"
+      "id" : "4e4e50c0-9c65-11ef-8b08-b1b78211b00c"
     },
-    "name" : "Stelmec",
-    "phone" : null,
-    "state" : null,
-    "title" : "Stelmec",
+    "name" : "Demo",
+    "phone" : "+919594046755",
+    "state" : "Maharashtra",
+    "title" : "Demo",
     "zip" : null
   },
   "relations" : [ ],
