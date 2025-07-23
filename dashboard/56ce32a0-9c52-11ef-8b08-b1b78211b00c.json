@@ -1771,7 +1771,7 @@
             "padding" : "0px",
             "settings" : {
               "title" : "Circuit Breaker Off",
-              "ledColor" : "#008F06",
+              "ledColor" : "#05583F",
               "initialValue" : false,
               "performCheckStatus" : false,
               "retrieveValueMethod" : "timeseries",
@@ -1833,7 +1833,7 @@
             "padding" : "0px",
             "settings" : {
               "title" : " Circuit Breaker On",
-              "ledColor" : "#FF0000",
+              "ledColor" : "#850E1B",
               "initialValue" : false,
               "performCheckStatus" : false,
               "retrieveValueMethod" : "timeseries",
@@ -1965,7 +1965,7 @@
             "resolveMultiple" : false,
             "singleEntity" : {
               "entityType" : "DEVICE",
-              "id" : "9ce6dc90-e79a-11ef-8b08-b1b78211b00c"
+              "id" : "f28bf7d0-e794-11ef-8b08-b1b78211b00c"
             }
           }
         }
