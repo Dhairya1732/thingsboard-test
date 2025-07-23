@@ -1,0 +1,110 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : true,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "c5d2cf20-4852-11ef-9869-85cbc512a09a"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "583bd440-45f7-11f0-8b08-b1b78211b00c"
+    },
+    "label" : "",
+    "name" : "gateway",
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "de3a3c7e108ff105b7a165a662eef23fa3d2333d72c81c5a3cb5f7ed83664f27",
+    "credentialsType" : "X509_CERTIFICATE",
+    "credentialsValue" : "MIIFnjCCBAagAwIBAgIHHSqOefNfVDANBgkqhkiG9w0BAQsFADCB4zEgMB4GA1UEAwwXTWVzaG5ldC1DbGllbnQtNWJhZmQzZDQxHDAaBgNVBAoME01lc2huZXQgRWxlY3Ryb25pY3MxFTATBgNVBAsMDElvVCBTZWN1cml0eTErMCkGCSqGSIb3DQEJARYcbWVzaG5ldGVsZWN0cm9uaWNzQGdtYWlsLmNvbTEOMAwGA1UEBwwFVG9reW8xDjAMBgNVBAgMBVRva3lvMQswCQYDVQQGEwJKUDEwMC4GCgmSJomT8ixkAQEMIDBiNTBkZGY0M2JmYjRjYWNhMzQzN2U1MzlkZmMzYWUwMCAXDTI1MDIxNDA1MDM1NloYDzIxNDUxMTI1MDUwMzU2WjCB4zEgMB4GA1UEAwwXTWVzaG5ldC1DbGllbnQtNWJhZmQzZDQxHDAaBgNVBAoME01lc2huZXQgRWxlY3Ryb25pY3MxFTATBgNVBAsMDElvVCBTZWN1cml0eTErMCkGCSqGSIb3DQEJARYcbWVzaG5ldGVsZWN0cm9uaWNzQGdtYWlsLmNvbTEOMAwGA1UEBwwFVG9reW8xDjAMBgNVBAgMBVRva3lvMQswCQYDVQQGEwJKUDEwMC4GCgmSJomT8ixkAQEMIDBiNTBkZGY0M2JmYjRjYWNhMzQzN2U1MzlkZmMzYWUwMIIBojANBgkqhkiG9w0BAQEFAAOCAY8AMIIBigKCAYEAmTQba/yJE5vw9gAEVS4NwRr5s90DEdotBrKEaDFAQEiLxY9RnrMLy+yeQlJrAWFbYeiYI5qc/An1BVbiGUpg7+1W/Jgz7SID+lCPubXslEZxifIBmSFxmzNgz/ZOEshpjQmL40LxQBut5Ab7vBjhgxk0mIbp3oPvkOvZrtbMNXBtIrd4TUllkwBad0uEVHo7iXteUSMcDydjDa2Y/FeHvzaPopuw35IoRpKhx7HHfvFErZBo+DlaGd6Gor5svucbxGpXSpk2mdX/kWPZFB7fNLjgsJtD2ajA6rqbFhos2cBTfP8rUddJu2EsXYHgB9tFdoB6VXr8nVIfDdnQDUgwtNWKUrUa8byTvpq9At6zZcyHrrtuIccUtjfKOuqPYE4O1MUZtOIVfSGpXkE4kCns7lfPygWu9rnWk//xEneO20pJM7rE+ZNeEM1WCB4FOIyDsvYyKvmftBa08h5RMw5YNL5tjH4cRtwqf3z08s0U90MEssBbuAKBC3lv7xvaWDaZAgMBAAGjUzBRMB0GA1UdDgQWBBR+oj2PrZ7vcPbzcmWHaybfBx2I3jAfBgNVHSMEGDAWgBR+oj2PrZ7vcPbzcmWHaybfBx2I3jAPBgNVHRMBAf8EBTADAQH/MA0GCSqGSIb3DQEBCwUAA4IBgQAcm+28XH2SPqqXYZokT9Np1oT1eW1+XIndgYtRIrmxrDCqoEkicv4JDca+6h79izG5kIKJWATgAo2bz6SBTVNwbP2d/HBbTXMxgKfBCT36/FUJvlw42dBhBHKCzJlPq++NJVxFStR+erzcE9EDB7od6J6wSbLNeBq4EVyKRoTvfYSRrPHs8hnx1YjCDS6Pb4fYJaBRRnL/DbHcAxt2qFe6WSOiXriRhxRsYycG+g5e53Ox7GbCqkKcbxq33MIOUGbu2EI7hVWRdf+F+RpM8rq9l6RUm9NoQrY2wkjJZVGFK1wjBKvm9132X+GXSraa+jl9PlnOMXJC4/5aU+vTVbOaDqUNo7KyJflVaoaXtXXlOm5Fg0HsO7bZp/2H++MH1bsQZ1DaCctXQHttt1ZtM3gYg8NWvCVfWfC+3dGe4CSsXltXg/x12tWZEnnPQTQG3KOVIVSfGdRtIjLw1H3GlUomSnfd3pu6Ibi17WJ19Tv+cPqg3ktBbNeBbItzRxzIkLc="
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "583bd440-45f7-11f0-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "48a11c00-4a81-11f0-8b08-b1b78211b00c"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "583bd440-45f7-11f0-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "493e6d70-4a81-11f0-8b08-b1b78211b00c"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1750310072014,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1750310072014,
+      "longValue" : 1750310072014,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1750309422707,
+      "longValue" : 1750309422405,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1750308797379,
+      "longValue" : 1750308797378,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1750309422430,
+      "longValue" : 1750309422430,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

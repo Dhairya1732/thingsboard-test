@@ -1,0 +1,292 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : true,
+    "externalId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "be270640-1180-11f0-8b08-b1b78211b00c"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "5c515c00-117f-11f0-8b08-b1b78211b00c"
+    },
+    "name" : "Attributes Rule Chain",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 1,
+      "toIndex" : 2,
+      "type" : "Failure"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 2,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 0,
+      "type" : "True"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 5,
+      "type" : "False"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 4,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : 1,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 660,
+        "layoutY" : 82
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "0413add0-1180-11f0-8b08-b1b78211b00c"
+      },
+      "name" : "Attributes Output",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainOutputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 217,
+        "layoutY" : 301
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : true,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ "Reset" ],
+        "serverAttributeNames" : [ "lastFaultTimestamp" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "be270640-1180-11f0-8b08-b1b78211b00c"
+      },
+      "name" : "Get Attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 401,
+        "layoutY" : 143
+      },
+      "configuration" : {
+        "messageNames" : [ ],
+        "metadataNames" : [ "lastFaultTimestamp", "Reset" ],
+        "checkAllKeys" : true
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "be2865d0-1180-11f0-8b08-b1b78211b00c"
+      },
+      "name" : "Check Attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 808,
+        "layoutY" : 202
+      },
+      "configuration" : {
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "409cda00-1181-11f0-8b08-b1b78211b00c"
+      },
+      "name" : "Save Server Attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 802,
+        "layoutY" : 380
+      },
+      "configuration" : {
+        "scope" : "SHARED_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : false
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "409d0110-1181-11f0-8b08-b1b78211b00c"
+      },
+      "name" : "Save Shared Attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 559,
+        "layoutY" : 308
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "if (!metadata.hasOwnProperty(\"Reset\")) {\n    metadata[\"Reset\"] = false;\n}\nif (metadata.hasOwnProperty(\"shared_Reset\")) {\n    delete metadata[\"shared_Reset\"];\n}\nif (!metadata.hasOwnProperty(\"lastFaultTimestamp\")) {\n    metadata[\"lastFaultTimestamp\"] = 1;\n}\nif (metadata.hasOwnProperty(\"ss_lastFaultTimestamp\")) {\n    delete metadata[\"ss_lastFaultTimestamp\"];\n}\nreturn {\n    msg: metadata,\n    metadata: metadata,\n    msgType: \"POST_ATTRIBUTES_REQUEST\"\n};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugMode" : true,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "39c55620-1182-11f0-8b08-b1b78211b00c"
+      },
+      "name" : "Add Attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Reset",
+      "lastUpdateTs" : 1743791146245,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "entityName",
+      "lastUpdateTs" : 1743791146245,
+      "longValue" : null,
+      "strValue" : "Attributes Rule Chain"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "entityType",
+      "lastUpdateTs" : 1743791146245,
+      "longValue" : null,
+      "strValue" : "RULE_CHAIN"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastFaultTimestamp",
+      "lastUpdateTs" : 1743791146245,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "shared_Reset",
+      "lastUpdateTs" : 1743791214864,
+      "longValue" : null,
+      "strValue" : "false"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ss_lastFaultTimestamp",
+      "lastUpdateTs" : 1743791214864,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userEmail",
+      "lastUpdateTs" : 1743791146245,
+      "longValue" : null,
+      "strValue" : "admin@meshnetelectronics.com"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userFirstName",
+      "lastUpdateTs" : 1743791146245,
+      "longValue" : null,
+      "strValue" : "Admin"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userId",
+      "lastUpdateTs" : 1743791146245,
+      "longValue" : null,
+      "strValue" : "39a3b450-4853-11ef-9869-85cbc512a09a"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userLastName",
+      "lastUpdateTs" : 1743791146245,
+      "longValue" : null,
+      "strValue" : "Meshnet"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userName",
+      "lastUpdateTs" : 1743791146245,
+      "longValue" : null,
+      "strValue" : "admin@meshnetelectronics.com"
+    } ]
+  }
+}

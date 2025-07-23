@@ -1,0 +1,170 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : null,
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "05acafd0-9cbd-11ef-8b08-b1b78211b00c"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "a2f9bb70-e79a-11ef-8b08-b1b78211b00c"
+    },
+    "label" : null,
+    "name" : "SLR140C_7",
+    "softwareId" : null,
+    "type" : "SLR140C"
+  },
+  "credentials" : {
+    "credentialsId" : "IIkfrygHwW4YgPjVi5jX",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Reset",
+      "lastUpdateTs" : 1743864913697,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1743864913684,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "deviceName",
+      "lastUpdateTs" : 1743864913697,
+      "longValue" : null,
+      "strValue" : "SLR140C_7"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "deviceType",
+      "lastUpdateTs" : 1743864913697,
+      "longValue" : null,
+      "strValue" : "SLR140C"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1743864913684,
+      "longValue" : 1743864913684,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1743864282702,
+      "longValue" : 1743864280174,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1743864279759,
+      "longValue" : 1743864279759,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1743864280187,
+      "longValue" : 1743864280187,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastFaultTimestamp",
+      "lastUpdateTs" : 1743864913697,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "scope",
+      "lastUpdateTs" : 1743864913697,
+      "longValue" : null,
+      "strValue" : "SERVER_SCOPE"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ts",
+      "lastUpdateTs" : 1743864279966,
+      "longValue" : 1743864279954,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "Reset",
+      "lastUpdateTs" : 1743864279966,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "deviceName",
+      "lastUpdateTs" : 1743864279966,
+      "longValue" : null,
+      "strValue" : "SLR140C_7"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "deviceType",
+      "lastUpdateTs" : 1743864279966,
+      "longValue" : null,
+      "strValue" : "SLR140C"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastFaultTimestamp",
+      "lastUpdateTs" : 1743864279966,
+      "longValue" : 1,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ts",
+      "lastUpdateTs" : 1743864279966,
+      "longValue" : 1743864279954,
+      "strValue" : null
+    } ]
+  }
+}

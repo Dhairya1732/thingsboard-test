@@ -1,0 +1,64 @@
+{
+  "entityType" : "ASSET",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "assetProfileId" : {
+      "entityType" : "ASSET_PROFILE",
+      "id" : "c5ed5c00-4852-11ef-9869-85cbc512a09a"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "4e4e50c0-9c65-11ef-8b08-b1b78211b00c"
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "ASSET",
+      "id" : "dcdc6390-e8aa-11ef-8b08-b1b78211b00c"
+    },
+    "label" : null,
+    "name" : "Panel 1",
+    "type" : "default"
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "dcdc6390-e8aa-11ef-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "f9160580-9953-11ef-8b08-b1b78211b00c"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "dcdc6390-e8aa-11ef-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "46040460-9070-11ef-8b08-b1b78211b00c"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "dcdc6390-e8aa-11ef-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "469c25b0-9070-11ef-8b08-b1b78211b00c"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

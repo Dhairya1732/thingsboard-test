@@ -1,0 +1,29 @@
+{
+  "entityType" : "CUSTOMER",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : "Demo customer for client via internal tenant",
+      "homeDashboardId" : null,
+      "homeDashboardHideToolbar" : true
+    },
+    "address" : null,
+    "address2" : null,
+    "city" : "Mumbai",
+    "country" : "India",
+    "email" : "meshnetelectronicsllp@gmail.com",
+    "externalId" : null,
+    "id" : {
+      "entityType" : "CUSTOMER",
+      "id" : "4e4e50c0-9c65-11ef-8b08-b1b78211b00c"
+    },
+    "name" : "Demo",
+    "phone" : "+919594046755",
+    "state" : "Maharashtra",
+    "title" : "Demo",
+    "zip" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

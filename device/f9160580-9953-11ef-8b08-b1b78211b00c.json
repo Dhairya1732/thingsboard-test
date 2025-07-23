@@ -1,0 +1,120 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "lastConnectedGateway" : "5995e030-87f0-11ef-8b08-b1b78211b00c"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "4c7e7e40-a201-11ef-8b08-b1b78211b00c"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "c5d2cf20-4852-11ef-9869-85cbc512a09a"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "f9160580-9953-11ef-8b08-b1b78211b00c"
+    },
+    "label" : null,
+    "name" : "Energy Meter",
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "XtphrxfJUMUX1vqaLj2Y",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "a04f2530-e958-11ef-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "f9160580-9953-11ef-8b08-b1b78211b00c"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "ASSET",
+      "id" : "dcdc6390-e8aa-11ef-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "f9160580-9953-11ef-8b08-b1b78211b00c"
+    },
+    "type" : "Contains",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "5995e030-87f0-11ef-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "f9160580-9953-11ef-8b08-b1b78211b00c"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : false,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1739026617401,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1739026617401,
+      "longValue" : 1739026617398,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1739025984689,
+      "longValue" : 1739025981685,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1739024614189,
+      "longValue" : 1739024614189,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1739025981695,
+      "longValue" : 1739025981695,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

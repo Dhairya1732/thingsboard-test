@@ -1,0 +1,637 @@
+{
+  "entityType" : "DASHBOARD",
+  "entity" : {
+    "assignedCustomers" : null,
+    "configuration" : {
+      "description" : "",
+      "widgets" : {
+        "04e33e35-97eb-60d6-cd47-cb452835894b" : {
+          "typeFullFqn" : "system.cards.html_card",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15479322438769105,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "cardHtml" : "<div class='container'>\n        <div class='card'>\n            <p class=\"firmware-version\">Firmware Version: 1.2.3</p>\n            <div class=\"manufacturer-info\">\n                <p class=\"serial-number\">Serial Number: SN123456789</p>\n                <p class=\"manufacturer-name\">Manufacturer: XYZ Corp</p>\n            </div>\n            <div class=\"meter-details\">\n                <p class=\"meter-type\">Meter Type: Digital</p>\n                <p class=\"manufacturing-year\">Year of Manufacturing: 2024</p>\n                <p class=\"meter-category\">Meter Category: Residential</p>\n                <p class=\"current-rating\">Current Rating: 20A</p>\n            </div>\n        </div>\n    </div>",
+              "cardCss" : "@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); /* Clean futuristic font */\r\n\r\nbody {\r\n    font-family: 'Orbitron', sans-serif;\r\n    background-color: #0d0f1a; /* Dark background for contrast */\r\n    margin: 0;\r\n    height: 100vh;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n.container {\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    width: 100%;\r\n    margin-top: 20%;\r\n}\r\n\r\n.card {\r\n    background-color: #1e293b; /* Simplified dark card background */\r\n    color: #ffffff;\r\n    width: 400px;\r\n    padding: 70px;\r\n    border-radius: 12px; /* Slightly rounded corners */\r\n    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */\r\n    text-align: center;\r\n}\r\n\r\n.firmware-version {\r\n    font-size: 18px;\r\n    color: #fbc02d; /* Electric yellow to highlight the firmware version */\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.serial-number, .manufacturer-name {\r\n    margin: 0;\r\n    padding: 10px 0;\r\n}\r\n\r\n.serial-number {\r\n    font-size: 18px;\r\n    color: #9ea7b3; /* Soft silver color */\r\n}\r\n\r\n.manufacturer-name {\r\n    font-size: 24px;\r\n    color: #fbc02d; /* Electric yellow for emphasis */\r\n    font-weight: 600;\r\n    margin-bottom: 20px;\r\n}\r\n\r\n.meter-details p {\r\n    font-size: 16px;\r\n    color: #9ea7b3; /* Muted color for details at the bottom */\r\n    margin: 5px 0;\r\n}\r\n"
+            },
+            "title" : "HTML Card",
+            "dropShadow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "04e33e35-97eb-60d6-cd47-cb452835894b"
+        },
+        "a8c19f33-188b-d4dc-2029-506eaf13ac11" : {
+          "typeFullFqn" : "system.digital_gauges.simple_neon_gauge_justgage",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "14fac200-5cc7-11ef-9869-85cbc512a09a",
+              "dataKeys" : [ {
+                "name" : "label",
+                "type" : "entityField",
+                "label" : "Label",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.8272651503912505
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1723879415109,
+                  "endTimeMs" : 1723965815109
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : null,
+            "color" : "rgba(255, 254, 254, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "gaugeType" : "donut",
+              "donutStartAngle" : 90,
+              "showMinMax" : true,
+              "minValue" : 0,
+              "maxValue" : 11,
+              "minMaxFont" : {
+                "family" : "Segment7Standard",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : null
+              },
+              "minMaxColor" : null,
+              "showValue" : true,
+              "valueFont" : {
+                "family" : "Segment7Standard",
+                "size" : 32,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#020202C7"
+              },
+              "valueColor" : "#020202C7",
+              "showTitle" : true,
+              "title" : "PonTime",
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#000000"
+              },
+              "titleColor" : "#000000",
+              "showUnitTitle" : false,
+              "unitTitle" : null,
+              "showTimestamp" : false,
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : null
+              },
+              "labelColor" : null,
+              "gaugeWidthScale" : 1,
+              "neonGlowBrightness" : 40,
+              "dashThickness" : 1.5,
+              "roundedLineCap" : false,
+              "gaugeColor" : null,
+              "barColor" : {
+                "type" : "constant",
+                "color" : "#2196f3",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 11
+                }
+              },
+              "showTicks" : false,
+              "tickWidth" : 4,
+              "colorTicks" : "#666",
+              "ticksValue" : [ ],
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "useFixedLevelColor" : false,
+              "levelColors" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ]
+            },
+            "title" : "Simple neon gauge",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "widgetStyle" : { },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "configMode" : "basic",
+            "displayTimewindow" : true,
+            "borderRadius" : null,
+            "units" : "h",
+            "decimals" : null,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "0"
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a8c19f33-188b-d4dc-2029-506eaf13ac11"
+        },
+        "703dc73b-c0cb-0a84-110e-b70560944724" : {
+          "typeFullFqn" : "system.digital_gauges.gauge_justgage",
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "53ad92a0-5b20-11ef-9869-85cbc512a09a",
+              "dataKeys" : [ {
+                "name" : "PrimaryCurrent",
+                "type" : "timeseries",
+                "label" : "PrimaryCurrent",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.02085104191708953
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1723907833367,
+                  "endTimeMs" : 1723994233367
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#ffffff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "gaugeType" : "arc",
+              "donutStartAngle" : 90,
+              "showMinMax" : true,
+              "minValue" : 0,
+              "maxValue" : 100,
+              "minMaxFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#666666"
+              },
+              "minMaxColor" : "#666666",
+              "showValue" : true,
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 36,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#666666"
+              },
+              "valueColor" : "#666666",
+              "showTitle" : true,
+              "title" : null,
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#999999"
+              },
+              "titleColor" : "#999999",
+              "showUnitTitle" : true,
+              "unitTitle" : "mA",
+              "showTimestamp" : false,
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : null
+              },
+              "labelColor" : null,
+              "gaugeWidthScale" : 0.75,
+              "neonGlowBrightness" : 0,
+              "dashThickness" : 0,
+              "roundedLineCap" : false,
+              "gaugeColor" : "#eeeeee",
+              "barColor" : {
+                "type" : "constant",
+                "color" : "#2196f3",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 100
+                }
+              },
+              "showTicks" : false,
+              "tickWidth" : 4,
+              "colorTicks" : "#666",
+              "ticksValue" : [ ],
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "useFixedLevelColor" : false
+            },
+            "title" : "Gauge",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "configMode" : "advanced",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "actions" : { },
+            "borderRadius" : null,
+            "units" : "mA",
+            "decimals" : null,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "703dc73b-c0cb-0a84-110e-b70560944724"
+        },
+        "494f19bd-f04c-2d86-83e9-ff4c11a854f0" : {
+          "typeFullFqn" : "system.digital_gauges.gauge_justgage",
+          "type" : "latest",
+          "sizeX" : 4,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "device",
+              "name" : "",
+              "deviceId" : "53ad92a0-5b20-11ef-9869-85cbc512a09a",
+              "dataKeys" : [ {
+                "name" : "PrimaryVoltage",
+                "type" : "timeseries",
+                "label" : "PrimaryVoltage",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15537354081297727
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1723907909764,
+                  "endTimeMs" : 1723994309764
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#ffffff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "gaugeType" : "arc",
+              "donutStartAngle" : 90,
+              "showMinMax" : true,
+              "minValue" : 0,
+              "maxValue" : 100,
+              "minMaxFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#666666"
+              },
+              "minMaxColor" : "#666666",
+              "showValue" : true,
+              "valueFont" : {
+                "family" : "Roboto",
+                "size" : 36,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#666666"
+              },
+              "valueColor" : "#666666",
+              "showTitle" : true,
+              "title" : null,
+              "titleFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : "#999999"
+              },
+              "titleColor" : "#999999",
+              "showUnitTitle" : true,
+              "unitTitle" : "V",
+              "showTimestamp" : false,
+              "timestampFormat" : "yyyy-MM-dd HH:mm:ss",
+              "labelFont" : {
+                "family" : "Roboto",
+                "size" : 8,
+                "style" : "normal",
+                "weight" : "500",
+                "color" : null
+              },
+              "labelColor" : null,
+              "gaugeWidthScale" : 0.75,
+              "neonGlowBrightness" : 0,
+              "dashThickness" : 0,
+              "roundedLineCap" : false,
+              "gaugeColor" : "#eeeeee",
+              "barColor" : {
+                "type" : "constant",
+                "color" : "#2196f3",
+                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';",
+                "gradient" : {
+                  "advancedMode" : false,
+                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
+                  "gradientAdvanced" : [ {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(0, 255, 0, 1)"
+                  }, {
+                    "source" : {
+                      "type" : "constant"
+                    },
+                    "color" : "rgba(255, 0, 0, 1)"
+                  } ],
+                  "minValue" : 0,
+                  "maxValue" : 100
+                }
+              },
+              "showTicks" : false,
+              "tickWidth" : 4,
+              "colorTicks" : "#666",
+              "ticksValue" : [ ],
+              "animation" : true,
+              "animationDuration" : 500,
+              "animationRule" : "linear",
+              "useFixedLevelColor" : false
+            },
+            "title" : "Gauge",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "configMode" : "advanced",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "actions" : { },
+            "borderRadius" : null,
+            "units" : "V",
+            "decimals" : null,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "494f19bd-f04c-2d86-83e9-ff4c11a854f0"
+        }
+      },
+      "states" : {
+        "default" : {
+          "name" : "ABT meter",
+          "root" : true,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "04e33e35-97eb-60d6-cd47-cb452835894b" : {
+                  "sizeX" : 10,
+                  "sizeY" : 13,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "a8c19f33-188b-d4dc-2029-506eaf13ac11" : {
+                  "sizeX" : 14,
+                  "sizeY" : 6,
+                  "row" : 0,
+                  "col" : 10
+                },
+                "703dc73b-c0cb-0a84-110e-b70560944724" : {
+                  "sizeX" : 7,
+                  "sizeY" : 7,
+                  "row" : 6,
+                  "col" : 10
+                },
+                "494f19bd-f04c-2d86-83e9-ff4c11a854f0" : {
+                  "sizeX" : 7,
+                  "sizeY" : 7,
+                  "row" : 6,
+                  "col" : 17
+                }
+              },
+              "gridSettings" : {
+                "backgroundColor" : "#eeeeee",
+                "columns" : 24,
+                "margin" : 10,
+                "outerMargin" : true,
+                "backgroundSizeMode" : "100%"
+              }
+            }
+          }
+        }
+      },
+      "entityAliases" : {
+        "8042cbf2-b5fa-dc6c-9782-504dfde66d46" : {
+          "id" : "8042cbf2-b5fa-dc6c-9782-504dfde66d46",
+          "alias" : "Billing Count",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "CUSTOMER",
+              "id" : "fd8baa20-48f9-11ef-9869-85cbc512a09a"
+            }
+          }
+        },
+        "eff70618-5f7b-bfd2-7527-ec6b32205cdc" : {
+          "id" : "eff70618-5f7b-bfd2-7527-ec6b32205cdc",
+          "alias" : "Power Failure",
+          "filter" : {
+            "type" : "singleEntity",
+            "resolveMultiple" : false,
+            "singleEntity" : {
+              "entityType" : "DASHBOARD",
+              "id" : "95371d50-5cc3-11ef-9869-85cbc512a09a"
+            }
+          }
+        }
+      },
+      "filters" : { },
+      "timewindow" : {
+        "displayValue" : "",
+        "hideInterval" : false,
+        "hideLastInterval" : false,
+        "hideQuickInterval" : false,
+        "hideAggregation" : false,
+        "hideAggInterval" : false,
+        "hideTimezone" : false,
+        "selectedTab" : 0,
+        "realtime" : {
+          "realtimeType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "history" : {
+          "historyType" : 0,
+          "interval" : 1000,
+          "timewindowMs" : 60000,
+          "fixedTimewindow" : {
+            "startTimeMs" : 1723831656502,
+            "endTimeMs" : 1723918056502
+          },
+          "quickInterval" : "CURRENT_DAY"
+        },
+        "aggregation" : {
+          "type" : "AVG",
+          "limit" : 25000
+        }
+      },
+      "settings" : {
+        "stateControllerId" : "entity",
+        "showTitle" : false,
+        "showDashboardsSelect" : true,
+        "showEntitiesSelect" : true,
+        "showDashboardTimewindow" : true,
+        "showDashboardExport" : true,
+        "toolbarAlwaysOpen" : true
+      }
+    },
+    "externalId" : null,
+    "id" : {
+      "entityType" : "DASHBOARD",
+      "id" : "a62c5120-5d4a-11ef-9869-85cbc512a09a"
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "ABT Meter",
+    "title" : "ABT Meter"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
