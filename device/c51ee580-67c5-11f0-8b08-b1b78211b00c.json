@@ -1,0 +1,186 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : true,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "c5d2cf20-4852-11ef-9869-85cbc512a09a"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "c51ee580-67c5-11f0-8b08-b1b78211b00c"
+    },
+    "label" : "",
+    "name" : "Stelmec_Gateway",
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "d29ee6a3771221f6b6ff07e907e487e253350b777b02d022dadef12defc2259a",
+    "credentialsType" : "X509_CERTIFICATE",
+    "credentialsValue" : "MIIFrDCCBBSgAwIBAgIHIn99M0xRgDANBgkqhkiG9w0BAQsFADCB6jEgMB4GA1UEAwwXTWVzaG5ldC1DbGllbnQtN2ExNjlmMWExHDAaBgNVBAoME01lc2huZXQgRWxlY3Ryb25pY3MxFTATBgNVBAsMDElvVCBTZWN1cml0eTErMCkGCSqGSIb3DQEJARYcbWVzaG5ldGVsZWN0cm9uaWNzQGdtYWlsLmNvbTEPMA0GA1UEBwwGTXVtYmFpMRQwEgYDVQQIDAtNYWhhcmFzaHRyYTELMAkGA1UEBhMCSU4xMDAuBgoJkiaJk/IsZAEBDCA4YjgzYzNmMGQ5MTg0NTRkYTRlNDFjZmVmNDc4ZjgzZTAgFw0yNTAyMTQwNTAxNDlaGA8yMjA2MDgxNDA1MDE0OVowgeoxIDAeBgNVBAMMF01lc2huZXQtQ2xpZW50LTdhMTY5ZjFhMRwwGgYDVQQKDBNNZXNobmV0IEVsZWN0cm9uaWNzMRUwEwYDVQQLDAxJb1QgU2VjdXJpdHkxKzApBgkqhkiG9w0BCQEWHG1lc2huZXRlbGVjdHJvbmljc0BnbWFpbC5jb20xDzANBgNVBAcMBk11bWJhaTEUMBIGA1UECAwLTWFoYXJhc2h0cmExCzAJBgNVBAYTAklOMTAwLgYKCZImiZPyLGQBAQwgOGI4M2MzZjBkOTE4NDU0ZGE0ZTQxY2ZlZjQ3OGY4M2UwggGiMA0GCSqGSIb3DQEBAQUAA4IBjwAwggGKAoIBgQDTUFgm1UUgQjJ2886iDpx3wA0AIXsdIDQEwKEbx8eD/JgcBVlxUiuWtxSJ81FtdhSjBRyu6LFTi+u7LX+J7kit7v3ap9a2t0W6SuzCPhjci4i392hv+xqQduW9PhT3hIsET4jHY9OS0besrG4hZX7WS4a+sirtJ8oY6zUoazYvMH2WfYLBzN+RaN2KHxmjh1SANgP52c0f5W5FsX784WwyHexUNy2rWTCX5CvskaQPXp2YMBh8BHCKCVO8fc1Lm/KuHQhILHoH2bk+D0a4pOYmPqfNz64xX+VHMB/iX3nHdil+EXwzq7CQ3rl/P9XBwjciA+CdnO88BLe+bfGwdi7+SE3SBdYg2x0WmECEhdeegBDj6thhY3bjLq4U96zm0Q34P/sE90Vh/1IHuoNIxM8Tr3NH2M4A43euT8YsmQNGGUFcdEhuFG6TNg0XJeaGwrQ8YUv6cBhdlvyxa4+cxm4+iSO3FoovJ9jb4g9uXBmMQSUoKaNBMMAI8Zxd26NjkmsCAwEAAaNTMFEwHQYDVR0OBBYEFNLtynB51Fen7jjcDAzk82nWwlsjMB8GA1UdIwQYMBaAFNLtynB51Fen7jjcDAzk82nWwlsjMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggGBAJdWAws/uXH+GL+MgmW1kkFZ7JMw0ApMAhcmbbfkxniFtyeeEZSQx/utTjihHjAss89sU+uTeUpL1IVIMPfcYSycLs3DrKVsxLHGBchXEEqyOfGG1J/Ur3mxT492TjlSKCEHr47vUHrEXGdeLRF2j0aYNUsakBSrDoseeqHscC0GP2eRYqcop/eXBJaCWVUYogJ+ptqElGEw88sIFBfvfpQfNT5SB0BqHf37wmpHkshKuKsnyiknkdC8AFSuR8o/HLNXu8LagPHnCC3/F0AEOrrGM4TXreHqPIdxaPgqc4jMGjR2WK+sx+40MAKqlfqT3Ck0DUadkeEWZX9RDXAFHmN0+cfGx2EoAoU040bDy4d7Jmst+OqLECSJq6VmacD8tOlwhIaDpoDmIUxxrD9nLD/6UuDxbRaI9xc6/LjFn2Z3lPtiXQmSRXKvkSF2mMvKv4Z23YXvCq0ohQrI12ommH/KuYkpAovwl5O9JAceQablVHMdGL93bxUy36732CsMdA=="
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "c51ee580-67c5-11f0-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "0e092ac0-67c7-11f0-8b08-b1b78211b00c"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "c51ee580-67c5-11f0-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "0f62ee60-67c7-11f0-8b08-b1b78211b00c"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "c51ee580-67c5-11f0-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "0f62ee61-67c7-11f0-8b08-b1b78211b00c"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "c51ee580-67c5-11f0-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "0fd9cc10-67c7-11f0-8b08-b1b78211b00c"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "c51ee580-67c5-11f0-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "106f7c60-67c7-11f0-8b08-b1b78211b00c"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "c51ee580-67c5-11f0-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "1108fd40-67c7-11f0-8b08-b1b78211b00c"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "c51ee580-67c5-11f0-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "13f60b12-67c7-11f0-8b08-b1b78211b00c"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "c51ee580-67c5-11f0-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "13f65930-67c7-11f0-8b08-b1b78211b00c"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON"
+  }, {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "c51ee580-67c5-11f0-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "5cf8a430-67d1-11f0-8b08-b1b78211b00c"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1753276507432,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1753283751707,
+      "longValue" : 1753283750851,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1753283196510,
+      "longValue" : 1753283196509,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1753281688185,
+      "longValue" : 1753281688185,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

@@ -2,11 +2,11 @@
   "entityType" : "DEVICE",
   "entity" : {
     "additionalInfo" : {
-      "lastConnectedGateway" : "5d62cdc0-eaf8-11ef-8b08-b1b78211b00c"
+      "lastConnectedGateway" : "c51ee580-67c5-11f0-8b08-b1b78211b00c"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
-      "id" : "4c7e7e40-a201-11ef-8b08-b1b78211b00c"
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
     },
     "deviceData" : {
       "configuration" : {
@@ -20,22 +20,19 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "c5d2cf20-4852-11ef-9869-85cbc512a09a"
     },
-    "externalId" : {
-      "entityType" : "DEVICE",
-      "id" : "f68e9780-e798-11ef-8b08-b1b78211b00c"
-    },
+    "externalId" : null,
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
-      "id" : "f68e9780-e798-11ef-8b08-b1b78211b00c"
+      "id" : "0e092ac0-67c7-11f0-8b08-b1b78211b00c"
     },
     "label" : null,
-    "name" : "Meter2",
+    "name" : "VCB_1",
     "softwareId" : null,
     "type" : "default"
   },
   "credentials" : {
-    "credentialsId" : "cF6PaFa3UcdwUdLlYLEy",
+    "credentialsId" : "stbptuMkebTVruuyckeC",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -43,55 +40,79 @@
     "additionalInfo" : null,
     "from" : {
       "entityType" : "DEVICE",
-      "id" : "5995e030-87f0-11ef-8b08-b1b78211b00c"
+      "id" : "c51ee580-67c5-11f0-8b08-b1b78211b00c"
     },
     "to" : {
       "entityType" : "DEVICE",
-      "id" : "f68e9780-e798-11ef-8b08-b1b78211b00c"
+      "id" : "0e092ac0-67c7-11f0-8b08-b1b78211b00c"
     },
     "type" : "Created",
     "typeGroup" : "COMMON"
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1746996922522,
+      "lastUpdateTs" : 1753276508043,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
-      "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1746996922522,
-      "longValue" : 1746996922521,
-      "strValue" : null
+      "key" : "deviceName",
+      "lastUpdateTs" : 1753277415396,
+      "longValue" : null,
+      "strValue" : "VCB_1"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "deviceType",
+      "lastUpdateTs" : 1753277415396,
+      "longValue" : null,
+      "strValue" : "default"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1746996276687,
-      "longValue" : 1746996275529,
+      "lastUpdateTs" : 1753283742701,
+      "longValue" : 1753283741839,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1746995460074,
-      "longValue" : 1746995460074,
+      "lastUpdateTs" : 1753283198170,
+      "longValue" : 1753283198170,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1746996275555,
-      "longValue" : 1746996275555,
+      "lastUpdateTs" : 1753283196560,
+      "longValue" : 1753283196560,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastFaultTimestamp",
+      "lastUpdateTs" : 1753277403854,
+      "longValue" : null,
+      "strValue" : "1"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "ts",
+      "lastUpdateTs" : 1753283741924,
+      "longValue" : 1753283741839,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]
