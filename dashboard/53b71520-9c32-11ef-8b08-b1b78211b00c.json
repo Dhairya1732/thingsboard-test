@@ -1872,45 +1872,6 @@
           "col" : 0,
           "id" : "d1b70d67-5e5b-d5c1-7dcd-d9b7d759ce10"
         },
-        "c0ae910f-d043-a494-7059-a29637f43ecc" : {
-          "typeFullFqn" : "system.cards.html_card",
-          "type" : "static",
-          "sizeX" : 7.5,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "static",
-              "name" : "function",
-              "dataKeys" : [ {
-                "name" : "f(x)",
-                "type" : "function",
-                "label" : "Random",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.15479322438769105,
-                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
-              } ]
-            } ],
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "cardHtml" : "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>Display Image</title>\r\n</head>\r\n<body>\r\n    <div class=\"image-container\">\r\n        <img src=\"https://stelmec.com/wp-content/uploads/2023/02/Stelmec-WHITE-LOGO-01-2.svg\" alt=\"Stelmec Logo\">\r\n    </div>\r\n</body>\r\n</html>\r\n",
-              "cardCss" : "body {\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    height: 100vh;\r\n    margin: 0;\r\n    background-color: #f5f5f5;\r\n}\r\n\r\n.image-container {\r\n    background: #305680;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\nimg {\r\n    width: 200px;\r\n    height: 120px;\r\n}\r\n"
-            },
-            "title" : "HTML Card",
-            "dropShadow" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "c0ae910f-d043-a494-7059-a29637f43ecc"
-        },
         "10ff6350-ea21-69b5-4e67-a7ad43e1d821" : {
           "typeFullFqn" : "system.line_chart",
           "type" : "timeseries",
@@ -2313,6 +2274,45 @@
           "row" : 0,
           "col" : 0,
           "id" : "10ff6350-ea21-69b5-4e67-a7ad43e1d821"
+        },
+        "a6a04a7a-d743-4d61-a2ce-435fad5935f6" : {
+          "typeFullFqn" : "system.cards.html_card",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.15479322438769105,
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "timewindow" : {
+              "realtime" : {
+                "timewindowMs" : 60000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : {
+              "cardHtml" : "<div class=\"image-container\">\r\n    <img src=\"https://stelmec.com/wp-content/uploads/2025/02/Atria-new-branding-7-e1739964755907.png\" alt=\"Stelmec Logo\">\r\n</div>",
+              "cardCss" : "html, body {\n    width: 100%;\n    height: 100%;\n    margin: 0;\n}\n\nbody {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-color: #f5f5f5;\n}\n\n.image-container {\n    width: 100%;\n    height: 100%;\n    background: #ffffff;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 0.5rem;\n}\n\nimg {\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n    /* Maintains aspect ratio without clipping */\n}"
+            },
+            "title" : "HTML Card",
+            "dropShadow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "a6a04a7a-d743-4d61-a2ce-435fad5935f6"
         }
       },
       "states" : {
@@ -2358,17 +2358,17 @@
                   "row" : 5,
                   "col" : 23
                 },
-                "c0ae910f-d043-a494-7059-a29637f43ecc" : {
-                  "sizeX" : 8,
-                  "sizeY" : 3,
-                  "row" : 0,
-                  "col" : 26
-                },
                 "10ff6350-ea21-69b5-4e67-a7ad43e1d821" : {
                   "sizeX" : 11,
                   "sizeY" : 8,
                   "row" : 13,
                   "col" : 23
+                },
+                "a6a04a7a-d743-4d61-a2ce-435fad5935f6" : {
+                  "sizeX" : 8,
+                  "sizeY" : 3,
+                  "row" : 0,
+                  "col" : 26
                 }
               },
               "gridSettings" : {
@@ -2427,7 +2427,10 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "53b71520-9c32-11ef-8b08-b1b78211b00c"
+    },
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "53b71520-9c32-11ef-8b08-b1b78211b00c"

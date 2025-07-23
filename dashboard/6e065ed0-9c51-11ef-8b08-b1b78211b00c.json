@@ -28,13 +28,13 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "deviceId" : "46040460-9070-11ef-8b08-b1b78211b00c",
-              "entityAliasId" : "0df20127-4849-dab6-fc9d-6201452d51f9",
+              "deviceId" : "f9160580-9953-11ef-8b08-b1b78211b00c",
+              "entityAliasId" : "05b0622b-d846-2601-164d-bee29397f115",
               "dataKeys" : [ {
-                "name" : "Primary Current R",
+                "name" : "voltage",
                 "type" : "timeseries",
-                "label" : "Primary Current (R)",
-                "color" : "#048AD3",
+                "label" : "V",
+                "color" : "#F44336",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -104,239 +104,8 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.05320419791431408,
-                "units" : "A",
-                "decimals" : 2
-              }, {
-                "name" : "Primary Current Y",
-                "type" : "timeseries",
-                "label" : "Primary Current (Y)",
-                "color" : "#4caf50",
-                "settings" : {
-                  "yAxisId" : "default",
-                  "showInLegend" : true,
-                  "dataHiddenByDefault" : false,
-                  "type" : "line",
-                  "lineSettings" : {
-                    "showLine" : true,
-                    "step" : false,
-                    "stepType" : "start",
-                    "smooth" : false,
-                    "lineType" : "solid",
-                    "lineWidth" : 2,
-                    "showPoints" : false,
-                    "showPointLabel" : false,
-                    "pointLabelPosition" : "top",
-                    "pointLabelFont" : {
-                      "family" : "Roboto",
-                      "size" : 11,
-                      "sizeUnit" : "px",
-                      "style" : "normal",
-                      "weight" : "400",
-                      "lineHeight" : "1"
-                    },
-                    "pointLabelColor" : "rgba(0, 0, 0, 0.76)",
-                    "enablePointLabelBackground" : false,
-                    "pointLabelBackground" : "rgba(255,255,255,0.56)",
-                    "pointShape" : "emptyCircle",
-                    "pointSize" : 4,
-                    "fillAreaSettings" : {
-                      "type" : "none",
-                      "opacity" : 0.4,
-                      "gradient" : {
-                        "start" : 100,
-                        "end" : 0
-                      }
-                    }
-                  },
-                  "barSettings" : {
-                    "showBorder" : false,
-                    "borderWidth" : 2,
-                    "borderRadius" : 0,
-                    "showLabel" : false,
-                    "labelPosition" : "top",
-                    "labelFont" : {
-                      "family" : "Roboto",
-                      "size" : 11,
-                      "sizeUnit" : "px",
-                      "style" : "normal",
-                      "weight" : "400",
-                      "lineHeight" : "1"
-                    },
-                    "labelColor" : "rgba(0, 0, 0, 0.76)",
-                    "enableLabelBackground" : false,
-                    "labelBackground" : "rgba(255,255,255,0.56)",
-                    "backgroundSettings" : {
-                      "type" : "none",
-                      "opacity" : 0.4,
-                      "gradient" : {
-                        "start" : 100,
-                        "end" : 0
-                      }
-                    }
-                  },
-                  "comparisonSettings" : {
-                    "showValuesForComparison" : false,
-                    "comparisonValuesLabel" : "",
-                    "color" : ""
-                  }
-                },
-                "_hash" : 0.09429857326897828,
-                "decimals" : 2,
-                "units" : "A"
-              }, {
-                "name" : "Primary Current B",
-                "type" : "timeseries",
-                "label" : "Primary Current (B)",
-                "color" : "#f44336",
-                "settings" : {
-                  "yAxisId" : "default",
-                  "showInLegend" : true,
-                  "dataHiddenByDefault" : false,
-                  "type" : "line",
-                  "lineSettings" : {
-                    "showLine" : true,
-                    "step" : false,
-                    "stepType" : "start",
-                    "smooth" : false,
-                    "lineType" : "solid",
-                    "lineWidth" : 2,
-                    "showPoints" : false,
-                    "showPointLabel" : false,
-                    "pointLabelPosition" : "top",
-                    "pointLabelFont" : {
-                      "family" : "Roboto",
-                      "size" : 11,
-                      "sizeUnit" : "px",
-                      "style" : "normal",
-                      "weight" : "400",
-                      "lineHeight" : "1"
-                    },
-                    "pointLabelColor" : "rgba(0, 0, 0, 0.76)",
-                    "enablePointLabelBackground" : false,
-                    "pointLabelBackground" : "rgba(255,255,255,0.56)",
-                    "pointShape" : "emptyCircle",
-                    "pointSize" : 4,
-                    "fillAreaSettings" : {
-                      "type" : "none",
-                      "opacity" : 0.4,
-                      "gradient" : {
-                        "start" : 100,
-                        "end" : 0
-                      }
-                    }
-                  },
-                  "barSettings" : {
-                    "showBorder" : false,
-                    "borderWidth" : 2,
-                    "borderRadius" : 0,
-                    "showLabel" : false,
-                    "labelPosition" : "top",
-                    "labelFont" : {
-                      "family" : "Roboto",
-                      "size" : 11,
-                      "sizeUnit" : "px",
-                      "style" : "normal",
-                      "weight" : "400",
-                      "lineHeight" : "1"
-                    },
-                    "labelColor" : "rgba(0, 0, 0, 0.76)",
-                    "enableLabelBackground" : false,
-                    "labelBackground" : "rgba(255,255,255,0.56)",
-                    "backgroundSettings" : {
-                      "type" : "none",
-                      "opacity" : 0.4,
-                      "gradient" : {
-                        "start" : 100,
-                        "end" : 0
-                      }
-                    }
-                  },
-                  "comparisonSettings" : {
-                    "showValuesForComparison" : false,
-                    "comparisonValuesLabel" : "",
-                    "color" : ""
-                  }
-                },
-                "_hash" : 0.14226589454857996,
-                "units" : "A",
-                "decimals" : 2
-              }, {
-                "name" : "Primary Current E",
-                "type" : "timeseries",
-                "label" : "Primary Current (E)",
-                "color" : "#ffc107",
-                "settings" : {
-                  "yAxisId" : "default",
-                  "showInLegend" : true,
-                  "dataHiddenByDefault" : false,
-                  "type" : "line",
-                  "lineSettings" : {
-                    "showLine" : true,
-                    "step" : false,
-                    "stepType" : "start",
-                    "smooth" : false,
-                    "lineType" : "solid",
-                    "lineWidth" : 2,
-                    "showPoints" : false,
-                    "showPointLabel" : false,
-                    "pointLabelPosition" : "top",
-                    "pointLabelFont" : {
-                      "family" : "Roboto",
-                      "size" : 11,
-                      "sizeUnit" : "px",
-                      "style" : "normal",
-                      "weight" : "400",
-                      "lineHeight" : "1"
-                    },
-                    "pointLabelColor" : "rgba(0, 0, 0, 0.76)",
-                    "enablePointLabelBackground" : false,
-                    "pointLabelBackground" : "rgba(255,255,255,0.56)",
-                    "pointShape" : "emptyCircle",
-                    "pointSize" : 4,
-                    "fillAreaSettings" : {
-                      "type" : "none",
-                      "opacity" : 0.4,
-                      "gradient" : {
-                        "start" : 100,
-                        "end" : 0
-                      }
-                    }
-                  },
-                  "barSettings" : {
-                    "showBorder" : false,
-                    "borderWidth" : 2,
-                    "borderRadius" : 0,
-                    "showLabel" : false,
-                    "labelPosition" : "top",
-                    "labelFont" : {
-                      "family" : "Roboto",
-                      "size" : 11,
-                      "sizeUnit" : "px",
-                      "style" : "normal",
-                      "weight" : "400",
-                      "lineHeight" : "1"
-                    },
-                    "labelColor" : "rgba(0, 0, 0, 0.76)",
-                    "enableLabelBackground" : false,
-                    "labelBackground" : "rgba(255,255,255,0.56)",
-                    "backgroundSettings" : {
-                      "type" : "none",
-                      "opacity" : 0.4,
-                      "gradient" : {
-                        "start" : 100,
-                        "end" : 0
-                      }
-                    }
-                  },
-                  "comparisonSettings" : {
-                    "showValuesForComparison" : false,
-                    "comparisonValuesLabel" : "",
-                    "color" : ""
-                  }
-                },
-                "_hash" : 0.8958501877583913,
-                "units" : "A",
+                "_hash" : 7.707872282345374E-4,
+                "units" : "V",
                 "decimals" : 2
               } ],
               "alarmFilterConfig" : {
@@ -348,7 +117,7 @@
               "hideInterval" : false,
               "hideLastInterval" : false,
               "hideQuickInterval" : false,
-              "hideAggregation" : false,
+              "hideAggregation" : true,
               "hideAggInterval" : false,
               "hideTimezone" : false,
               "selectedTab" : 0,
@@ -356,10 +125,10 @@
                 "realtimeType" : 0,
                 "timewindowMs" : 300000,
                 "quickInterval" : "CURRENT_HOUR",
-                "interval" : 120000
+                "interval" : 1000
               },
               "aggregation" : {
-                "type" : "NONE",
+                "type" : "AVG",
                 "limit" : 25000
               },
               "timezone" : null
@@ -405,7 +174,7 @@
               },
               "yAxes" : {
                 "default" : {
-                  "units" : "A",
+                  "units" : "V",
                   "decimals" : 2,
                   "show" : true,
                   "label" : "",
@@ -439,10 +208,10 @@
                   "id" : "default",
                   "order" : 0,
                   "min" : 0,
-                  "max" : null,
+                  "max" : 300,
                   "ticksGenerator" : null,
-                  "interval" : null,
-                  "splitNumber" : null
+                  "interval" : 50,
+                  "splitNumber" : 100
                 }
               },
               "thresholds" : [ ],
@@ -598,11 +367,11 @@
               },
               "padding" : "12px"
             },
-            "title" : "Primary Current",
+            "title" : "Voltage ",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
-            "configMode" : "advanced",
+            "configMode" : "basic",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
@@ -658,100 +427,75 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "deviceId" : "46040460-9070-11ef-8b08-b1b78211b00c",
-              "entityAliasId" : "0df20127-4849-dab6-fc9d-6201452d51f9",
+              "deviceId" : "f9160580-9953-11ef-8b08-b1b78211b00c",
+              "entityAliasId" : "05b0622b-d846-2601-164d-bee29397f115",
               "filterId" : null,
               "dataKeys" : [ {
-                "name" : "Fault1 Timestamp",
+                "name" : "voltage",
                 "type" : "timeseries",
-                "label" : "Fault Timestamp",
-                "color" : "#8bc34a",
-                "settings" : { },
-                "_hash" : 0.22584523926775502,
-                "aggregationType" : null,
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "Fault1 Trigger",
-                "type" : "timeseries",
-                "label" : "Fault Trigger",
-                "color" : "#9c27b0",
-                "settings" : { },
-                "_hash" : 0.9081404948723353,
-                "decimals" : null,
-                "aggregationType" : null,
-                "units" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "Fault1 Group",
-                "type" : "timeseries",
-                "label" : "Group",
+                "label" : "Voltage V(V)",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.5635207899300276,
-                "units" : "",
-                "decimals" : 0,
-                "aggregationType" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "_hash" : 0.7795385459637334,
+                "units" : "V",
+                "decimals" : 2
               }, {
-                "name" : "Fault1 R %",
+                "name" : "current",
                 "type" : "timeseries",
-                "label" : "Fault Current R (A)",
+                "label" : "Current I(A)",
                 "color" : "#ffc107",
                 "settings" : { },
-                "_hash" : 0.33213911577839905,
-                "aggregationType" : null,
+                "_hash" : 0.1722938172805457,
                 "units" : "A",
-                "decimals" : 2,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "decimals" : 2
               }, {
-                "name" : "Fault1 Y %",
+                "name" : "frequency",
                 "type" : "timeseries",
-                "label" : "Fault Current Y (A)",
-                "color" : "#607d8b",
-                "settings" : { },
-                "_hash" : 0.7504971330694128,
-                "aggregationType" : null,
-                "units" : "A",
-                "decimals" : 2,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "Fault1 B %",
-                "type" : "timeseries",
-                "label" : "Fault Current B (A)",
-                "color" : "#9c27b0",
-                "settings" : { },
-                "_hash" : 0.39445318064153323,
-                "aggregationType" : null,
-                "units" : "A",
-                "decimals" : 2,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "Fault1 E %",
-                "type" : "timeseries",
-                "label" : "Fault Current E (A)",
+                "label" : "Frequency(Hz)",
                 "color" : "#8bc34a",
                 "settings" : { },
-                "_hash" : 0.7938640638613499,
-                "aggregationType" : null,
-                "units" : "A",
+                "_hash" : 0.593942375790243,
+                "units" : "Hz",
                 "decimals" : 2,
+                "aggregationType" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
+              }, {
+                "name" : "active_power",
+                "type" : "timeseries",
+                "label" : "Active Power(W)",
+                "color" : "#3f51b5",
+                "settings" : { },
+                "_hash" : 0.5349736575145607,
+                "units" : "W",
+                "decimals" : 2,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : false,
+                "postFuncBody" : null
+              }, {
+                "name" : "energy",
+                "type" : "timeseries",
+                "label" : "Energy(Wh)",
+                "color" : "#e91e63",
+                "settings" : { },
+                "_hash" : 0.9135407042848875,
+                "units" : "Wh",
+                "decimals" : 2,
+                "aggregationType" : null,
+                "funcBody" : null,
+                "usePostProcessing" : false,
+                "postFuncBody" : null
+              }, {
+                "name" : "power_factor",
+                "type" : "timeseries",
+                "label" : "Power Factor",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.07651392084026365,
+                "units" : null,
+                "decimals" : 2
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -768,40 +512,27 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "timewindowMs" : 1800000,
+                "timewindowMs" : 300000,
                 "quickInterval" : "CURRENT_DAY",
                 "interval" : 1000
               },
               "aggregation" : {
                 "type" : "NONE",
                 "limit" : 200
-              },
-              "timezone" : null
+              }
             },
             "showTitle" : true,
             "backgroundColor" : "rgb(255, 255, 255)",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "enableSearch" : true,
-              "enableSelectColumnDisplay" : true,
-              "enableStickyHeader" : true,
-              "enableStickyAction" : true,
-              "showCellActionsMenu" : true,
-              "reserveSpaceForHiddenAction" : "true",
-              "showTimestamp" : false,
-              "dateFormat" : {
-                "format" : "yyyy-MM-dd HH:mm:ss"
-              },
+              "showTimestamp" : true,
               "displayPagination" : true,
-              "useEntityLabel" : false,
               "defaultPageSize" : 10,
-              "hideEmptyLines" : false,
-              "disableStickyHeader" : false,
-              "useRowStyleFunction" : false,
-              "rowStyleFunction" : ""
+              "enableSearch" : true,
+              "enableSelectColumnDisplay" : true
             },
-            "title" : "Fault Table",
+            "title" : "Values Table",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : {
@@ -817,7 +548,7 @@
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
             "displayTimewindow" : true,
-            "configMode" : "advanced",
+            "configMode" : "basic",
             "titleFont" : null,
             "titleColor" : null,
             "titleIcon" : null,
@@ -859,7 +590,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "cardHtml" : "<div class='card'>Relay Monitoring Dashboard</div>",
+              "cardHtml" : "<div class='card'>Meter Dashboard</div>",
               "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 36px;\n    color: #305680;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
             },
             "title" : "HTML Card",
@@ -876,10 +607,9 @@
           "sizeY" : 3,
           "config" : {
             "datasources" : [ {
-              "type" : "entity",
+              "type" : "device",
               "name" : "",
               "deviceId" : "f9160580-9953-11ef-8b08-b1b78211b00c",
-              "entityAliasId" : "0df20127-4849-dab6-fc9d-6201452d51f9",
               "dataKeys" : [ {
                 "name" : "manufacturer_name",
                 "type" : "timeseries",
@@ -887,6 +617,13 @@
                 "color" : "#2196f3",
                 "settings" : { },
                 "_hash" : 0.6674480675198582
+              }, {
+                "name" : "serial_number",
+                "type" : "timeseries",
+                "label" : "serial_number",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.40568518398997244
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -921,8 +658,8 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "cardHtml" : "<center>\n    <div class='card'>\n        <div class=\"info-row\">\n            <p class=\"relay-title\">Profile: Relay</p>\n            <p class=\"manufacturer-name\">Manufacturer: Stelmec Ltd.</p>\n        </div>\n    </div>\n</center>",
-              "cardCss" : "@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); /* Clean futuristic font */\n\nbody {\n    font-family: 'Times New Roman',Times New Roman;\n    background-color: #fff; /* Dark background for contrast */\n    margin: 0;\n    height: auto; /* Take full viewport height */\n    display: flex;\n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n}\n\n.card {\n    \n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n    background-color: #fff; /* Simplified dark card background */\n    color: #ffffff;\n    width: 100%;\n    height: auto; /* Adjusted height for the horizontal layout */\n    padding-left: 50px;\n    padding-right: 50px;\n    border-radius: 16px; /* Slightly more rounded corners for a modern look */\n    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */\n}\n\n.info-row {\n    padding-top:15px;\n    display: flex;\n    justify-content: space-between;\n    width: 100%; /* Occupy the full width of the card */\n    align-items: center; /* Align the items in the center vertically */\n    align-content: center;\n    height: 50px;\n    \n}\n\n.relay-title {\n    font-size: 22px;\n    font-weight: 600;\n    color: #305680; \n    flex: 1; /* Ensure the title takes up one-third of the width */\n    text-align: left;\n}\n\n.serial-number {\n    font-weight: 600;\n    font-size: 22px;\n    color: #305680;\n    flex: 1;\n    text-align: right; /* Center the serial number */\n}\n\n.manufacturer-name {\n    font-size: 22px;\n    color: #305680;\n    font-weight: 600;\n    flex: 1;\n    text-align: center; /* Align the manufacturer name to the right */\n}"
+              "cardHtml" : "<center>\n    <div class='card'>\n        <div class=\"info-row\">\n            <p class=\"relay-title\">Profile: Panel Meter</p>\n            <p class=\"manufacturer-name\">Manufacturer: ${manufacturer_name}</p>\n            <p class=\"serial-number\">Serial Number: ${serial_number}</p>\n            \n        </div>\n    </div>\n</center>",
+              "cardCss" : "@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); /* Clean futuristic font */\n\nbody {\n    font-family: 'Times New Roman',Times New Roman;\n    background-color: #fff; /* Dark background for contrast */\n    margin: 0;\n    height: 100vh; /* Take full viewport height */\n    display: flex;\n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n}\n\n.card {\n    \n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n    background-color: #fff; /* Simplified dark card background */\n    color: #ffffff;\n    width: 100%;\n    height: 50px; /* Adjusted height for the horizontal layout */\n    padding-left: 50px;\n    padding-right: 50px;\n    border-radius: 16px; /* Slightly more rounded corners for a modern look */\n    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */\n}\n\n.info-row {\n    padding-top:15px;\n   \n    display: flex;\n    justify-content: space-between;\n    width: 100%; /* Occupy the full width of the card */\n    align-items: center; /* Align the items in the center vertically */\n    align-content: center;\n    height: 50px;\n    \n}\n\n.relay-title {\n    font-size: 22px;\n    font-weight: 600;\n    color: #305680; \n    margin-left: 10px;\n    flex: 1; /* Ensure the title takes up one-third of the width */\n    text-align: left;\n}\n\n.serial-number {\n    font-weight: 600;\n    font-size: 22px;\n    color: #305680;\n    flex: 1;\n    text-align: center; /* Center the serial number */\n}\n\n.manufacturer-name {\n    font-size: 22px;\n    color: #305680;\n    font-weight: 600;\n    flex: 1;\n    text-align: right; /* Align the manufacturer name to the right */\n}"
             },
             "title" : "HTML Value Card",
             "dropShadow" : false,
@@ -950,13 +687,13 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "deviceId" : "46040460-9070-11ef-8b08-b1b78211b00c",
-              "entityAliasId" : "0df20127-4849-dab6-fc9d-6201452d51f9",
+              "deviceId" : "f9160580-9953-11ef-8b08-b1b78211b00c",
+              "entityAliasId" : "05b0622b-d846-2601-164d-bee29397f115",
               "dataKeys" : [ {
-                "name" : "Secondary Current R",
+                "name" : "current",
                 "type" : "timeseries",
-                "label" : "Secondary Current (r)",
-                "color" : "#2196f3",
+                "label" : "I",
+                "color" : "#F5DD00",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -1026,238 +763,7 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.8800389664836736,
-                "decimals" : 2,
-                "units" : "A"
-              }, {
-                "name" : "Secondary Current Y",
-                "type" : "timeseries",
-                "label" : "Secondary Current (y)",
-                "color" : "#4caf50",
-                "settings" : {
-                  "yAxisId" : "default",
-                  "showInLegend" : true,
-                  "dataHiddenByDefault" : false,
-                  "type" : "line",
-                  "lineSettings" : {
-                    "showLine" : true,
-                    "step" : false,
-                    "stepType" : "start",
-                    "smooth" : false,
-                    "lineType" : "solid",
-                    "lineWidth" : 2,
-                    "showPoints" : false,
-                    "showPointLabel" : false,
-                    "pointLabelPosition" : "top",
-                    "pointLabelFont" : {
-                      "family" : "Roboto",
-                      "size" : 11,
-                      "sizeUnit" : "px",
-                      "style" : "normal",
-                      "weight" : "400",
-                      "lineHeight" : "1"
-                    },
-                    "pointLabelColor" : "rgba(0, 0, 0, 0.76)",
-                    "enablePointLabelBackground" : false,
-                    "pointLabelBackground" : "rgba(255,255,255,0.56)",
-                    "pointShape" : "emptyCircle",
-                    "pointSize" : 4,
-                    "fillAreaSettings" : {
-                      "type" : "none",
-                      "opacity" : 0.4,
-                      "gradient" : {
-                        "start" : 100,
-                        "end" : 0
-                      }
-                    }
-                  },
-                  "barSettings" : {
-                    "showBorder" : false,
-                    "borderWidth" : 2,
-                    "borderRadius" : 0,
-                    "showLabel" : false,
-                    "labelPosition" : "top",
-                    "labelFont" : {
-                      "family" : "Roboto",
-                      "size" : 11,
-                      "sizeUnit" : "px",
-                      "style" : "normal",
-                      "weight" : "400",
-                      "lineHeight" : "1"
-                    },
-                    "labelColor" : "rgba(0, 0, 0, 0.76)",
-                    "enableLabelBackground" : false,
-                    "labelBackground" : "rgba(255,255,255,0.56)",
-                    "backgroundSettings" : {
-                      "type" : "none",
-                      "opacity" : 0.4,
-                      "gradient" : {
-                        "start" : 100,
-                        "end" : 0
-                      }
-                    }
-                  },
-                  "comparisonSettings" : {
-                    "showValuesForComparison" : false,
-                    "comparisonValuesLabel" : "",
-                    "color" : ""
-                  }
-                },
-                "_hash" : 0.49583218328359013,
-                "decimals" : 2,
-                "units" : "A"
-              }, {
-                "name" : "Secondary Current B",
-                "type" : "timeseries",
-                "label" : "Secondary Current (b)",
-                "color" : "#f44336",
-                "settings" : {
-                  "yAxisId" : "default",
-                  "showInLegend" : true,
-                  "dataHiddenByDefault" : false,
-                  "type" : "line",
-                  "lineSettings" : {
-                    "showLine" : true,
-                    "step" : false,
-                    "stepType" : "start",
-                    "smooth" : false,
-                    "lineType" : "solid",
-                    "lineWidth" : 2,
-                    "showPoints" : false,
-                    "showPointLabel" : false,
-                    "pointLabelPosition" : "top",
-                    "pointLabelFont" : {
-                      "family" : "Roboto",
-                      "size" : 11,
-                      "sizeUnit" : "px",
-                      "style" : "normal",
-                      "weight" : "400",
-                      "lineHeight" : "1"
-                    },
-                    "pointLabelColor" : "rgba(0, 0, 0, 0.76)",
-                    "enablePointLabelBackground" : false,
-                    "pointLabelBackground" : "rgba(255,255,255,0.56)",
-                    "pointShape" : "emptyCircle",
-                    "pointSize" : 4,
-                    "fillAreaSettings" : {
-                      "type" : "none",
-                      "opacity" : 0.4,
-                      "gradient" : {
-                        "start" : 100,
-                        "end" : 0
-                      }
-                    }
-                  },
-                  "barSettings" : {
-                    "showBorder" : false,
-                    "borderWidth" : 2,
-                    "borderRadius" : 0,
-                    "showLabel" : false,
-                    "labelPosition" : "top",
-                    "labelFont" : {
-                      "family" : "Roboto",
-                      "size" : 11,
-                      "sizeUnit" : "px",
-                      "style" : "normal",
-                      "weight" : "400",
-                      "lineHeight" : "1"
-                    },
-                    "labelColor" : "rgba(0, 0, 0, 0.76)",
-                    "enableLabelBackground" : false,
-                    "labelBackground" : "rgba(255,255,255,0.56)",
-                    "backgroundSettings" : {
-                      "type" : "none",
-                      "opacity" : 0.4,
-                      "gradient" : {
-                        "start" : 100,
-                        "end" : 0
-                      }
-                    }
-                  },
-                  "comparisonSettings" : {
-                    "showValuesForComparison" : false,
-                    "comparisonValuesLabel" : "",
-                    "color" : ""
-                  }
-                },
-                "_hash" : 0.7548540698298956,
-                "decimals" : 2,
-                "units" : "A"
-              }, {
-                "name" : "Secondary Current E",
-                "type" : "timeseries",
-                "label" : "Secondary Current (e)",
-                "color" : "#ffc107",
-                "settings" : {
-                  "yAxisId" : "default",
-                  "showInLegend" : true,
-                  "dataHiddenByDefault" : false,
-                  "type" : "line",
-                  "lineSettings" : {
-                    "showLine" : true,
-                    "step" : false,
-                    "stepType" : "start",
-                    "smooth" : false,
-                    "lineType" : "solid",
-                    "lineWidth" : 2,
-                    "showPoints" : false,
-                    "showPointLabel" : false,
-                    "pointLabelPosition" : "top",
-                    "pointLabelFont" : {
-                      "family" : "Roboto",
-                      "size" : 11,
-                      "sizeUnit" : "px",
-                      "style" : "normal",
-                      "weight" : "400",
-                      "lineHeight" : "1"
-                    },
-                    "pointLabelColor" : "rgba(0, 0, 0, 0.76)",
-                    "enablePointLabelBackground" : false,
-                    "pointLabelBackground" : "rgba(255,255,255,0.56)",
-                    "pointShape" : "emptyCircle",
-                    "pointSize" : 4,
-                    "fillAreaSettings" : {
-                      "type" : "none",
-                      "opacity" : 0.4,
-                      "gradient" : {
-                        "start" : 100,
-                        "end" : 0
-                      }
-                    }
-                  },
-                  "barSettings" : {
-                    "showBorder" : false,
-                    "borderWidth" : 2,
-                    "borderRadius" : 0,
-                    "showLabel" : false,
-                    "labelPosition" : "top",
-                    "labelFont" : {
-                      "family" : "Roboto",
-                      "size" : 11,
-                      "sizeUnit" : "px",
-                      "style" : "normal",
-                      "weight" : "400",
-                      "lineHeight" : "1"
-                    },
-                    "labelColor" : "rgba(0, 0, 0, 0.76)",
-                    "enableLabelBackground" : false,
-                    "labelBackground" : "rgba(255,255,255,0.56)",
-                    "backgroundSettings" : {
-                      "type" : "none",
-                      "opacity" : 0.4,
-                      "gradient" : {
-                        "start" : 100,
-                        "end" : 0
-                      }
-                    }
-                  },
-                  "comparisonSettings" : {
-                    "showValuesForComparison" : false,
-                    "comparisonValuesLabel" : "",
-                    "color" : ""
-                  }
-                },
-                "_hash" : 0.7727774001604235,
+                "_hash" : 0.4905282301693681,
                 "units" : "A",
                 "decimals" : 2,
                 "aggregationType" : null,
@@ -1268,7 +774,7 @@
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               },
-              "latestDataKeys" : null
+              "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
               "hideInterval" : false,
@@ -1282,10 +788,10 @@
                 "realtimeType" : 0,
                 "timewindowMs" : 300000,
                 "quickInterval" : "CURRENT_HOUR",
-                "interval" : 300000
+                "interval" : 1000
               },
               "aggregation" : {
-                "type" : "NONE",
+                "type" : "AVG",
                 "limit" : 25000
               },
               "timezone" : null
@@ -1365,10 +871,10 @@
                   "id" : "default",
                   "order" : 0,
                   "min" : 0,
-                  "max" : null,
+                  "max" : 5,
                   "ticksGenerator" : null,
-                  "interval" : null,
-                  "splitNumber" : null
+                  "interval" : 1,
+                  "splitNumber" : 1
                 }
               },
               "thresholds" : [ ],
@@ -1524,11 +1030,11 @@
               },
               "padding" : "12px"
             },
-            "title" : "Secondary Current",
+            "title" : "Current",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
-            "configMode" : "advanced",
+            "configMode" : "basic",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
@@ -1575,151 +1081,531 @@
           "col" : 0,
           "id" : "d76b1276-b504-87f6-d945-45112eff6795"
         },
-        "8507eecd-2afa-d48a-5adb-f31c445ef23b" : {
-          "typeFullFqn" : "system.cards.html_value_card",
-          "type" : "latest",
-          "sizeX" : 7.5,
-          "sizeY" : 3,
+        "d1b70d67-5e5b-d5c1-7dcd-d9b7d759ce10" : {
+          "typeFullFqn" : "system.line_chart",
+          "type" : "timeseries",
+          "sizeX" : 8,
+          "sizeY" : 5,
           "config" : {
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "deviceId" : "469c25b0-9070-11ef-8b08-b1b78211b00c",
-              "entityAliasId" : "0df20127-4849-dab6-fc9d-6201452d51f9",
+              "deviceId" : "f9160580-9953-11ef-8b08-b1b78211b00c",
+              "entityAliasId" : "05b0622b-d846-2601-164d-bee29397f115",
               "dataKeys" : [ {
-                "name" : "Fault1 Trigger",
+                "name" : "active_power",
                 "type" : "timeseries",
-                "label" : "Fault1 Trigger",
-                "color" : "#9c27b0",
-                "settings" : { },
-                "_hash" : 0.6552079135570146,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
+                "label" : "Active Power",
+                "color" : "#F44336",
+                "settings" : {
+                  "yAxisId" : "default",
+                  "showInLegend" : true,
+                  "dataHiddenByDefault" : false,
+                  "type" : "line",
+                  "lineSettings" : {
+                    "showLine" : true,
+                    "step" : false,
+                    "stepType" : "start",
+                    "smooth" : false,
+                    "lineType" : "solid",
+                    "lineWidth" : 2,
+                    "showPoints" : false,
+                    "showPointLabel" : false,
+                    "pointLabelPosition" : "top",
+                    "pointLabelFont" : {
+                      "family" : "Roboto",
+                      "size" : 11,
+                      "sizeUnit" : "px",
+                      "style" : "normal",
+                      "weight" : "400",
+                      "lineHeight" : "1"
+                    },
+                    "pointLabelColor" : "rgba(0, 0, 0, 0.76)",
+                    "enablePointLabelBackground" : false,
+                    "pointLabelBackground" : "rgba(255,255,255,0.56)",
+                    "pointShape" : "emptyCircle",
+                    "pointSize" : 4,
+                    "fillAreaSettings" : {
+                      "type" : "none",
+                      "opacity" : 0.4,
+                      "gradient" : {
+                        "start" : 100,
+                        "end" : 0
+                      }
+                    }
+                  },
+                  "barSettings" : {
+                    "showBorder" : false,
+                    "borderWidth" : 2,
+                    "borderRadius" : 0,
+                    "showLabel" : false,
+                    "labelPosition" : "top",
+                    "labelFont" : {
+                      "family" : "Roboto",
+                      "size" : 11,
+                      "sizeUnit" : "px",
+                      "style" : "normal",
+                      "weight" : "400",
+                      "lineHeight" : "1"
+                    },
+                    "labelColor" : "rgba(0, 0, 0, 0.76)",
+                    "enableLabelBackground" : false,
+                    "labelBackground" : "rgba(255,255,255,0.56)",
+                    "backgroundSettings" : {
+                      "type" : "none",
+                      "opacity" : 0.4,
+                      "gradient" : {
+                        "start" : 100,
+                        "end" : 0
+                      }
+                    }
+                  },
+                  "comparisonSettings" : {
+                    "showValuesForComparison" : false,
+                    "comparisonValuesLabel" : "",
+                    "color" : ""
+                  }
+                },
+                "_hash" : 0.7526672891774804,
+                "units" : "W",
+                "decimals" : 2,
+                "aggregationType" : null,
                 "funcBody" : null,
-                "usePostProcessing" : null,
+                "usePostProcessing" : false,
                 "postFuncBody" : null
               }, {
-                "name" : "Fault1 Date",
+                "name" : "energy",
                 "type" : "timeseries",
-                "label" : "Fault1 Date",
-                "color" : "#9c27b0",
-                "settings" : { },
-                "_hash" : 0.6452167162739944
-              }, {
-                "name" : "Fault1 Time",
-                "type" : "timeseries",
-                "label" : "Fault1 Time",
-                "color" : "#8bc34a",
-                "settings" : { },
-                "_hash" : 0.22125062836249576
-              }, {
-                "name" : "Fault1 R %",
-                "type" : "timeseries",
-                "label" : "Fault1 R %",
-                "color" : "#ffc107",
-                "settings" : { },
-                "_hash" : 0.6509528460699903,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
+                "label" : "energy",
+                "color" : "#4caf50",
+                "settings" : {
+                  "yAxisId" : "default",
+                  "showInLegend" : true,
+                  "dataHiddenByDefault" : false,
+                  "type" : "line",
+                  "lineSettings" : {
+                    "showLine" : true,
+                    "step" : false,
+                    "stepType" : "start",
+                    "smooth" : false,
+                    "lineType" : "solid",
+                    "lineWidth" : 2,
+                    "showPoints" : false,
+                    "showPointLabel" : false,
+                    "pointLabelPosition" : "top",
+                    "pointLabelFont" : {
+                      "family" : "Roboto",
+                      "size" : 11,
+                      "sizeUnit" : "px",
+                      "style" : "normal",
+                      "weight" : "400",
+                      "lineHeight" : "1"
+                    },
+                    "pointLabelColor" : "rgba(0, 0, 0, 0.76)",
+                    "enablePointLabelBackground" : false,
+                    "pointLabelBackground" : "rgba(255,255,255,0.56)",
+                    "pointShape" : "emptyCircle",
+                    "pointSize" : 4,
+                    "fillAreaSettings" : {
+                      "type" : "none",
+                      "opacity" : 0.4,
+                      "gradient" : {
+                        "start" : 100,
+                        "end" : 0
+                      }
+                    }
+                  },
+                  "barSettings" : {
+                    "showBorder" : false,
+                    "borderWidth" : 2,
+                    "borderRadius" : 0,
+                    "showLabel" : false,
+                    "labelPosition" : "top",
+                    "labelFont" : {
+                      "family" : "Roboto",
+                      "size" : 11,
+                      "sizeUnit" : "px",
+                      "style" : "normal",
+                      "weight" : "400",
+                      "lineHeight" : "1"
+                    },
+                    "labelColor" : "rgba(0, 0, 0, 0.76)",
+                    "enableLabelBackground" : false,
+                    "labelBackground" : "rgba(255,255,255,0.56)",
+                    "backgroundSettings" : {
+                      "type" : "none",
+                      "opacity" : 0.4,
+                      "gradient" : {
+                        "start" : 100,
+                        "end" : 0
+                      }
+                    }
+                  },
+                  "comparisonSettings" : {
+                    "showValuesForComparison" : false,
+                    "comparisonValuesLabel" : "",
+                    "color" : ""
+                  }
+                },
+                "_hash" : 0.24422976635293114,
+                "units" : "Wh",
+                "decimals" : 2,
+                "aggregationType" : null,
                 "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value.toString().padStart(4, '0');"
-              }, {
-                "name" : "Fault1 Y %",
-                "type" : "timeseries",
-                "label" : "Fault1 Y %",
-                "color" : "#607d8b",
-                "settings" : { },
-                "_hash" : 0.1787348667160542,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value.toString().padStart(4, '0');"
-              }, {
-                "name" : "Fault1 B %",
-                "type" : "timeseries",
-                "label" : "Fault1 B %",
-                "color" : "#9c27b0",
-                "settings" : { },
-                "_hash" : 0.42081595033527375,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value.toString().padStart(4, '0');"
-              }, {
-                "name" : "Fault1 E %",
-                "type" : "timeseries",
-                "label" : "Fault1 E %",
-                "color" : "#8bc34a",
-                "settings" : { },
-                "_hash" : 0.4684419862769158,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value.toString().padStart(4, '0');"
+                "usePostProcessing" : false,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
-              }
+              },
+              "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
-              "displayValue" : "",
+              "hideInterval" : false,
+              "hideLastInterval" : false,
+              "hideQuickInterval" : false,
+              "hideAggregation" : false,
+              "hideAggInterval" : false,
+              "hideTimezone" : false,
               "selectedTab" : 0,
               "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1730810497459,
-                  "endTimeMs" : 1730896897459
-                },
-                "quickInterval" : "CURRENT_DAY"
+                "realtimeType" : 0,
+                "timewindowMs" : 300000,
+                "quickInterval" : "CURRENT_HOUR",
+                "interval" : 1000
               },
               "aggregation" : {
                 "type" : "AVG",
                 "limit" : 25000
-              }
+              },
+              "timezone" : null
             },
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
+            "showTitle" : true,
+            "backgroundColor" : "rgba(0, 0, 0, 0)",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "cardHtml" : "<center>\n    <div class=\"card\">\n        <h6><u><b>Fault Data</b></u></h6>\n        <div class=\"trip-condition\">\n            <p><strong>Trip Condition:</strong> ${Fault1 Trigger}</p>\n        </div>\n        <div class=\"info-grid\">\n            <div class=\"info-item\">\n                <p><strong>R:</strong> ${Fault1 R %} A</p>\n            </div>\n            <div class=\"info-item\">\n                <p><strong>Y:</strong> ${Fault1 Y %} A</p>\n            </div>\n            <div class=\"info-item\">\n                <p><strong>B:</strong> ${Fault1 B %} A</p>\n            </div>\n            <div class=\"info-item\">\n                <p><strong>E:</strong> ${Fault1 E %} A</p>\n            </div>\n        </div>\n        <br>\n        <div class=\"time-date-row\">\n            <p><strong>Fault Time:</strong> ${Fault1 Time}</p>\n            <p><strong>Fault Date:</strong> ${Fault1 Date}</p>\n        </div>\n    </div>\n</center>",
-              "cardCss" : "html, body {\n    margin: 0;\n    padding: 0;\n    height: 100%;\n}\n\n/* Card container inside the widget */\n.card {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    background-color: #fff;\n    width: 100%;\n    padding: 0px;\n    box-sizing: border-box;\n    overflow: auto;\n    margin: 0px;\n}\n\n/* Centered trip condition */\n.trip-condition {\n    text-align: center;\n    height: 75px;\n}\n\n/* Grid format for R, Y, B, E phases */\n.info-grid {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr); /* Two columns per row */\n    column-gap: 5px;  /* Slight horizontal space between items */\n    width: 100%;\n    text-align: center;\n    padding: 0;\n    margin: 0;\n}\n\n.info-item {\n    padding: 0px;\n    margin: 0px;\n    font-size: 10px;\n}\n\n.info-item p{\n    padding: 0px;\n    margin: 0px;\n}\n\n/* Centered time and date */\n.time-date-row {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    width: 100%;\n    padding: 0px;\n    margin: 0px;\n}\n\n.time-date-row p{\n    margin: 0px;\n    font-size: 25px;\n}"
+              "comparisonEnabled" : false,
+              "timeForComparison" : "previousInterval",
+              "comparisonCustomIntervalValue" : 7200000,
+              "comparisonXAxis" : {
+                "show" : true,
+                "label" : "",
+                "labelFont" : {
+                  "family" : "Roboto",
+                  "size" : 12,
+                  "sizeUnit" : "px",
+                  "style" : "normal",
+                  "weight" : "600",
+                  "lineHeight" : "1"
+                },
+                "labelColor" : "rgba(0, 0, 0, 0.54)",
+                "position" : "top",
+                "showTickLabels" : true,
+                "tickLabelFont" : {
+                  "family" : "Roboto",
+                  "size" : 10,
+                  "sizeUnit" : "px",
+                  "style" : "normal",
+                  "weight" : "400",
+                  "lineHeight" : "1"
+                },
+                "tickLabelColor" : "rgba(0, 0, 0, 0.54)",
+                "ticksFormat" : { },
+                "showTicks" : true,
+                "ticksColor" : "rgba(0, 0, 0, 0.54)",
+                "showLine" : true,
+                "lineColor" : "rgba(0, 0, 0, 0.54)",
+                "showSplitLines" : true,
+                "splitLinesColor" : "rgba(0, 0, 0, 0.12)"
+              },
+              "yAxes" : {
+                "default" : {
+                  "units" : "W",
+                  "decimals" : 2,
+                  "show" : true,
+                  "label" : "active power",
+                  "labelFont" : {
+                    "family" : "Roboto",
+                    "size" : 12,
+                    "sizeUnit" : "px",
+                    "style" : "normal",
+                    "weight" : "600",
+                    "lineHeight" : "1"
+                  },
+                  "labelColor" : "rgba(0, 0, 0, 0.54)",
+                  "position" : "left",
+                  "showTickLabels" : true,
+                  "tickLabelFont" : {
+                    "family" : "Roboto",
+                    "size" : 12,
+                    "sizeUnit" : "px",
+                    "style" : "normal",
+                    "weight" : "400",
+                    "lineHeight" : "1"
+                  },
+                  "tickLabelColor" : "rgba(0, 0, 0, 0.54)",
+                  "ticksFormatter" : null,
+                  "showTicks" : true,
+                  "ticksColor" : "rgba(0, 0, 0, 0.54)",
+                  "showLine" : true,
+                  "lineColor" : "rgba(0, 0, 0, 0.54)",
+                  "showSplitLines" : true,
+                  "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
+                  "id" : "default",
+                  "order" : 0,
+                  "min" : 0,
+                  "max" : 500,
+                  "ticksGenerator" : null,
+                  "interval" : 100,
+                  "splitNumber" : 100
+                },
+                "axis1" : {
+                  "units" : "Wh",
+                  "decimals" : 2,
+                  "show" : true,
+                  "label" : "energy",
+                  "labelFont" : {
+                    "family" : "Roboto",
+                    "size" : 12,
+                    "sizeUnit" : "px",
+                    "style" : "normal",
+                    "weight" : "600",
+                    "lineHeight" : "1"
+                  },
+                  "labelColor" : "rgba(0, 0, 0, 0.54)",
+                  "position" : "right",
+                  "showTickLabels" : true,
+                  "tickLabelFont" : {
+                    "family" : "Roboto",
+                    "size" : 12,
+                    "sizeUnit" : "px",
+                    "style" : "normal",
+                    "weight" : "400",
+                    "lineHeight" : "1"
+                  },
+                  "tickLabelColor" : "rgba(0, 0, 0, 0.54)",
+                  "ticksFormatter" : null,
+                  "showTicks" : true,
+                  "ticksColor" : "rgba(0, 0, 0, 0.54)",
+                  "showLine" : true,
+                  "lineColor" : "rgba(0, 0, 0, 0.54)",
+                  "showSplitLines" : true,
+                  "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
+                  "id" : "axis1",
+                  "order" : 1,
+                  "min" : 0,
+                  "max" : 500,
+                  "ticksGenerator" : null,
+                  "interval" : 100,
+                  "splitNumber" : 100
+                }
+              },
+              "thresholds" : [ ],
+              "dataZoom" : true,
+              "stack" : false,
+              "grid" : {
+                "show" : false,
+                "backgroundColor" : null,
+                "borderWidth" : 1,
+                "borderColor" : "#ccc"
+              },
+              "xAxis" : {
+                "show" : true,
+                "label" : "",
+                "labelFont" : {
+                  "family" : "Roboto",
+                  "size" : 12,
+                  "sizeUnit" : "px",
+                  "style" : "normal",
+                  "weight" : "600",
+                  "lineHeight" : "1"
+                },
+                "labelColor" : "rgba(0, 0, 0, 0.54)",
+                "position" : "bottom",
+                "showTickLabels" : true,
+                "tickLabelFont" : {
+                  "family" : "Roboto",
+                  "size" : 10,
+                  "sizeUnit" : "px",
+                  "style" : "normal",
+                  "weight" : "400",
+                  "lineHeight" : "1"
+                },
+                "tickLabelColor" : "rgba(0, 0, 0, 0.54)",
+                "ticksFormat" : { },
+                "showTicks" : true,
+                "ticksColor" : "rgba(0, 0, 0, 0.54)",
+                "showLine" : true,
+                "lineColor" : "rgba(0, 0, 0, 0.54)",
+                "showSplitLines" : true,
+                "splitLinesColor" : "rgba(0, 0, 0, 0.12)"
+              },
+              "noAggregationBarWidthSettings" : {
+                "strategy" : "group",
+                "groupWidth" : {
+                  "relative" : true,
+                  "relativeWidth" : 2,
+                  "absoluteWidth" : 1000
+                },
+                "barWidth" : {
+                  "relative" : true,
+                  "relativeWidth" : 2,
+                  "absoluteWidth" : 1000
+                }
+              },
+              "showLegend" : true,
+              "legendColumnTitleFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "legendColumnTitleColor" : "rgba(0, 0, 0, 0.38)",
+              "legendLabelFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "legendLabelColor" : "rgba(0, 0, 0, 0.76)",
+              "legendValueFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "16px"
+              },
+              "legendValueColor" : "rgba(0, 0, 0, 0.87)",
+              "legendConfig" : {
+                "direction" : "column",
+                "position" : "top",
+                "sortDataKeys" : false,
+                "showMin" : false,
+                "showMax" : false,
+                "showAvg" : false,
+                "showTotal" : false,
+                "showLatest" : true
+              },
+              "showTooltip" : true,
+              "tooltipTrigger" : "axis",
+              "tooltipLabelFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "tooltipLabelColor" : "rgba(0, 0, 0, 0.76)",
+              "tooltipValueFont" : {
+                "family" : "Roboto",
+                "size" : 12,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "500",
+                "lineHeight" : "16px"
+              },
+              "tooltipValueColor" : "rgba(0, 0, 0, 0.76)",
+              "tooltipValueFormatter" : null,
+              "tooltipShowDate" : true,
+              "tooltipDateFormat" : {
+                "format" : null,
+                "lastUpdateAgo" : false,
+                "custom" : false,
+                "auto" : true,
+                "autoDateFormatSettings" : { }
+              },
+              "tooltipDateFont" : {
+                "family" : "Roboto",
+                "size" : 11,
+                "sizeUnit" : "px",
+                "style" : "normal",
+                "weight" : "400",
+                "lineHeight" : "16px"
+              },
+              "tooltipDateColor" : "rgba(0, 0, 0, 0.76)",
+              "tooltipDateInterval" : true,
+              "tooltipBackgroundColor" : "rgba(255, 255, 255, 0.76)",
+              "tooltipBackgroundBlur" : 4,
+              "animation" : {
+                "animation" : true,
+                "animationThreshold" : 2000,
+                "animationDuration" : 500,
+                "animationEasing" : "cubicOut",
+                "animationDelay" : 0,
+                "animationDurationUpdate" : 300,
+                "animationEasingUpdate" : "cubicOut",
+                "animationDelayUpdate" : 0
+              },
+              "background" : {
+                "type" : "color",
+                "color" : "#fff",
+                "overlay" : {
+                  "enabled" : false,
+                  "color" : "rgba(255,255,255,0.72)",
+                  "blur" : 3
+                }
+              },
+              "padding" : "12px"
             },
-            "title" : "HTML Value Card",
-            "dropShadow" : false,
+            "title" : "Active Power",
+            "dropShadow" : true,
             "enableFullscreen" : true,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
+            "titleStyle" : null,
+            "configMode" : "basic",
             "actions" : { },
-            "displayTimewindow" : true
+            "showTitleIcon" : false,
+            "titleIcon" : "thermostat",
+            "iconColor" : "#1F6BDD",
+            "useDashboardTimewindow" : false,
+            "displayTimewindow" : true,
+            "titleFont" : {
+              "size" : 16,
+              "sizeUnit" : "px",
+              "family" : "Roboto",
+              "weight" : "500",
+              "style" : "normal",
+              "lineHeight" : "24px"
+            },
+            "titleColor" : "rgba(0, 0, 0, 0.87)",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "units" : "",
+            "decimals" : null,
+            "noDataDisplayMessage" : "",
+            "timewindowStyle" : {
+              "showIcon" : false,
+              "iconSize" : "24px",
+              "icon" : null,
+              "iconPosition" : "left",
+              "font" : {
+                "size" : 12,
+                "sizeUnit" : "px",
+                "family" : "Roboto",
+                "weight" : "400",
+                "style" : "normal",
+                "lineHeight" : "16px"
+              },
+              "color" : "rgba(0, 0, 0, 0.38)",
+              "displayTypePrefix" : true
+            },
+            "margin" : "0px",
+            "borderRadius" : "0px",
+            "iconSize" : "0px"
           },
           "row" : 0,
           "col" : 0,
-          "id" : "8507eecd-2afa-d48a-5adb-f31c445ef23b"
+          "id" : "d1b70d67-5e5b-d5c1-7dcd-d9b7d759ce10"
         },
-        "4851a4a1-1314-442e-77d1-e81cd9d30b91" : {
+        "05f0b87c-313b-d828-7d9a-82616cdac40d" : {
           "typeFullFqn" : "system.cards.html_card",
           "type" : "static",
           "sizeX" : 7.5,
@@ -1756,150 +1642,26 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "4851a4a1-1314-442e-77d1-e81cd9d30b91"
-        },
-        "eb3316fd-387a-4a15-f0bb-1f2eea0577f6" : {
-          "typeFullFqn" : "system.control_widgets.led_indicator",
-          "type" : "rpc",
-          "sizeX" : 2.5,
-          "sizeY" : 2.5,
-          "config" : {
-            "targetDeviceAliases" : [ ],
-            "showTitle" : false,
-            "backgroundColor" : "#e6e7e8",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "title" : "Circuit Breaker Off",
-              "ledColor" : "#008F06",
-              "initialValue" : false,
-              "performCheckStatus" : false,
-              "retrieveValueMethod" : "timeseries",
-              "checkStatusMethod" : "checkStatus",
-              "valueAttribute" : "Circuit Breaker",
-              "parseValueFunction" : "return !data;",
-              "requestTimeout" : 500,
-              "requestPersistent" : false,
-              "persistentPollingInterval" : 5000
-            },
-            "title" : "Circuit Breaker On",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "display" : "flex",
-              "justifyContent" : "center",
-              "alignItems" : "center",
-              "width" : "100%"
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "actions" : { },
-            "decimals" : 2,
-            "datasources" : [ ],
-            "targetDevice" : {
-              "type" : "entity",
-              "entityAliasId" : "0df20127-4849-dab6-fc9d-6201452d51f9"
-            },
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "titleIcon" : "",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleFont" : {
-              "sizeUnit" : "px",
-              "family" : null,
-              "weight" : "bold",
-              "style" : null
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "eb3316fd-387a-4a15-f0bb-1f2eea0577f6"
-        },
-        "dd1724a5-0ff5-0b13-64b5-1cdadce1e90d" : {
-          "typeFullFqn" : "system.control_widgets.led_indicator",
-          "type" : "rpc",
-          "sizeX" : 2.5,
-          "sizeY" : 2.5,
-          "config" : {
-            "targetDeviceAliases" : [ ],
-            "showTitle" : false,
-            "backgroundColor" : "#e6e7e8",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "title" : " Circuit Breaker On",
-              "ledColor" : "#FF0000",
-              "initialValue" : false,
-              "performCheckStatus" : false,
-              "retrieveValueMethod" : "timeseries",
-              "checkStatusMethod" : "checkStatus",
-              "valueAttribute" : "Circuit Breaker",
-              "parseValueFunction" : "return data;",
-              "requestTimeout" : 500,
-              "requestPersistent" : false,
-              "persistentPollingInterval" : 5000
-            },
-            "title" : "Circuit Breaker Off",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "display" : "flex",
-              "fontSize" : "16px",
-              "fontWeight" : 400,
-              "justify-content" : "center"
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "actions" : { },
-            "decimals" : 2,
-            "datasources" : [ ],
-            "targetDevice" : {
-              "type" : "entity",
-              "entityAliasId" : "0df20127-4849-dab6-fc9d-6201452d51f9"
-            },
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "titleIcon" : "",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleFont" : {
-              "sizeUnit" : "px",
-              "family" : null,
-              "weight" : "bold",
-              "style" : null
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "dd1724a5-0ff5-0b13-64b5-1cdadce1e90d"
+          "id" : "05f0b87c-313b-d828-7d9a-82616cdac40d"
         }
       },
       "states" : {
         "default" : {
-          "name" : "Relay Dashboard",
+          "name" : "Meter_Dashboard",
           "root" : true,
           "layouts" : {
             "main" : {
               "widgets" : {
                 "622ddf4b-0b7a-f19d-6f50-0d6192ace56b" : {
                   "sizeX" : 11,
-                  "sizeY" : 14,
+                  "sizeY" : 11,
                   "row" : 5,
                   "col" : 0
                 },
                 "94504aa8-43b4-ae0f-d5a1-cd8e81be701a" : {
                   "sizeX" : 34,
-                  "sizeY" : 12,
-                  "row" : 19,
+                  "sizeY" : 9,
+                  "row" : 16,
                   "col" : 0
                 },
                 "65f5fd0a-a849-1d35-9dd9-773763128013" : {
@@ -1909,40 +1671,28 @@
                   "col" : 0
                 },
                 "d07b8e58-2352-471c-5305-12644d3eb930" : {
-                  "sizeX" : 22,
+                  "sizeX" : 34,
                   "sizeY" : 2,
                   "row" : 3,
                   "col" : 0
                 },
                 "d76b1276-b504-87f6-d945-45112eff6795" : {
                   "sizeX" : 11,
-                  "sizeY" : 14,
+                  "sizeY" : 11,
                   "row" : 5,
                   "col" : 11
                 },
-                "8507eecd-2afa-d48a-5adb-f31c445ef23b" : {
+                "d1b70d67-5e5b-d5c1-7dcd-d9b7d759ce10" : {
                   "sizeX" : 12,
-                  "sizeY" : 12,
-                  "row" : 7,
+                  "sizeY" : 11,
+                  "row" : 5,
                   "col" : 22
                 },
-                "4851a4a1-1314-442e-77d1-e81cd9d30b91" : {
+                "05f0b87c-313b-d828-7d9a-82616cdac40d" : {
                   "sizeX" : 8,
                   "sizeY" : 3,
                   "row" : 0,
                   "col" : 26
-                },
-                "eb3316fd-387a-4a15-f0bb-1f2eea0577f6" : {
-                  "sizeX" : 6,
-                  "sizeY" : 4,
-                  "row" : 3,
-                  "col" : 22
-                },
-                "dd1724a5-0ff5-0b13-64b5-1cdadce1e90d" : {
-                  "sizeX" : 6,
-                  "sizeY" : 4,
-                  "row" : 3,
-                  "col" : 28
                 }
               },
               "gridSettings" : {
@@ -1957,15 +1707,15 @@
         }
       },
       "entityAliases" : {
-        "0df20127-4849-dab6-fc9d-6201452d51f9" : {
-          "id" : "0df20127-4849-dab6-fc9d-6201452d51f9",
-          "alias" : "RelaySLR140",
+        "05b0622b-d846-2601-164d-bee29397f115" : {
+          "id" : "05b0622b-d846-2601-164d-bee29397f115",
+          "alias" : "SinglePhaseMeter",
           "filter" : {
             "type" : "singleEntity",
             "resolveMultiple" : false,
             "singleEntity" : {
               "entityType" : "DEVICE",
-              "id" : "9ce6dc90-e79a-11ef-8b08-b1b78211b00c"
+              "id" : "f68e9780-e798-11ef-8b08-b1b78211b00c"
             }
           }
         }
@@ -1981,12 +1731,12 @@
         "selectedTab" : 0,
         "realtime" : {
           "realtimeType" : 0,
-          "timewindowMs" : 1000,
+          "timewindowMs" : 60000,
           "quickInterval" : "CURRENT_DAY",
-          "interval" : 1000
+          "interval" : 5000
         },
         "aggregation" : {
-          "type" : "NONE",
+          "type" : "AVG",
           "limit" : 25000
         },
         "timezone" : null
@@ -2001,19 +1751,16 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "externalId" : {
-      "entityType" : "DASHBOARD",
-      "id" : "56ce32a0-9c52-11ef-8b08-b1b78211b00c"
-    },
+    "externalId" : null,
     "id" : {
       "entityType" : "DASHBOARD",
-      "id" : "56ce32a0-9c52-11ef-8b08-b1b78211b00c"
+      "id" : "6e065ed0-9c51-11ef-8b08-b1b78211b00c"
     },
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
-    "name" : "Relay_SLR140_Dashboard",
-    "title" : "Relay_SLR140_Dashboard"
+    "name" : "Meter_Dashboard (single phase)",
+    "title" : "Meter_Dashboard (single phase)"
   },
   "relations" : [ ],
   "attributes" : {
