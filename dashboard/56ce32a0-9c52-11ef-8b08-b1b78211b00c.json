@@ -1748,8 +1748,8 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "8px",
             "settings" : {
-              "cardHtml" : "<div class=\"image-container\">\r\n    <img src=\"https://stelmec.com/wp-content/uploads/2023/02/Stelmec-WHITE-LOGO-01-2.svg\" alt=\"Stelmec Logo\">\r\n</div>",
-              "cardCss" : "html, body {\n    width: 100%;\n    height: 100%;\n    margin: 0;\n}\n\nbody {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-color: #f5f5f5;\n}\n\n.image-container {\n    width: 100%;\n    height: 100%;\n    background: #305680;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n\nimg {\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n    /* Maintains aspect ratio without clipping */\n}"
+              "cardHtml" : "<div class=\"image-container\">\r\n    <img src=\"https://stelmec.com/wp-content/uploads/2025/02/Atria-new-branding-7-e1739964755907.png\" alt=\"Stelmec Logo\">\r\n</div>",
+              "cardCss" : "html, body {\n    width: 100%;\n    height: 100%;\n    margin: 0;\n}\n\nbody {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-color: #f5f5f5;\n}\n\n.image-container {\n    width: 100%;\n    height: 100%;\n    background: #ffffff;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 0.5rem;\n}\n\nimg {\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n    /* Maintains aspect ratio without clipping */\n}"
             },
             "title" : "HTML Card",
             "dropShadow" : true
@@ -1881,117 +1881,6 @@
           "row" : 0,
           "col" : 0,
           "id" : "dd1724a5-0ff5-0b13-64b5-1cdadce1e90d"
-        },
-        "acfc89f5-87de-e027-1736-8c9bf7a7f430" : {
-          "typeFullFqn" : "system.command_button",
-          "type" : "rpc",
-          "sizeX" : 3,
-          "sizeY" : 1,
-          "config" : {
-            "showTitle" : false,
-            "backgroundColor" : "rgba(255, 255, 255, 0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "onClickState" : {
-                "action" : "SET_ATTRIBUTE",
-                "executeRpc" : {
-                  "method" : "setState",
-                  "requestTimeout" : 5000,
-                  "requestPersistent" : false,
-                  "persistentPollingInterval" : 1000
-                },
-                "setAttribute" : {
-                  "scope" : "SHARED_SCOPE",
-                  "key" : "Reset"
-                },
-                "putTimeSeries" : {
-                  "key" : "state"
-                },
-                "valueToData" : {
-                  "type" : "CONSTANT",
-                  "constantValue" : true,
-                  "valueToDataFunction" : "/* Return RPC parameters or attribute/time-series value */\nreturn true;"
-                }
-              },
-              "disabledState" : {
-                "action" : "GET_ATTRIBUTE",
-                "defaultValue" : false,
-                "executeRpc" : {
-                  "method" : null,
-                  "requestTimeout" : null,
-                  "requestPersistent" : null,
-                  "persistentPollingInterval" : null
-                },
-                "getAttribute" : {
-                  "scope" : "SHARED_SCOPE",
-                  "key" : "Reset"
-                },
-                "getTimeSeries" : {
-                  "key" : "state"
-                },
-                "dataToValue" : {
-                  "type" : "NONE",
-                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
-                  "compareToValue" : true
-                }
-              },
-              "appearance" : {
-                "type" : "filled",
-                "showLabel" : true,
-                "label" : "Reset Relay",
-                "showIcon" : true,
-                "icon" : "arrow_outward",
-                "iconSize" : 24,
-                "iconSizeUnit" : "px",
-                "mainColor" : "#3F52DD",
-                "backgroundColor" : "#FFFFFF",
-                "autoScale" : true,
-                "customStyle" : {
-                  "enabled" : null,
-                  "hovered" : null,
-                  "pressed" : null,
-                  "activated" : null,
-                  "disabled" : null
-                }
-              }
-            },
-            "title" : "Command button",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "widgetStyle" : { },
-            "actions" : { },
-            "widgetCss" : "",
-            "noDataDisplayMessage" : "",
-            "titleFont" : {
-              "size" : 12,
-              "sizeUnit" : "px",
-              "family" : null,
-              "weight" : null,
-              "style" : null,
-              "lineHeight" : "1.6"
-            },
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "pageSize" : 1024,
-            "titleIcon" : "",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "14px",
-            "configMode" : "basic",
-            "borderRadius" : "4px",
-            "datasources" : [ ],
-            "targetDevice" : {
-              "type" : "entity",
-              "entityAliasId" : "0df20127-4849-dab6-fc9d-6201452d51f9"
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "acfc89f5-87de-e027-1736-8c9bf7a7f430"
         }
       },
       "states" : {
@@ -2014,10 +1903,10 @@
                   "col" : 0
                 },
                 "65f5fd0a-a849-1d35-9dd9-773763128013" : {
-                  "sizeX" : 20,
+                  "sizeX" : 26,
                   "sizeY" : 3,
                   "row" : 0,
-                  "col" : 6
+                  "col" : 0
                 },
                 "d07b8e58-2352-471c-5305-12644d3eb930" : {
                   "sizeX" : 22,
@@ -2054,12 +1943,6 @@
                   "sizeY" : 4,
                   "row" : 3,
                   "col" : 28
-                },
-                "acfc89f5-87de-e027-1736-8c9bf7a7f430" : {
-                  "sizeX" : 6,
-                  "sizeY" : 3,
-                  "row" : 0,
-                  "col" : 0
                 }
               },
               "gridSettings" : {
@@ -2118,7 +2001,10 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "56ce32a0-9c52-11ef-8b08-b1b78211b00c"
+    },
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "56ce32a0-9c52-11ef-8b08-b1b78211b00c"
