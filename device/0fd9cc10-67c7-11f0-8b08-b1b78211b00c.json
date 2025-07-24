@@ -20,7 +20,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "05acafd0-9cbd-11ef-8b08-b1b78211b00c"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "0fd9cc10-67c7-11f0-8b08-b1b78211b00c"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -32,7 +35,7 @@
     "type" : "SLR140C"
   },
   "credentials" : {
-    "credentialsId" : "EV3PLIJZ1Q26V7jW6Yfo",
+    "credentialsId" : "eig0deVSd86Gpda8kh7s",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -47,7 +50,8 @@
       "id" : "0fd9cc10-67c7-11f0-8b08-b1b78211b00c"
     },
     "type" : "Created",
-    "typeGroup" : "COMMON"
+    "typeGroup" : "COMMON",
+    "version" : 1197
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -82,6 +86,30 @@
       "lastUpdateTs" : 1753283202817,
       "longValue" : null,
       "strValue" : "SLR140C"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "entityName",
+      "lastUpdateTs" : 1753349685173,
+      "longValue" : null,
+      "strValue" : "VCB_4"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "entityType",
+      "lastUpdateTs" : 1753349685173,
+      "longValue" : null,
+      "strValue" : "DEVICE"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1753350290582,
+      "longValue" : 1753350290578,
+      "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
@@ -207,6 +235,22 @@
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
+      "key" : "entityName",
+      "lastUpdateTs" : 1753349685177,
+      "longValue" : null,
+      "strValue" : "VCB_4"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "entityType",
+      "lastUpdateTs" : 1753349685177,
+      "longValue" : null,
+      "strValue" : "DEVICE"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
       "key" : "lastFaultTimestamp",
       "lastUpdateTs" : 1753283705206,
       "longValue" : 1,
@@ -219,6 +263,30 @@
       "lastUpdateTs" : 1753283705206,
       "longValue" : 1753283705193,
       "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userEmail",
+      "lastUpdateTs" : 1753349685177,
+      "longValue" : null,
+      "strValue" : "tenant@thingsboard.org"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userId",
+      "lastUpdateTs" : 1753349685177,
+      "longValue" : null,
+      "strValue" : "a1923ba0-fab3-11ef-8e77-bd1649368acc"
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "userName",
+      "lastUpdateTs" : 1753349685177,
+      "longValue" : null,
+      "strValue" : "tenant@thingsboard.org"
     } ]
   }
 }

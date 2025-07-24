@@ -38,7 +38,7 @@
     "type" : "AQI"
   },
   "credentials" : {
-    "credentialsId" : "MqVclQ4HmXOrlUwnBUvQ",
+    "credentialsId" : "FUfQFHJ7ezZ2EP2kjNCO",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -53,7 +53,8 @@
       "id" : "5fe79630-490d-11ef-9869-85cbc512a09a"
     },
     "type" : "Contains",
-    "typeGroup" : "COMMON"
+    "typeGroup" : "COMMON",
+    "version" : 1209
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {

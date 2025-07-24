@@ -20,7 +20,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "348e6e00-9cc3-11ef-8b08-b1b78211b00c"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "1108fd40-67c7-11f0-8b08-b1b78211b00c"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -32,7 +35,7 @@
     "type" : "3 Phase Meter"
   },
   "credentials" : {
-    "credentialsId" : "f7uIEYZiJWXWbcQffQxY",
+    "credentialsId" : "0popPQwQb1oKKPSMSx4e",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -47,7 +50,8 @@
       "id" : "1108fd40-67c7-11f0-8b08-b1b78211b00c"
     },
     "type" : "Created",
-    "typeGroup" : "COMMON"
+    "typeGroup" : "COMMON",
+    "version" : 1199
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {

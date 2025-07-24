@@ -22,7 +22,10 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "c5d2cf20-4852-11ef-9869-85cbc512a09a"
     },
-    "externalId" : null,
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "c51ee580-67c5-11f0-8b08-b1b78211b00c"
+    },
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -49,7 +52,8 @@
       "id" : "0e092ac0-67c7-11f0-8b08-b1b78211b00c"
     },
     "type" : "Created",
-    "typeGroup" : "COMMON"
+    "typeGroup" : "COMMON",
+    "version" : 1194
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -61,7 +65,8 @@
       "id" : "0f62ee60-67c7-11f0-8b08-b1b78211b00c"
     },
     "type" : "Created",
-    "typeGroup" : "COMMON"
+    "typeGroup" : "COMMON",
+    "version" : 1195
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -73,7 +78,8 @@
       "id" : "0f62ee61-67c7-11f0-8b08-b1b78211b00c"
     },
     "type" : "Created",
-    "typeGroup" : "COMMON"
+    "typeGroup" : "COMMON",
+    "version" : 1196
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -85,7 +91,8 @@
       "id" : "0fd9cc10-67c7-11f0-8b08-b1b78211b00c"
     },
     "type" : "Created",
-    "typeGroup" : "COMMON"
+    "typeGroup" : "COMMON",
+    "version" : 1197
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -97,7 +104,8 @@
       "id" : "106f7c60-67c7-11f0-8b08-b1b78211b00c"
     },
     "type" : "Created",
-    "typeGroup" : "COMMON"
+    "typeGroup" : "COMMON",
+    "version" : 1198
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -109,7 +117,8 @@
       "id" : "1108fd40-67c7-11f0-8b08-b1b78211b00c"
     },
     "type" : "Created",
-    "typeGroup" : "COMMON"
+    "typeGroup" : "COMMON",
+    "version" : 1199
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -121,7 +130,8 @@
       "id" : "13f60b12-67c7-11f0-8b08-b1b78211b00c"
     },
     "type" : "Created",
-    "typeGroup" : "COMMON"
+    "typeGroup" : "COMMON",
+    "version" : 1200
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -133,7 +143,8 @@
       "id" : "13f65930-67c7-11f0-8b08-b1b78211b00c"
     },
     "type" : "Created",
-    "typeGroup" : "COMMON"
+    "typeGroup" : "COMMON",
+    "version" : 1201
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -145,7 +156,8 @@
       "id" : "5cf8a430-67d1-11f0-8b08-b1b78211b00c"
     },
     "type" : "Created",
-    "typeGroup" : "COMMON"
+    "typeGroup" : "COMMON",
+    "version" : 1202
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -155,6 +167,14 @@
       "key" : "active",
       "lastUpdateTs" : 1753276507432,
       "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1753350290578,
+      "longValue" : 1753350290578,
       "strValue" : null
     }, {
       "booleanValue" : null,
