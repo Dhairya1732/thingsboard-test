@@ -23,7 +23,7 @@
                 "name" : "PR PH",
                 "type" : "timeseries",
                 "label" : "Primary Current (R)",
-                "color" : "#048AD3",
+                "color" : "#F44336",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -104,7 +104,7 @@
                 "name" : "PY PH",
                 "type" : "timeseries",
                 "label" : "Primary Current (Y)",
-                "color" : "#4caf50",
+                "color" : "#F5DD00",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -185,7 +185,7 @@
                 "name" : "PB PH",
                 "type" : "timeseries",
                 "label" : "Primary Current (B)",
-                "color" : "#F44336",
+                "color" : "#048AD3",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -266,7 +266,7 @@
                 "name" : "PE PH",
                 "type" : "timeseries",
                 "label" : "Primary Current (E)",
-                "color" : "#ffc107",
+                "color" : "#000000",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -350,9 +350,6 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
@@ -764,9 +761,6 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
@@ -881,9 +875,10 @@
           "sizeY" : 3,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
-              "deviceId" : "469c25b0-9070-11ef-8b08-b1b78211b00c",
+              "deviceId" : null,
+              "entityAliasId" : "d3e5dcc9-3421-d0ea-6fff-88ce416ccc3b",
               "dataKeys" : [ ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -896,7 +891,10 @@
                 "realtimeType" : 1,
                 "interval" : 1000,
                 "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
               },
               "history" : {
                 "historyType" : 0,
@@ -906,7 +904,11 @@
                   "startTimeMs" : 1730810497459,
                   "endTimeMs" : 1730896897459
                 },
-                "quickInterval" : "CURRENT_DAY"
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
               },
               "aggregation" : {
                 "type" : "AVG",
@@ -919,7 +921,7 @@
             "padding" : "0px",
             "settings" : {
               "cardHtml" : "<center>\n    <div class='card'>\n        <div class=\"info-row\">\n            <p class=\"relay-title\">Profile: Relay</p>\n            <p class=\"manufacturer-name\">Manufacturer: Stelmec Ltd.</p>\n        </div>\n    </div>\n</center>",
-              "cardCss" : "@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); /* Clean futuristic font */\n\nbody {\n    font-family: 'Times New Roman',Times New Roman;\n    background-color: #fff; /* Dark background for contrast */\n    margin: 0;\n    height: 50%; /* Take full viewport height */\n    display: flex;\n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n}\n\n.card {\n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n    background-color: #fff; /* Simplified dark card background */\n    color: #ffffff;\n    width: 100%;\n    height: 50%; /* Adjusted height for the horizontal layout */\n    padding-left: 50px;\n    padding-right: 50px;\n    border-radius: 16px; /* Slightly more rounded corners for a modern look */\n    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */\n}\n\n.info-row {\n    padding-top:15px;\n    display: flex;\n    justify-content: space-between;\n    width: 100%; /* Occupy the full width of the card */\n    align-items: center; /* Align the items in the center vertically */\n    align-content: center;\n    height: 50px;\n}\n\n.relay-title {\n    font-size: 22px;\n    font-weight: 600;\n    color: #305680; \n    flex: 1; /* Ensure the title takes up one-third of the width */\n    text-align: left;\n}\n\n.manufacturer-name {\n    align-items: center;\n    align-content: center;\n    font-size: 22px;\n    color: #305680;\n    font-weight: 600;\n    flex: 1;\n    text-align: center; \n}"
+              "cardCss" : "@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); /* Clean futuristic font */\n\nbody {\n    font-family: 'Times New Roman',Times New Roman;\n    background-color: #fff; /* Dark background for contrast */\n    margin: 0;\n    height: 100%; /* Take full viewport height */\n    display: flex;\n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n}\n\n.card {\n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n    background-color: #fff; /* Simplified dark card background */\n    color: #ffffff;\n    width: 100%;\n    height: 100%; /* Adjusted height for the horizontal layout */\n    padding-left: 50px;\n    padding-right: 50px;\n    border-radius: 16px; /* Slightly more rounded corners for a modern look */\n    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */\n}\n\n.info-row {\n    padding-top:15px;\n    display: flex;\n    justify-content: space-between;\n    width: 100%; /* Occupy the full width of the card */\n    align-items: center; /* Align the items in the center vertically */\n    align-content: center;\n    height: 50px;\n}\n\n.relay-title {\n    font-size: 22px;\n    font-weight: 600;\n    color: #305680; \n    flex: 1; /* Ensure the title takes up one-third of the width */\n    text-align: left;\n}\n\n.manufacturer-name {\n    align-items: center;\n    align-content: center;\n    font-size: 22px;\n    color: #305680;\n    font-weight: 600;\n    flex: 1;\n    text-align: right; \n}"
             },
             "title" : "HTML Value Card",
             "dropShadow" : false,
@@ -953,7 +955,7 @@
                 "name" : "SR PH",
                 "type" : "timeseries",
                 "label" : "Secondary Current (r)",
-                "color" : "#048AD3",
+                "color" : "#F44336",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -1034,7 +1036,7 @@
                 "name" : "SY PH",
                 "type" : "timeseries",
                 "label" : "Secondary Current (y)",
-                "color" : "#4caf50",
+                "color" : "#F5DD00",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -1115,7 +1117,7 @@
                 "name" : "SB PH",
                 "type" : "timeseries",
                 "label" : "Secondary Current (b)",
-                "color" : "#F44336",
+                "color" : "#4CAF50",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -1196,7 +1198,7 @@
                 "name" : "SE PH",
                 "type" : "timeseries",
                 "label" : "Secondary Current (e)",
-                "color" : "#ffc107",
+                "color" : "#000000",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -1280,9 +1282,6 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
@@ -1680,7 +1679,10 @@
                 "realtimeType" : 1,
                 "interval" : 1000,
                 "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
               },
               "history" : {
                 "historyType" : 0,
@@ -1690,7 +1692,11 @@
                   "startTimeMs" : 1730810497459,
                   "endTimeMs" : 1730896897459
                 },
-                "quickInterval" : "CURRENT_DAY"
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
               },
               "aggregation" : {
                 "type" : "AVG",
@@ -1931,7 +1937,8 @@
                 "columns" : 24,
                 "margin" : 10,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "layoutType" : "default"
               }
             }
           }
@@ -1946,16 +1953,13 @@
             "resolveMultiple" : false,
             "singleEntity" : {
               "entityType" : "DEVICE",
-              "id" : "0f62ee61-67c7-11f0-8b08-b1b78211b00c"
+              "id" : "106f7c60-67c7-11f0-8b08-b1b78211b00c"
             }
           }
         }
       },
       "filters" : { },
       "timewindow" : {
-        "hideInterval" : false,
-        "hideLastInterval" : false,
-        "hideQuickInterval" : false,
         "hideAggregation" : false,
         "hideAggInterval" : false,
         "hideTimezone" : false,

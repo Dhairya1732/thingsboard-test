@@ -12,7 +12,7 @@
     },
     "firstRuleNodeId" : {
       "entityType" : "RULE_NODE",
-      "id" : "83025430-6783-11f0-8b08-b1b78211b00c"
+      "id" : "f96a2953-6872-11f0-9382-cdcc027e6fe2"
     },
     "id" : {
       "entityType" : "RULE_CHAIN",
@@ -67,11 +67,11 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "830169d0-6783-11f0-8b08-b1b78211b00c"
+        "id" : "f96a0240-6872-11f0-9382-cdcc027e6fe2"
       },
       "name" : "Save Timeseries",
       "queueName" : null,
@@ -91,11 +91,11 @@
       },
       "configurationVersion" : 2,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "830190e0-6783-11f0-8b08-b1b78211b00c"
+        "id" : "f96a0241-6872-11f0-9382-cdcc027e6fe2"
       },
       "name" : "Save Client Attributes",
       "queueName" : null,
@@ -113,11 +113,11 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "830190e1-6783-11f0-8b08-b1b78211b00c"
+        "id" : "f96a0242-6872-11f0-9382-cdcc027e6fe2"
       },
       "name" : "Message Type Switch",
       "queueName" : null,
@@ -136,11 +136,11 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "8301df00-6783-11f0-8b08-b1b78211b00c"
+        "id" : "f96a2950-6872-11f0-9382-cdcc027e6fe2"
       },
       "name" : "Log RPC from Device",
       "queueName" : null,
@@ -159,11 +159,11 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "8301df01-6783-11f0-8b08-b1b78211b00c"
+        "id" : "f96a2951-6872-11f0-9382-cdcc027e6fe2"
       },
       "name" : "Log Other",
       "queueName" : null,
@@ -180,11 +180,11 @@
       },
       "configurationVersion" : 0,
       "createdTime" : 0,
-      "debugMode" : false,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "83022d20-6783-11f0-8b08-b1b78211b00c"
+        "id" : "f96a2952-6872-11f0-9382-cdcc027e6fe2"
       },
       "name" : "RPC Call Request",
       "queueName" : null,
@@ -194,20 +194,20 @@
     }, {
       "additionalInfo" : {
         "description" : "Process incoming messages from devices with the alarm rules defined in the device profile. Dispatch all incoming messages with \"Success\" relation type.",
-        "layoutX" : 234,
-        "layoutY" : 239
+        "layoutX" : 273,
+        "layoutY" : 260
       },
       "configuration" : {
         "persistAlarmRulesState" : false,
         "fetchAlarmRulesStateOnStart" : false
       },
-      "configurationVersion" : 0,
+      "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "83025430-6783-11f0-8b08-b1b78211b00c"
+        "id" : "f96a2953-6872-11f0-9382-cdcc027e6fe2"
       },
       "name" : "Device Profile Node",
       "queueName" : null,
@@ -226,11 +226,11 @@
       },
       "configurationVersion" : 1,
       "createdTime" : 0,
-      "debugMode" : true,
+      "debugSettings" : null,
       "externalId" : null,
       "id" : {
         "entityType" : "RULE_NODE",
-        "id" : "83027b40-6783-11f0-8b08-b1b78211b00c"
+        "id" : "f96a2954-6872-11f0-9382-cdcc027e6fe2"
       },
       "name" : "Send to Data Transformation Rule Chain",
       "queueName" : null,

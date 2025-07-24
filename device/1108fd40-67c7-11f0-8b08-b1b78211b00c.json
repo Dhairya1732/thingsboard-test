@@ -1,0 +1,100 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "lastConnectedGateway" : "6d56e5d0-6871-11f0-9382-cdcc027e6fe2"
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "348e6e00-9cc3-11ef-8b08-b1b78211b00c"
+    },
+    "externalId" : {
+      "entityType" : "DEVICE",
+      "id" : "1108fd40-67c7-11f0-8b08-b1b78211b00c"
+    },
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "1108fd40-67c7-11f0-8b08-b1b78211b00c"
+    },
+    "label" : null,
+    "name" : "TVM_3",
+    "softwareId" : null,
+    "type" : "3 Phase Meter"
+  },
+  "credentials" : {
+    "credentialsId" : "0popPQwQb1oKKPSMSx4e",
+    "credentialsType" : "ACCESS_TOKEN",
+    "credentialsValue" : null
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "c51ee580-67c5-11f0-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "1108fd40-67c7-11f0-8b08-b1b78211b00c"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON",
+    "version" : 1199
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1753350998829,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "inactivityAlarmTime",
+      "lastUpdateTs" : 1753281460779,
+      "longValue" : 1753281460778,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1753364958701,
+      "longValue" : 1753364957541,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1753364925449,
+      "longValue" : 1753364925449,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1753364919126,
+      "longValue" : 1753364919126,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

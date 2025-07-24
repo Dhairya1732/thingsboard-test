@@ -94,12 +94,12 @@
                   }
                 },
                 "_hash" : 0.4905282301693681,
-                "units" : "V",
+                "units" : "kV",
                 "decimals" : 3,
                 "aggregationType" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value/100;"
+                "postFuncBody" : "return value/1000;"
               }, {
                 "name" : "voltageL2",
                 "type" : "timeseries",
@@ -175,12 +175,12 @@
                   }
                 },
                 "_hash" : 0.31453050558508555,
-                "units" : "V",
+                "units" : "kV",
                 "decimals" : 3,
                 "aggregationType" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value/100;"
+                "postFuncBody" : "return value/1000;"
               }, {
                 "name" : "voltageL3",
                 "type" : "timeseries",
@@ -256,12 +256,12 @@
                   }
                 },
                 "_hash" : 0.7097908490274276,
-                "units" : "V",
+                "units" : "kV",
                 "decimals" : 3,
                 "aggregationType" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value/100;"
+                "postFuncBody" : "return value/1000;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -269,9 +269,6 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
@@ -718,9 +715,6 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
@@ -839,7 +833,13 @@
                 "label" : "serial_number",
                 "color" : "#4caf50",
                 "settings" : { },
-                "_hash" : 0.40568518398997244
+                "_hash" : 0.40568518398997244,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : false,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -852,7 +852,10 @@
                 "realtimeType" : 1,
                 "interval" : 1000,
                 "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
               },
               "history" : {
                 "historyType" : 0,
@@ -862,7 +865,11 @@
                   "startTimeMs" : 1730810497459,
                   "endTimeMs" : 1730896897459
                 },
-                "quickInterval" : "CURRENT_DAY"
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
               },
               "aggregation" : {
                 "type" : "AVG",
@@ -874,8 +881,8 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "cardHtml" : "<center>\n    <div class='card'>\n        <div class=\"info-row\">\n            <p class=\"relay-title\">Profile: Panel Meter</p>\n            <p class=\"manufacturer-name\">Manufacturer: ${manufacturer_name}</p>\n            <p class=\"serial-number\">Serial Number: ${serial_number}</p>\n            \n        </div>\n    </div>\n</center>",
-              "cardCss" : "@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); /* Clean futuristic font */\n\nbody {\n    font-family: 'Times New Roman',Times New Roman;\n    background-color: #fff; /* Dark background for contrast */\n    margin: 0;\n    height: 100vh; /* Take full viewport height */\n    display: flex;\n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n}\n\n.card {\n    \n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n    background-color: #fff; /* Simplified dark card background */\n    color: #ffffff;\n    width: 100%;\n    height: 50px; /* Adjusted height for the horizontal layout */\n    padding-left: 50px;\n    padding-right: 50px;\n    border-radius: 16px; /* Slightly more rounded corners for a modern look */\n    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */\n}\n\n.info-row {\n    padding-top:15px;\n    display: flex;\n    justify-content: space-between;\n    width: 100%; /* Occupy the full width of the card */\n    align-items: center; /* Align the items in the center vertically */\n    align-content: center;\n    height: 50px;\n    \n}\n\n.relay-title {\n    max-width: 270px;\n    font-size: 22px;\n    font-weight: 600;\n    color: #305680; \n    flex: 1; /* Ensure the title takes up one-third of the width */\n    text-align: left;\n}\n\n.serial-number {\n    font-weight: 600;\n    font-size: 22px;\n    color: #305680;\n    flex: 1;\n    text-align: center; /* Center the serial number */\n}\n\n.manufacturer-name {\n    font-size: 22px;\n    color: #305680;\n    font-weight: 600;\n    flex: 1;\n    text-align: right; /* Align the manufacturer name to the right */\n}"
+              "cardHtml" : "<center>\n    <div class='card'>\n        <div class=\"info-row\">\n            <span class=\"relay-title\">Profile: Panel Meter</span>\n            <span class=\"manufacturer-name\">Manufacturer: ${manufacturer_name}</span>\n            <span class=\"serial-number\">Serial Number: ${serial_number}</span>\n        </div>\n    </div>\n</center>",
+              "cardCss" : "@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); /* Clean futuristic font */\n\nbody {\n    font-family: 'Times New Roman',Times New Roman;\n    background-color: #fff; /* Dark background for contrast */\n    margin: 0;\n    height: 100%; /* Take full viewport height */\n    display: flex;\n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n}\n\n.card {\n    display: flex;\n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n    background-color: #fff; /* Simplified dark card background */\n    color: #ffffff;\n    width: 100%;\n    height: 50px; /* Adjusted height for the horizontal layout */\n    padding-left: 35px;\n    padding-right: 35px;\n    border-radius: 16px; /* Slightly more rounded corners for a modern look */\n    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */\n}\n\n.info-row {\n    padding:15px;\n    display: flex;\n    justify-content: space-between;\n    width: 100%; /* Occupy the full width of the card */\n    align-items: center; /* Align the items in the center vertically */\n    align-content: center;\n    height: 50px;\n    \n}\n\n.relay-title {\n    font-size: 22px;\n    font-weight: 600;\n    color: #305680; \n    flex: 1; /* Ensure the title takes up one-third of the width */\n    text-align: left;\n}\n\n.serial-number {\n    font-weight: 600;\n    font-size: 22px;\n    color: #305680;\n    flex: 1;\n    text-align: right;\n}\n\n.manufacturer-name {\n    font-size: 22px;\n    color: #305680;\n    font-weight: 600;\n    flex: 1;\n    white-space: nowrap;\n}"
             },
             "title" : "HTML Value Card",
             "dropShadow" : false,
@@ -981,11 +988,11 @@
                 },
                 "_hash" : 0.4905282301693681,
                 "units" : "A",
-                "decimals" : 2,
+                "decimals" : 3,
                 "aggregationType" : null,
                 "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value*1000;"
+                "usePostProcessing" : false,
+                "postFuncBody" : null
               }, {
                 "name" : "currentL2",
                 "type" : "timeseries",
@@ -1062,11 +1069,11 @@
                 },
                 "_hash" : 0.31453050558508555,
                 "units" : "A",
-                "decimals" : 2,
+                "decimals" : 3,
                 "aggregationType" : null,
                 "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value*1000;"
+                "usePostProcessing" : false,
+                "postFuncBody" : null
               }, {
                 "name" : "currentL3",
                 "type" : "timeseries",
@@ -1143,11 +1150,11 @@
                 },
                 "_hash" : 0.7097908490274276,
                 "units" : "A",
-                "decimals" : 2,
+                "decimals" : 3,
                 "aggregationType" : null,
                 "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value*1000;"
+                "usePostProcessing" : false,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1155,22 +1162,36 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
+                "interval" : 5000,
                 "timewindowMs" : 900000,
                 "quickInterval" : "CURRENT_HOUR",
-                "interval" : 15000
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1753267989349,
+                  "endTimeMs" : 1753354389349
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
               },
               "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
+                "type" : "NONE",
+                "limit" : 50000
               },
               "timezone" : null
             },
@@ -1216,7 +1237,7 @@
               "yAxes" : {
                 "default" : {
                   "units" : "A",
-                  "decimals" : 0,
+                  "decimals" : 1,
                   "show" : true,
                   "label" : "",
                   "labelFont" : {
@@ -1558,9 +1579,6 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
@@ -1961,9 +1979,6 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
@@ -2366,7 +2381,8 @@
                 "columns" : 24,
                 "margin" : 10,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "layoutType" : "default"
               }
             }
           }
@@ -2381,16 +2397,13 @@
             "resolveMultiple" : false,
             "singleEntity" : {
               "entityType" : "DEVICE",
-              "id" : "13f65930-67c7-11f0-8b08-b1b78211b00c"
+              "id" : "5cf8a430-67d1-11f0-8b08-b1b78211b00c"
             }
           }
         }
       },
       "filters" : { },
       "timewindow" : {
-        "hideInterval" : false,
-        "hideLastInterval" : false,
-        "hideQuickInterval" : false,
         "hideAggregation" : false,
         "hideAggInterval" : false,
         "hideTimezone" : false,
