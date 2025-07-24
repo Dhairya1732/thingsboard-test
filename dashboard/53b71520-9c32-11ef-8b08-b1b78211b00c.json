@@ -1,21 +1,10 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "assignedCustomers" : [ {
-      "customerId" : {
-        "entityType" : "CUSTOMER",
-        "id" : "4e4e50c0-9c65-11ef-8b08-b1b78211b00c"
-      },
-      "title" : "Demo",
-      "public" : false
-    }, {
-      "customerId" : {
-        "entityType" : "CUSTOMER",
-        "id" : "4c7e7e40-a201-11ef-8b08-b1b78211b00c"
-      },
-      "title" : "Stelmec",
-      "public" : false
-    } ],
+    "title" : "Meter_Dashboard (3phase)",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -110,7 +99,7 @@
                 "aggregationType" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value/1000;"
+                "postFuncBody" : "return value/100;"
               }, {
                 "name" : "voltageL2",
                 "type" : "timeseries",
@@ -191,7 +180,7 @@
                 "aggregationType" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value/1000;"
+                "postFuncBody" : "return value/100;"
               }, {
                 "name" : "voltageL3",
                 "type" : "timeseries",
@@ -272,7 +261,7 @@
                 "aggregationType" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value/1000;"
+                "postFuncBody" : "return value/100;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -833,9 +822,10 @@
           "sizeY" : 3,
           "config" : {
             "datasources" : [ {
-              "type" : "device",
+              "type" : "entity",
               "name" : "",
-              "deviceId" : "f9160580-9953-11ef-8b08-b1b78211b00c",
+              "deviceId" : null,
+              "entityAliasId" : "84df572c-3914-9eb3-d64f-76be32b1edd7",
               "dataKeys" : [ {
                 "name" : "manufacturer_name",
                 "type" : "timeseries",
@@ -994,8 +984,8 @@
                 "decimals" : 2,
                 "aggregationType" : null,
                 "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value*1000;"
               }, {
                 "name" : "currentL2",
                 "type" : "timeseries",
@@ -1075,8 +1065,8 @@
                 "decimals" : 2,
                 "aggregationType" : null,
                 "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value*1000;"
               }, {
                 "name" : "currentL3",
                 "type" : "timeseries",
@@ -1156,8 +1146,8 @@
                 "decimals" : 2,
                 "aggregationType" : null,
                 "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value*1000;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1582,7 +1572,7 @@
                 "interval" : 5000
               },
               "aggregation" : {
-                "type" : "AVG",
+                "type" : "NONE",
                 "limit" : 25000
               },
               "timezone" : null
@@ -1629,7 +1619,7 @@
               "yAxes" : {
                 "default" : {
                   "units" : "kWh",
-                  "decimals" : 2,
+                  "decimals" : 0,
                   "show" : true,
                   "label" : "",
                   "labelFont" : {
@@ -1664,8 +1654,8 @@
                   "min" : null,
                   "max" : null,
                   "ticksGenerator" : null,
-                  "interval" : 250,
-                  "splitNumber" : 500
+                  "interval" : 750,
+                  "splitNumber" : 1000
                 }
               },
               "thresholds" : [ ],
@@ -2391,7 +2381,7 @@
             "resolveMultiple" : false,
             "singleEntity" : {
               "entityType" : "DEVICE",
-              "id" : "9d851860-e79a-11ef-8b08-b1b78211b00c"
+              "id" : "13f65930-67c7-11f0-8b08-b1b78211b00c"
             }
           }
         }
@@ -2427,6 +2417,9 @@
         "toolbarAlwaysOpen" : true
       }
     },
+    "name" : "Meter_Dashboard (3phase)",
+    "resources" : null,
+    "assignedCustomers" : [ ],
     "externalId" : {
       "entityType" : "DASHBOARD",
       "id" : "53b71520-9c32-11ef-8b08-b1b78211b00c"
@@ -2434,12 +2427,7 @@
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "53b71520-9c32-11ef-8b08-b1b78211b00c"
-    },
-    "image" : null,
-    "mobileHide" : false,
-    "mobileOrder" : null,
-    "name" : "Meter_Dashboard (3phase)",
-    "title" : "Meter_Dashboard (3phase)"
+    }
   },
   "relations" : [ ],
   "attributes" : {

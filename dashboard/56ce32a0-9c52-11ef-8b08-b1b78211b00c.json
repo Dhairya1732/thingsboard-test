@@ -1,21 +1,10 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "assignedCustomers" : [ {
-      "customerId" : {
-        "entityType" : "CUSTOMER",
-        "id" : "4e4e50c0-9c65-11ef-8b08-b1b78211b00c"
-      },
-      "title" : "Demo",
-      "public" : false
-    }, {
-      "customerId" : {
-        "entityType" : "CUSTOMER",
-        "id" : "4c7e7e40-a201-11ef-8b08-b1b78211b00c"
-      },
-      "title" : "Stelmec",
-      "public" : false
-    } ],
+    "title" : "Relay_SLR140_Dashboard",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -1771,7 +1760,7 @@
             "padding" : "0px",
             "settings" : {
               "title" : "Circuit Breaker Off",
-              "ledColor" : "#05583F",
+              "ledColor" : "#08835E",
               "initialValue" : false,
               "performCheckStatus" : false,
               "retrieveValueMethod" : "timeseries",
@@ -1965,7 +1954,7 @@
             "resolveMultiple" : false,
             "singleEntity" : {
               "entityType" : "DEVICE",
-              "id" : "f28bf7d0-e794-11ef-8b08-b1b78211b00c"
+              "id" : "0f62ee60-67c7-11f0-8b08-b1b78211b00c"
             }
           }
         }
@@ -2001,6 +1990,9 @@
         "toolbarAlwaysOpen" : true
       }
     },
+    "name" : "Relay_SLR140_Dashboard",
+    "resources" : null,
+    "assignedCustomers" : [ ],
     "externalId" : {
       "entityType" : "DASHBOARD",
       "id" : "56ce32a0-9c52-11ef-8b08-b1b78211b00c"
@@ -2008,12 +2000,7 @@
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "56ce32a0-9c52-11ef-8b08-b1b78211b00c"
-    },
-    "image" : null,
-    "mobileHide" : false,
-    "mobileOrder" : null,
-    "name" : "Relay_SLR140_Dashboard",
-    "title" : "Relay_SLR140_Dashboard"
+    }
   },
   "relations" : [ ],
   "attributes" : {
