@@ -34,9 +34,5 @@
     },
     "name" : "Device activity notification",
     "notificationType" : "DEVICE_ACTIVITY"
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ ]
   }
 }

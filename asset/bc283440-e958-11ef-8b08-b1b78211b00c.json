@@ -35,7 +35,8 @@
       "id" : "a04f2530-e958-11ef-8b08-b1b78211b00c"
     },
     "type" : "Contains",
-    "typeGroup" : "COMMON"
+    "typeGroup" : "COMMON",
+    "version" : 1213
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]

@@ -2242,8 +2242,11 @@
     },
     "name" : "Relay_Monitoring_Dashboard",
     "resources" : null,
-    "assignedCustomers" : null,
-    "externalId" : null,
+    "assignedCustomers" : [ ],
+    "externalId" : {
+      "entityType" : "DASHBOARD",
+      "id" : "c68ab3c0-1632-11f0-9327-5bb9aeae3341"
+    },
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "c68ab3c0-1632-11f0-9327-5bb9aeae3341"

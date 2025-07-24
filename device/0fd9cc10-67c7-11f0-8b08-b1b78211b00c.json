@@ -59,15 +59,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Reset",
-      "lastUpdateTs" : 1753283202817,
+      "lastUpdateTs" : 1753350676297,
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : true,
+      "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1753276511085,
+      "lastUpdateTs" : 1753350676260,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -139,15 +139,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastFaultTimestamp",
-      "lastUpdateTs" : 1753283705304,
-      "longValue" : null,
-      "strValue" : "16:54:54.915 22/7/25"
+      "lastUpdateTs" : 1753350676297,
+      "longValue" : 1,
+      "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "scope",
-      "lastUpdateTs" : 1753283202817,
+      "lastUpdateTs" : 1753350676297,
       "longValue" : null,
       "strValue" : "SERVER_SCOPE"
     }, {
@@ -171,9 +171,9 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "userEmail",
-      "lastUpdateTs" : 1753280099676,
+      "lastUpdateTs" : 1753350676297,
       "longValue" : null,
-      "strValue" : "admin@meshnetelectronics.com"
+      "strValue" : "tenant@thingsboard.org"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
@@ -187,9 +187,9 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "userId",
-      "lastUpdateTs" : 1753280099676,
+      "lastUpdateTs" : 1753350676297,
       "longValue" : null,
-      "strValue" : "39a3b450-4853-11ef-9869-85cbc512a09a"
+      "strValue" : "a1923ba0-fab3-11ef-8e77-bd1649368acc"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
@@ -203,9 +203,9 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "userName",
-      "lastUpdateTs" : 1753280099676,
+      "lastUpdateTs" : 1753350676297,
       "longValue" : null,
-      "strValue" : "admin@meshnetelectronics.com"
+      "strValue" : "tenant@thingsboard.org"
     } ],
     "SHARED_SCOPE" : [ {
       "booleanValue" : false,

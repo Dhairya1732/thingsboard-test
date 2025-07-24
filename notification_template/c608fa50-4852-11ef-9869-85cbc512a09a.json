@@ -29,9 +29,5 @@
     },
     "name" : "Maintenance work notification",
     "notificationType" : "GENERAL"
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ ]
   }
 }

@@ -31,9 +31,5 @@
       "triggerType" : "ENTITY_ACTION"
     },
     "triggerType" : "ENTITY_ACTION"
-  },
-  "relations" : [ ],
-  "attributes" : {
-    "SERVER_SCOPE" : [ ]
   }
 }

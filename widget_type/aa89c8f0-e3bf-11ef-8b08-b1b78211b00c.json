@@ -28,10 +28,12 @@
       "entityType" : "WIDGET_TYPE",
       "id" : "aa89c8f0-e3bf-11ef-8b08-b1b78211b00c"
     },
+    "resources" : null,
     "id" : {
       "entityType" : "WIDGET_TYPE",
       "id" : "aa89c8f0-e3bf-11ef-8b08-b1b78211b00c"
     },
+    "scada" : false,
     "tags" : null
   },
   "relations" : [ ],
