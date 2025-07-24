@@ -1,7 +1,10 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "assignedCustomers" : [ ],
+    "title" : "(Meshnet) Panel Dashboard",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -202,6 +205,9 @@
         "toolbarAlwaysOpen" : true
       }
     },
+    "name" : "(Meshnet) Panel Dashboard",
+    "resources" : null,
+    "assignedCustomers" : [ ],
     "externalId" : {
       "entityType" : "DASHBOARD",
       "id" : "c78cc9f0-efb0-11ef-8b08-b1b78211b00c"
@@ -209,12 +215,7 @@
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "c78cc9f0-efb0-11ef-8b08-b1b78211b00c"
-    },
-    "image" : null,
-    "mobileHide" : false,
-    "mobileOrder" : null,
-    "name" : "(Meshnet) Panel Dashboard",
-    "title" : "(Meshnet) Panel Dashboard"
+    }
   },
   "relations" : [ ],
   "attributes" : {

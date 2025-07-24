@@ -1,21 +1,10 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "assignedCustomers" : [ {
-      "customerId" : {
-        "entityType" : "CUSTOMER",
-        "id" : "4e4e50c0-9c65-11ef-8b08-b1b78211b00c"
-      },
-      "title" : "Demo",
-      "public" : false
-    }, {
-      "customerId" : {
-        "entityType" : "CUSTOMER",
-        "id" : "4c7e7e40-a201-11ef-8b08-b1b78211b00c"
-      },
-      "title" : "Stelmec",
-      "public" : false
-    } ],
+    "title" : "Panel Dashboard",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -261,6 +250,9 @@
         "toolbarAlwaysOpen" : true
       }
     },
+    "name" : "Panel Dashboard",
+    "resources" : null,
+    "assignedCustomers" : [ ],
     "externalId" : {
       "entityType" : "DASHBOARD",
       "id" : "90f25560-e3d3-11ef-8b08-b1b78211b00c"
@@ -268,12 +260,7 @@
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "90f25560-e3d3-11ef-8b08-b1b78211b00c"
-    },
-    "image" : null,
-    "mobileHide" : false,
-    "mobileOrder" : null,
-    "name" : "Panel Dashboard",
-    "title" : "Panel Dashboard"
+    }
   },
   "relations" : [ ],
   "attributes" : {

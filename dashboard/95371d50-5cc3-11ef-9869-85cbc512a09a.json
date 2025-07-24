@@ -1,7 +1,10 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "assignedCustomers" : [ ],
+    "title" : "Consumer Meter",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -1499,6 +1502,9 @@
         "toolbarAlwaysOpen" : true
       }
     },
+    "name" : "Consumer Meter",
+    "resources" : null,
+    "assignedCustomers" : [ ],
     "externalId" : {
       "entityType" : "DASHBOARD",
       "id" : "95371d50-5cc3-11ef-9869-85cbc512a09a"
@@ -1506,12 +1512,7 @@
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "95371d50-5cc3-11ef-9869-85cbc512a09a"
-    },
-    "image" : null,
-    "mobileHide" : false,
-    "mobileOrder" : null,
-    "name" : "Consumer Meter",
-    "title" : "Consumer Meter"
+    }
   },
   "relations" : [ ],
   "attributes" : {

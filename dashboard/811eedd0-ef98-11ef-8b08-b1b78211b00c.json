@@ -1,7 +1,10 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "assignedCustomers" : [ ],
+    "title" : "Transformer Monitoring Solution",
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -4587,6 +4590,9 @@
         "toolbarAlwaysOpen" : true
       }
     },
+    "name" : "Transformer Monitoring Solution",
+    "resources" : null,
+    "assignedCustomers" : [ ],
     "externalId" : {
       "entityType" : "DASHBOARD",
       "id" : "811eedd0-ef98-11ef-8b08-b1b78211b00c"
@@ -4594,12 +4600,7 @@
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "811eedd0-ef98-11ef-8b08-b1b78211b00c"
-    },
-    "image" : null,
-    "mobileHide" : false,
-    "mobileOrder" : null,
-    "name" : "Transformer Monitoring Solution",
-    "title" : "Transformer Monitoring Solution"
+    }
   },
   "relations" : [ ],
   "attributes" : {
