@@ -1,10 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "Relay_SLR140C_Dashboard",
-    "image" : null,
-    "mobileHide" : false,
-    "mobileOrder" : null,
+    "assignedCustomers" : [ ],
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -829,45 +826,6 @@
           "col" : 0,
           "id" : "94504aa8-43b4-ae0f-d5a1-cd8e81be701a"
         },
-        "65f5fd0a-a849-1d35-9dd9-773763128013" : {
-          "typeFullFqn" : "system.cards.html_card",
-          "type" : "static",
-          "sizeX" : 7.5,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "static",
-              "name" : "function",
-              "dataKeys" : [ {
-                "name" : "f(x)",
-                "type" : "function",
-                "label" : "Random",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.15479322438769105,
-                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
-              } ]
-            } ],
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "cardHtml" : "<div class='card'>Relay Monitoring Dashboard</div>",
-              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 36px;\n    color: #305680;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
-            },
-            "title" : "HTML Card",
-            "dropShadow" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "65f5fd0a-a849-1d35-9dd9-773763128013"
-        },
         "d07b8e58-2352-471c-5305-12644d3eb930" : {
           "typeFullFqn" : "system.cards.html_value_card",
           "type" : "latest",
@@ -891,10 +849,7 @@
                 "realtimeType" : 1,
                 "interval" : 1000,
                 "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideQuickInterval" : false
+                "quickInterval" : "CURRENT_DAY"
               },
               "history" : {
                 "historyType" : 0,
@@ -904,11 +859,7 @@
                   "startTimeMs" : 1730810497459,
                   "endTimeMs" : 1730896897459
                 },
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideFixedInterval" : false,
-                "hideQuickInterval" : false
+                "quickInterval" : "CURRENT_DAY"
               },
               "aggregation" : {
                 "type" : "AVG",
@@ -1679,10 +1630,7 @@
                 "realtimeType" : 1,
                 "interval" : 1000,
                 "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideQuickInterval" : false
+                "quickInterval" : "CURRENT_DAY"
               },
               "history" : {
                 "historyType" : 0,
@@ -1692,11 +1640,7 @@
                   "startTimeMs" : 1730810497459,
                   "endTimeMs" : 1730896897459
                 },
-                "quickInterval" : "CURRENT_DAY",
-                "hideInterval" : false,
-                "hideLastInterval" : false,
-                "hideFixedInterval" : false,
-                "hideQuickInterval" : false
+                "quickInterval" : "CURRENT_DAY"
               },
               "aggregation" : {
                 "type" : "AVG",
@@ -1868,6 +1812,77 @@
           "row" : 0,
           "col" : 0,
           "id" : "6e5d59fd-bb05-cc4b-a7cd-c902cc2f350e"
+        },
+        "b6594af6-16a4-e4ed-097e-e4e7af7700da" : {
+          "typeFullFqn" : "system.cards.html_value_card",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "d3e5dcc9-3421-d0ea-6fff-88ce416ccc3b",
+              "dataKeys" : [ {
+                "name" : "deviceName",
+                "type" : "attribute",
+                "label" : "deviceName",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.23944414175170226
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1753448497075,
+                  "endTimeMs" : 1753534897075
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>${deviceName} Relay Monitoring Dashboard</div>\n       ",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 36px;\n    color: #305680;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "b6594af6-16a4-e4ed-097e-e4e7af7700da"
         }
       },
       "states" : {
@@ -1887,12 +1902,6 @@
                   "sizeX" : 34,
                   "sizeY" : 12,
                   "row" : 19,
-                  "col" : 0
-                },
-                "65f5fd0a-a849-1d35-9dd9-773763128013" : {
-                  "sizeX" : 26,
-                  "sizeY" : 3,
-                  "row" : 0,
                   "col" : 0
                 },
                 "d07b8e58-2352-471c-5305-12644d3eb930" : {
@@ -1930,6 +1939,12 @@
                   "sizeY" : 3,
                   "row" : 0,
                   "col" : 26
+                },
+                "b6594af6-16a4-e4ed-097e-e4e7af7700da" : {
+                  "sizeX" : 26,
+                  "sizeY" : 3,
+                  "row" : 0,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
@@ -1986,9 +2001,6 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "name" : "Relay_SLR140C_Dashboard",
-    "resources" : null,
-    "assignedCustomers" : [ ],
     "externalId" : {
       "entityType" : "DASHBOARD",
       "id" : "dbe171c0-9c4b-11ef-8b08-b1b78211b00c"
@@ -1996,7 +2008,12 @@
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "dbe171c0-9c4b-11ef-8b08-b1b78211b00c"
-    }
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "Relay_SLR140C_Dashboard",
+    "title" : "Relay_SLR140C_Dashboard"
   },
   "relations" : [ ],
   "attributes" : {
