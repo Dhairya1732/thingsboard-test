@@ -1,10 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "(Meshnet) Meter_Dashboard (3phase)",
-    "image" : null,
-    "mobileHide" : false,
-    "mobileOrder" : null,
+    "assignedCustomers" : [ ],
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -2416,9 +2413,6 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "name" : "(Meshnet) Meter_Dashboard (3phase)",
-    "resources" : null,
-    "assignedCustomers" : [ ],
     "externalId" : {
       "entityType" : "DASHBOARD",
       "id" : "6d94d3a0-e945-11ef-8b08-b1b78211b00c"
@@ -2426,7 +2420,12 @@
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "6d94d3a0-e945-11ef-8b08-b1b78211b00c"
-    }
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "(Meshnet) Meter_Dashboard (3phase)",
+    "title" : "(Meshnet) Meter_Dashboard (3phase)"
   },
   "relations" : [ ],
   "attributes" : {

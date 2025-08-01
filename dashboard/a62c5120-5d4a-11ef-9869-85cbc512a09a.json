@@ -1,10 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "ABT Meter",
-    "image" : null,
-    "mobileHide" : false,
-    "mobileOrder" : null,
+    "assignedCustomers" : [ ],
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -622,9 +619,6 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "name" : "ABT Meter",
-    "resources" : null,
-    "assignedCustomers" : [ ],
     "externalId" : {
       "entityType" : "DASHBOARD",
       "id" : "a62c5120-5d4a-11ef-9869-85cbc512a09a"
@@ -632,7 +626,12 @@
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "a62c5120-5d4a-11ef-9869-85cbc512a09a"
-    }
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "ABT Meter",
+    "title" : "ABT Meter"
   },
   "relations" : [ ],
   "attributes" : {

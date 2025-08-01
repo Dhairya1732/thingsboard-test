@@ -1,10 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "Meter_Dashboard (3phase)",
-    "image" : null,
-    "mobileHide" : false,
-    "mobileOrder" : null,
+    "assignedCustomers" : [ ],
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -94,12 +91,12 @@
                   }
                 },
                 "_hash" : 0.4905282301693681,
-                "units" : "V",
+                "units" : "kV",
                 "decimals" : 3,
                 "aggregationType" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value/100;"
+                "postFuncBody" : "return value/1000;"
               }, {
                 "name" : "voltageL2",
                 "type" : "timeseries",
@@ -175,12 +172,12 @@
                   }
                 },
                 "_hash" : 0.31453050558508555,
-                "units" : "V",
+                "units" : "kV",
                 "decimals" : 3,
                 "aggregationType" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value/100;"
+                "postFuncBody" : "return value/1000;"
               }, {
                 "name" : "voltageL3",
                 "type" : "timeseries",
@@ -256,12 +253,12 @@
                   }
                 },
                 "_hash" : 0.7097908490274276,
-                "units" : "V",
+                "units" : "kV",
                 "decimals" : 3,
                 "aggregationType" : null,
                 "funcBody" : null,
                 "usePostProcessing" : true,
-                "postFuncBody" : "return value/100;"
+                "postFuncBody" : "return value/1000;"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -269,9 +266,6 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
@@ -718,9 +712,6 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
@@ -775,124 +766,6 @@
           "row" : 0,
           "col" : 0,
           "id" : "94504aa8-43b4-ae0f-d5a1-cd8e81be701a"
-        },
-        "65f5fd0a-a849-1d35-9dd9-773763128013" : {
-          "typeFullFqn" : "system.cards.html_card",
-          "type" : "static",
-          "sizeX" : 7.5,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "static",
-              "name" : "function",
-              "dataKeys" : [ {
-                "name" : "f(x)",
-                "type" : "function",
-                "label" : "Random",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.15479322438769105,
-                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
-              } ]
-            } ],
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "cardHtml" : "<div class='card'>Meter Dashboard</div>",
-              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 36px;\n    color: #305680;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
-            },
-            "title" : "HTML Card",
-            "dropShadow" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "65f5fd0a-a849-1d35-9dd9-773763128013"
-        },
-        "d07b8e58-2352-471c-5305-12644d3eb930" : {
-          "typeFullFqn" : "system.cards.html_value_card",
-          "type" : "latest",
-          "sizeX" : 7.5,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "deviceId" : null,
-              "entityAliasId" : "84df572c-3914-9eb3-d64f-76be32b1edd7",
-              "dataKeys" : [ {
-                "name" : "manufacturer_name",
-                "type" : "timeseries",
-                "label" : "manufacturer_name",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.6674480675198582
-              }, {
-                "name" : "serial_number",
-                "type" : "timeseries",
-                "label" : "serial_number",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.40568518398997244
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "timewindow" : {
-              "displayValue" : "",
-              "selectedTab" : 0,
-              "realtime" : {
-                "realtimeType" : 1,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "history" : {
-                "historyType" : 0,
-                "interval" : 1000,
-                "timewindowMs" : 60000,
-                "fixedTimewindow" : {
-                  "startTimeMs" : 1730810497459,
-                  "endTimeMs" : 1730896897459
-                },
-                "quickInterval" : "CURRENT_DAY"
-              },
-              "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "#fff",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "cardHtml" : "<center>\n    <div class='card'>\n        <div class=\"info-row\">\n            <p class=\"relay-title\">Profile: Panel Meter</p>\n            <p class=\"manufacturer-name\">Manufacturer: ${manufacturer_name}</p>\n            <p class=\"serial-number\">Serial Number: ${serial_number}</p>\n            \n        </div>\n    </div>\n</center>",
-              "cardCss" : "@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); /* Clean futuristic font */\n\nbody {\n    font-family: 'Times New Roman',Times New Roman;\n    background-color: #fff; /* Dark background for contrast */\n    margin: 0;\n    height: 100vh; /* Take full viewport height */\n    display: flex;\n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n}\n\n.card {\n    \n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n    background-color: #fff; /* Simplified dark card background */\n    color: #ffffff;\n    width: 100%;\n    height: 50px; /* Adjusted height for the horizontal layout */\n    padding-left: 50px;\n    padding-right: 50px;\n    border-radius: 16px; /* Slightly more rounded corners for a modern look */\n    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */\n}\n\n.info-row {\n    padding-top:15px;\n    display: flex;\n    justify-content: space-between;\n    width: 100%; /* Occupy the full width of the card */\n    align-items: center; /* Align the items in the center vertically */\n    align-content: center;\n    height: 50px;\n    \n}\n\n.relay-title {\n    max-width: 270px;\n    font-size: 22px;\n    font-weight: 600;\n    color: #305680; \n    flex: 1; /* Ensure the title takes up one-third of the width */\n    text-align: left;\n}\n\n.serial-number {\n    font-weight: 600;\n    font-size: 22px;\n    color: #305680;\n    flex: 1;\n    text-align: center; /* Center the serial number */\n}\n\n.manufacturer-name {\n    font-size: 22px;\n    color: #305680;\n    font-weight: 600;\n    flex: 1;\n    text-align: right; /* Align the manufacturer name to the right */\n}"
-            },
-            "title" : "HTML Value Card",
-            "dropShadow" : false,
-            "enableFullscreen" : true,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "useDashboardTimewindow" : true,
-            "showLegend" : false,
-            "actions" : { },
-            "displayTimewindow" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "d07b8e58-2352-471c-5305-12644d3eb930"
         },
         "d76b1276-b504-87f6-d945-45112eff6795" : {
           "typeFullFqn" : "system.line_chart",
@@ -981,11 +854,11 @@
                 },
                 "_hash" : 0.4905282301693681,
                 "units" : "A",
-                "decimals" : 2,
+                "decimals" : 3,
                 "aggregationType" : null,
                 "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value*1000;"
+                "usePostProcessing" : false,
+                "postFuncBody" : null
               }, {
                 "name" : "currentL2",
                 "type" : "timeseries",
@@ -1062,11 +935,11 @@
                 },
                 "_hash" : 0.31453050558508555,
                 "units" : "A",
-                "decimals" : 2,
+                "decimals" : 3,
                 "aggregationType" : null,
                 "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value*1000;"
+                "usePostProcessing" : false,
+                "postFuncBody" : null
               }, {
                 "name" : "currentL3",
                 "type" : "timeseries",
@@ -1143,11 +1016,11 @@
                 },
                 "_hash" : 0.7097908490274276,
                 "units" : "A",
-                "decimals" : 2,
+                "decimals" : 3,
                 "aggregationType" : null,
                 "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value*1000;"
+                "usePostProcessing" : false,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1155,22 +1028,36 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
+                "interval" : 5000,
                 "timewindowMs" : 900000,
                 "quickInterval" : "CURRENT_HOUR",
-                "interval" : 15000
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1753267989349,
+                  "endTimeMs" : 1753354389349
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
               },
               "aggregation" : {
-                "type" : "AVG",
-                "limit" : 25000
+                "type" : "NONE",
+                "limit" : 50000
               },
               "timezone" : null
             },
@@ -1216,7 +1103,7 @@
               "yAxes" : {
                 "default" : {
                   "units" : "A",
-                  "decimals" : 0,
+                  "decimals" : 1,
                   "show" : true,
                   "label" : "",
                   "labelFont" : {
@@ -1558,9 +1445,6 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
@@ -1961,9 +1845,6 @@
               "latestDataKeys" : [ ]
             } ],
             "timewindow" : {
-              "hideInterval" : false,
-              "hideLastInterval" : false,
-              "hideQuickInterval" : false,
               "hideAggregation" : false,
               "hideAggInterval" : false,
               "hideTimezone" : false,
@@ -2303,6 +2184,156 @@
           "row" : 0,
           "col" : 0,
           "id" : "a6a04a7a-d743-4d61-a2ce-435fad5935f6"
+        },
+        "330c4d19-bb8d-5912-2826-bfb6604a5c6e" : {
+          "typeFullFqn" : "system.cards.html_value_card",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "84df572c-3914-9eb3-d64f-76be32b1edd7",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.046759318698895935
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1753448497075,
+                  "endTimeMs" : 1753534897075
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>${Name} Meter Dashboard</div>\n       ",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 36px;\n    color: #305680;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : true,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "330c4d19-bb8d-5912-2826-bfb6604a5c6e"
+        },
+        "4b274b30-0059-9548-d0f8-4fa2e838fb9c" : {
+          "typeFullFqn" : "tenant.fixed_html_value_card2",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "84df572c-3914-9eb3-d64f-76be32b1edd7",
+              "dataKeys" : [ {
+                "name" : "manufacturer_name",
+                "type" : "timeseries",
+                "label" : "manufacturer_name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.31204228425579306
+              }, {
+                "name" : "serial_number",
+                "type" : "timeseries",
+                "label" : "serial_number",
+                "color" : "#4caf50",
+                "settings" : { },
+                "_hash" : 0.9588104266898787
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1753451970146,
+                  "endTimeMs" : 1753538370146
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "Fixed HTML Value Card",
+            "useDashboardTimewindow" : true,
+            "displayTimewindow" : true,
+            "showTitleIcon" : false,
+            "titleTooltip" : "",
+            "dropShadow" : true,
+            "enableFullscreen" : true,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "pageSize" : 1024,
+            "decimals" : 0,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "4b274b30-0059-9548-d0f8-4fa2e838fb9c"
         }
       },
       "states" : {
@@ -2322,18 +2353,6 @@
                   "sizeX" : 34,
                   "sizeY" : 13,
                   "row" : 21,
-                  "col" : 0
-                },
-                "65f5fd0a-a849-1d35-9dd9-773763128013" : {
-                  "sizeX" : 26,
-                  "sizeY" : 3,
-                  "row" : 0,
-                  "col" : 0
-                },
-                "d07b8e58-2352-471c-5305-12644d3eb930" : {
-                  "sizeX" : 34,
-                  "sizeY" : 2,
-                  "row" : 3,
                   "col" : 0
                 },
                 "d76b1276-b504-87f6-d945-45112eff6795" : {
@@ -2359,6 +2378,18 @@
                   "sizeY" : 3,
                   "row" : 0,
                   "col" : 26
+                },
+                "330c4d19-bb8d-5912-2826-bfb6604a5c6e" : {
+                  "sizeX" : 26,
+                  "sizeY" : 3,
+                  "row" : 0,
+                  "col" : 0
+                },
+                "4b274b30-0059-9548-d0f8-4fa2e838fb9c" : {
+                  "sizeX" : 34,
+                  "sizeY" : 2,
+                  "row" : 3,
+                  "col" : 0
                 }
               },
               "gridSettings" : {
@@ -2366,7 +2397,8 @@
                 "columns" : 24,
                 "margin" : 10,
                 "outerMargin" : true,
-                "backgroundSizeMode" : "100%"
+                "backgroundSizeMode" : "100%",
+                "layoutType" : "default"
               }
             }
           }
@@ -2381,16 +2413,13 @@
             "resolveMultiple" : false,
             "singleEntity" : {
               "entityType" : "DEVICE",
-              "id" : "13f65930-67c7-11f0-8b08-b1b78211b00c"
+              "id" : "13f60b12-67c7-11f0-8b08-b1b78211b00c"
             }
           }
         }
       },
       "filters" : { },
       "timewindow" : {
-        "hideInterval" : false,
-        "hideLastInterval" : false,
-        "hideQuickInterval" : false,
         "hideAggregation" : false,
         "hideAggInterval" : false,
         "hideTimezone" : false,
@@ -2417,9 +2446,6 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "name" : "Meter_Dashboard (3phase)",
-    "resources" : null,
-    "assignedCustomers" : [ ],
     "externalId" : {
       "entityType" : "DASHBOARD",
       "id" : "53b71520-9c32-11ef-8b08-b1b78211b00c"
@@ -2427,7 +2453,12 @@
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "53b71520-9c32-11ef-8b08-b1b78211b00c"
-    }
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "Meter_Dashboard (3phase)",
+    "title" : "Meter_Dashboard (3phase)"
   },
   "relations" : [ ],
   "attributes" : {

@@ -17,5 +17,9 @@
       "id" : "c61381a0-4852-11ef-9869-85cbc512a09a"
     },
     "name" : "Users of the entity owner"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
   }
 }

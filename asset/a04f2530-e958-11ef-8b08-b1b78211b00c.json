@@ -35,8 +35,7 @@
       "id" : "f9160580-9953-11ef-8b08-b1b78211b00c"
     },
     "type" : "Contains",
-    "typeGroup" : "COMMON",
-    "version" : 1217
+    "typeGroup" : "COMMON"
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -48,8 +47,7 @@
       "id" : "5fe79630-490d-11ef-9869-85cbc512a09a"
     },
     "type" : "Contains",
-    "typeGroup" : "COMMON",
-    "version" : 1209
+    "typeGroup" : "COMMON"
   }, {
     "additionalInfo" : null,
     "from" : {
@@ -61,8 +59,7 @@
       "id" : "a04f2530-e958-11ef-8b08-b1b78211b00c"
     },
     "type" : "Contains",
-    "typeGroup" : "COMMON",
-    "version" : 1213
+    "typeGroup" : "COMMON"
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]

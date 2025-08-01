@@ -20,10 +20,7 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "c5d2cf20-4852-11ef-9869-85cbc512a09a"
     },
-    "externalId" : {
-      "entityType" : "DEVICE",
-      "id" : "5cf8a430-67d1-11f0-8b08-b1b78211b00c"
-    },
+    "externalId" : null,
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -35,7 +32,7 @@
     "type" : "default"
   },
   "credentials" : {
-    "credentialsId" : "sO9gzLCha0IMpuTgaF6I",
+    "credentialsId" : "2zLhmFplYaeZJRRLRum1",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -50,8 +47,7 @@
       "id" : "5cf8a430-67d1-11f0-8b08-b1b78211b00c"
     },
     "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 1202
+    "typeGroup" : "COMMON"
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -59,7 +55,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1753350741257,
+      "lastUpdateTs" : 1753285540791,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -67,32 +63,32 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1753350290581,
-      "longValue" : 1753350290578,
+      "lastUpdateTs" : 1753285540791,
+      "longValue" : 1753285540790,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1753283751707,
-      "longValue" : 1753283750850,
+      "lastUpdateTs" : 1753284921703,
+      "longValue" : 1753284919540,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1753283202798,
-      "longValue" : 1753283202798,
+      "lastUpdateTs" : 1753284092621,
+      "longValue" : 1753284092621,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1753283196560,
-      "longValue" : 1753283196560,
+      "lastUpdateTs" : 1753284919565,
+      "longValue" : 1753284919565,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]

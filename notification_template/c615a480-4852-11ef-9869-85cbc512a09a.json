@@ -31,5 +31,9 @@
     },
     "name" : "New alarm notification",
     "notificationType" : "ALARM"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
   }
 }

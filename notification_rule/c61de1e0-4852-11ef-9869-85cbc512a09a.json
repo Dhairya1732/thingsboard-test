@@ -30,5 +30,9 @@
       "triggerType" : "DEVICE_ACTIVITY"
     },
     "triggerType" : "DEVICE_ACTIVITY"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
   }
 }

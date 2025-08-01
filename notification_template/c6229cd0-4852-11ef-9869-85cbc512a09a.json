@@ -34,5 +34,9 @@
     },
     "name" : "Rule chain/node lifecycle failure notification",
     "notificationType" : "RULE_ENGINE_COMPONENT_LIFECYCLE_EVENT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
   }
 }

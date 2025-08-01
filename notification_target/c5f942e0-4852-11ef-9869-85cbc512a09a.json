@@ -17,5 +17,9 @@
       "id" : "c5f942e0-4852-11ef-9869-85cbc512a09a"
     },
     "name" : "All users"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
   }
 }

@@ -1,0 +1,35 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "fixed_html_value_card2",
+    "name" : "Fixed HTML Value Card",
+    "deprecated" : false,
+    "image" : null,
+    "description" : null,
+    "descriptor" : {
+      "type" : "latest",
+      "sizeX" : 7.5,
+      "sizeY" : 3,
+      "resources" : [ ],
+      "templateHtml" : "<div class=\"card\">\r\n  <div class=\"info-row\">\r\n    <span class=\"relay-title\">Profile: Panel Meter</span>\r\n    <span class=\"manufacturer-name\">Manufacturer: \r\n      <span class=\"tb-manufacturer\"></span>\r\n    </span>\r\n    <span class=\"serial-number\">Serial Number: \r\n      <span class=\"tb-serial-value\"></span>\r\n    </span>\r\n  </div>\r\n</div>\r\n",
+      "templateCss" : "    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');\n    /* Clean futuristic font */\n\n    body {\n        font-family: 'Times New Roman', Times New Roman;\n        background-color: #fff;\n        /* Dark background for contrast */\n        margin: 0;\n        height: 100%;\n        /* Take full viewport height */\n        display: flex;\n        justify-content: center;\n        /* Center horizontally */\n        align-items: center;\n        /* Center vertically */\n    }\n\n    .card {\n        display: flex;\n        justify-content: center;\n        /* Center horizontally */\n        align-items: center;\n        /* Center vertically */\n        background-color: #fff;\n        /* Simplified dark card background */\n        color: #ffffff;\n        width: 100%;\n        height: 50px;\n        /* Adjusted height for the horizontal layout */\n        padding-left: 35px;\n        padding-right: 35px;\n        border-radius: 16px;\n        /* Slightly more rounded corners for a modern look */\n        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);\n        /* Stronger shadow for depth */\n    }\n\n    .info-row {\n        padding: 15px;\n        display: flex;\n        justify-content: space-between;\n        width: 100%;\n        /* Occupy the full width of the card */\n        align-items: center;\n        height: 50px;\n    }\n\n    .manufacturer-name {\n        font-size: 22px;\n        color: #305680;\n        font-weight: 600;\n        white-space: nowrap;\n        text-align: center;\n    }\n    \n    .serial-number \n    {\n        font-size: 22px;\n        color: #305680;\n        font-weight: 600;\n        text-align: right;\n        white-space: nowrap;\n    }\n    \n    .relay-title {\n        font-size: 22px;\n        color: #305680;\n        font-weight: 600;\n        text-align: left;\n        white-space: nowrap;\n    }",
+      "controllerScript" : "self.onInit = function() {\r\n    self.$manufacturerSpan = self.ctx.$container.find(\r\n        '.tb-manufacturer');\r\n    self.$serialSpan = self.ctx.$container.find(\r\n        '.tb-serial-value');\r\n};\r\n\r\nself.onDataUpdated = function() {\r\n    if (!self.$manufacturerSpan || !self.$serialSpan) {\r\n        console.error(\"Widget spans not found\");\r\n        return;\r\n    }\r\n\r\n    let rawMan = null;\r\n    let rawSerial = null;\r\n\r\n    if (self.ctx.data && self.ctx.data.length) {\r\n        for (let i = 0; i < self.ctx.data.length; i++) {\r\n            const keyData = self.ctx.data[i];\r\n            const keyName = keyData.dataKey.name;\r\n            const latestRow = keyData.data && keyData\r\n                .data[0];\r\n            const value = latestRow ? latestRow[1] :\r\n                null;\r\n            if (keyName === 'manufacturer_name')\r\n                rawMan = value;\r\n            if (keyName === 'serial_number') rawSerial =\r\n                value;\r\n        }\r\n    }\r\n\r\n    // Update manufacturer\r\n    self.$manufacturerSpan.text(rawMan != null ? rawMan\r\n        .toString().trim() : '');\r\n\r\n    // Format and update serial number\r\n    let serialText = rawSerial != null ? rawSerial\r\n        .toString().trim() : '';\r\n    if (/^\\d+(\\.\\d+)?$/.test(serialText)) {\r\n        serialText = Math.trunc(parseFloat(serialText))\r\n            .toString();\r\n    }\r\n    self.$serialSpan.text(serialText);\r\n};",
+      "settingsSchema" : "{}",
+      "dataKeySettingsSchema" : "{}\n",
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"function\",\"name\":\"function\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Random\",\"color\":\"#2196f3\",\"settings\":{},\"_hash\":0.15479322438769105,\"funcBody\":\"var value = prevValue + Math.random() * 100 - 50;\\nvar multiplier = Math.pow(10, 2 || 0);\\nvar value = Math.round(value * multiplier) / multiplier;\\nif (value < -1000) {\\n\\tvalue = -1000;\\n} else if (value > 1000) {\\n\\tvalue = 1000;\\n}\\nreturn value;\"}]}],\"timewindow\":{\"realtime\":{\"timewindowMs\":60000}},\"showTitle\":true,\"backgroundColor\":\"#fff\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"8px\",\"settings\":{},\"title\":\"Fixed HTML Value Card\"}"
+    },
+    "externalId" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "0437d790-6a28-11f0-8b08-b1b78211b00c"
+    },
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "0437d790-6a28-11f0-8b08-b1b78211b00c"
+    },
+    "tags" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

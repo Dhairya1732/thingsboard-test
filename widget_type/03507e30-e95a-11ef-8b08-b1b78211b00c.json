@@ -23,12 +23,10 @@
       "entityType" : "WIDGET_TYPE",
       "id" : "03507e30-e95a-11ef-8b08-b1b78211b00c"
     },
-    "resources" : null,
     "id" : {
       "entityType" : "WIDGET_TYPE",
       "id" : "03507e30-e95a-11ef-8b08-b1b78211b00c"
     },
-    "scada" : false,
     "tags" : null
   },
   "relations" : [ ],

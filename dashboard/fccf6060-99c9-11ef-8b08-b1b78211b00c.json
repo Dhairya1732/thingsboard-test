@@ -1,10 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "Stelmec_Meter_Dashboard",
-    "image" : null,
-    "mobileHide" : false,
-    "mobileOrder" : null,
+    "assignedCustomers" : [ ],
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -1412,9 +1409,6 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "name" : "Stelmec_Meter_Dashboard",
-    "resources" : null,
-    "assignedCustomers" : [ ],
     "externalId" : {
       "entityType" : "DASHBOARD",
       "id" : "fccf6060-99c9-11ef-8b08-b1b78211b00c"
@@ -1422,7 +1416,12 @@
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "fccf6060-99c9-11ef-8b08-b1b78211b00c"
-    }
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "Stelmec_Meter_Dashboard",
+    "title" : "Stelmec_Meter_Dashboard"
   },
   "relations" : [ ],
   "attributes" : {

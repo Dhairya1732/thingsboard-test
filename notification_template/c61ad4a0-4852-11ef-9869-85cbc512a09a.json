@@ -34,5 +34,9 @@
     },
     "name" : "Entity action notification",
     "notificationType" : "ENTITY_ACTION"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
   }
 }

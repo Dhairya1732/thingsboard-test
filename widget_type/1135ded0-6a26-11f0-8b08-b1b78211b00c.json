@@ -1,0 +1,35 @@
+{
+  "entityType" : "WIDGET_TYPE",
+  "entity" : {
+    "fqn" : "fixed_html_value_card",
+    "name" : "Fixed HTML value card",
+    "deprecated" : false,
+    "image" : null,
+    "description" : null,
+    "descriptor" : {
+      "type" : "latest",
+      "sizeX" : 7.5,
+      "sizeY" : 3,
+      "resources" : [ ],
+      "templateHtml" : "<div class=\"card\">\r\n  <div class=\"info-row\">\r\n    <span class=\"relay-title\">Profile: Panel Meter</span>\r\n    <span class=\"manufacturer-name\">{{manufacturer_name}}</span>\r\n    <span>Serial Number: <span class=\"tb-serial-value\"></span></span>\r\n  </div>\r\n</div>\r\n",
+      "templateCss" : "@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); /* Clean futuristic font */\n\nbody {\n    font-family: 'Times New Roman',Times New Roman;\n    background-color: #fff; /* Dark background for contrast */\n    margin: 0;\n    height: 100%; /* Take full viewport height */\n    display: flex;\n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n}\n\n.card {\n    display: flex;\n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n    background-color: #fff; /* Simplified dark card background */\n    color: #ffffff;\n    width: 100%;\n    height: 50px; /* Adjusted height for the horizontal layout */\n    padding-left: 35px;\n    padding-right: 35px;\n    border-radius: 16px; /* Slightly more rounded corners for a modern look */\n    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */\n}\n\n.info-row {\n    padding:15px;\n    display: flex;\n    justify-content: space-between;\n    width: 100%; /* Occupy the full width of the card */\n    align-items: center; /* Align the items in the center vertically */\n    align-content: center;\n    height: 50px;\n    \n}\n\n.relay-title {\n    font-size: 22px;\n    font-weight: 600;\n    color: #305680; \n    flex: 1; /* Ensure the title takes up one-third of the width */\n    text-align: left;\n}\n\n.serial-number {\n    font-weight: 600;\n    font-size: 22px;\n    color: #305680;\n    flex: 1;\n    text-align: right;\n}\n\n.manufacturer-name {\n    font-size: 22px;\n    color: #305680;\n    font-weight: 600;\n    flex: 1;\n    white-space: nowrap;\n}",
+      "controllerScript" : "self.onInit = function() {\r\n  self.$serialSpan = self.ctx.$container.find('.tb-serial-value');\r\n};\r\n\r\nself.onDataUpdated = function() {\r\n  if (!self.$serialSpan) {\r\n    console.error('Serial span not found');\r\n    return;\r\n  }\r\n\r\n  let raw = '';\r\n  if (self.ctx.data && self.ctx.data[0]) {\r\n    const row = self.ctx.data[0].data.find(r => r[0] === 'serial_number');\r\n    raw = row ? row[1] : '';\r\n  } else if (self.ctx.settings && this.ctx.settings.serial_number) {\r\n    raw = self.ctx.settings.serial_number;\r\n  }\r\n\r\n  let text = raw != null ? raw.toString() : '';\r\n  if (/^\\d+(\\.\\d+)?$/.test(text)) {\r\n    text = Math.trunc(parseFloat(text)).toString();\r\n  }\r\n\r\n  self.$serialSpan.text(text);\r\n};\r\n",
+      "settingsSchema" : "{}",
+      "dataKeySettingsSchema" : "{}\n",
+      "defaultConfig" : "{\"datasources\":[{\"type\":\"function\",\"name\":\"function\",\"dataKeys\":[{\"name\":\"f(x)\",\"type\":\"function\",\"label\":\"Random\",\"color\":\"#2196f3\",\"settings\":{},\"_hash\":0.15479322438769105,\"funcBody\":\"var value = prevValue + Math.random() * 100 - 50;\\nvar multiplier = Math.pow(10, 2 || 0);\\nvar value = Math.round(value * multiplier) / multiplier;\\nif (value < -1000) {\\n\\tvalue = -1000;\\n} else if (value > 1000) {\\n\\tvalue = 1000;\\n}\\nreturn value;\"}]}],\"timewindow\":{\"realtime\":{\"timewindowMs\":60000}},\"showTitle\":true,\"backgroundColor\":\"#fff\",\"color\":\"rgba(0, 0, 0, 0.87)\",\"padding\":\"8px\",\"settings\":{},\"title\":\"Attributes card\"}"
+    },
+    "externalId" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "1135ded0-6a26-11f0-8b08-b1b78211b00c"
+    },
+    "id" : {
+      "entityType" : "WIDGET_TYPE",
+      "id" : "1135ded0-6a26-11f0-8b08-b1b78211b00c"
+    },
+    "tags" : null
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}

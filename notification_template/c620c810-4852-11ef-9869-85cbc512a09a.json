@@ -31,5 +31,9 @@
     },
     "name" : "Alarm assigned notification",
     "notificationType" : "ALARM_ASSIGNMENT"
+  },
+  "relations" : [ ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
   }
 }

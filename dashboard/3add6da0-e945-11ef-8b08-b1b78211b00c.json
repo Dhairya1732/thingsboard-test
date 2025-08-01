@@ -1,10 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "title" : "(Meshnet) Relay_SLR140C_Dashboard",
-    "image" : null,
-    "mobileHide" : false,
-    "mobileOrder" : null,
+    "assignedCustomers" : [ ],
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -2135,9 +2132,6 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "name" : "(Meshnet) Relay_SLR140C_Dashboard",
-    "resources" : null,
-    "assignedCustomers" : [ ],
     "externalId" : {
       "entityType" : "DASHBOARD",
       "id" : "3add6da0-e945-11ef-8b08-b1b78211b00c"
@@ -2145,7 +2139,12 @@
     "id" : {
       "entityType" : "DASHBOARD",
       "id" : "3add6da0-e945-11ef-8b08-b1b78211b00c"
-    }
+    },
+    "image" : null,
+    "mobileHide" : false,
+    "mobileOrder" : null,
+    "name" : "(Meshnet) Relay_SLR140C_Dashboard",
+    "title" : "(Meshnet) Relay_SLR140C_Dashboard"
   },
   "relations" : [ ],
   "attributes" : {

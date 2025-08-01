@@ -20,10 +20,7 @@
       "entityType" : "DEVICE_PROFILE",
       "id" : "05acafd0-9cbd-11ef-8b08-b1b78211b00c"
     },
-    "externalId" : {
-      "entityType" : "DEVICE",
-      "id" : "106f7c60-67c7-11f0-8b08-b1b78211b00c"
-    },
+    "externalId" : null,
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
@@ -35,7 +32,7 @@
     "type" : "SLR140C"
   },
   "credentials" : {
-    "credentialsId" : "LLBosgpoYYAkrc4Ninvx",
+    "credentialsId" : "LbDyn5uf3JXobKDGY5NT",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
@@ -50,8 +47,7 @@
       "id" : "106f7c60-67c7-11f0-8b08-b1b78211b00c"
     },
     "type" : "Created",
-    "typeGroup" : "COMMON",
-    "version" : 1198
+    "typeGroup" : "COMMON"
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
@@ -59,7 +55,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Reset",
-      "lastUpdateTs" : 1753350655503,
+      "lastUpdateTs" : 1753285540822,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -67,7 +63,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1753350655431,
+      "lastUpdateTs" : 1753285540791,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -75,7 +71,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "deviceName",
-      "lastUpdateTs" : 1753283202812,
+      "lastUpdateTs" : 1753285540822,
       "longValue" : null,
       "strValue" : "VCB_5"
     }, {
@@ -83,7 +79,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "deviceType",
-      "lastUpdateTs" : 1753283202812,
+      "lastUpdateTs" : 1753285540822,
       "longValue" : null,
       "strValue" : "SLR140C"
     }, {
@@ -107,39 +103,39 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1753350290581,
-      "longValue" : 1753350290578,
+      "lastUpdateTs" : 1753285540791,
+      "longValue" : 1753285540790,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1753283709701,
-      "longValue" : 1753283707745,
+      "lastUpdateTs" : 1753284900692,
+      "longValue" : 1753284898553,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1753283202798,
-      "longValue" : 1753283202798,
+      "lastUpdateTs" : 1753284091715,
+      "longValue" : 1753284091715,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1753283196560,
-      "longValue" : 1753283196560,
+      "lastUpdateTs" : 1753284898579,
+      "longValue" : 1753284898579,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastFaultTimestamp",
-      "lastUpdateTs" : 1753350655503,
+      "lastUpdateTs" : 1753285540822,
       "longValue" : 1,
       "strValue" : null
     }, {
@@ -147,7 +143,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "scope",
-      "lastUpdateTs" : 1753350655503,
+      "lastUpdateTs" : 1753285540822,
       "longValue" : null,
       "strValue" : "SERVER_SCOPE"
     }, {
@@ -163,17 +159,17 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "ts",
-      "lastUpdateTs" : 1753283707770,
-      "longValue" : 1753283707744,
+      "lastUpdateTs" : 1753284297839,
+      "longValue" : 1753284297824,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "userEmail",
-      "lastUpdateTs" : 1753350655503,
+      "lastUpdateTs" : 1753280125312,
       "longValue" : null,
-      "strValue" : "tenant@thingsboard.org"
+      "strValue" : "admin@meshnetelectronics.com"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
@@ -187,9 +183,9 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "userId",
-      "lastUpdateTs" : 1753350655503,
+      "lastUpdateTs" : 1753280125312,
       "longValue" : null,
-      "strValue" : "a1923ba0-fab3-11ef-8e77-bd1649368acc"
+      "strValue" : "39a3b450-4853-11ef-9869-85cbc512a09a"
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
@@ -203,16 +199,16 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "userName",
-      "lastUpdateTs" : 1753350655503,
+      "lastUpdateTs" : 1753280125312,
       "longValue" : null,
-      "strValue" : "tenant@thingsboard.org"
+      "strValue" : "admin@meshnetelectronics.com"
     } ],
     "SHARED_SCOPE" : [ {
       "booleanValue" : false,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Reset",
-      "lastUpdateTs" : 1753283707770,
+      "lastUpdateTs" : 1753284297839,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -220,7 +216,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "deviceName",
-      "lastUpdateTs" : 1753283707770,
+      "lastUpdateTs" : 1753284297839,
       "longValue" : null,
       "strValue" : "VCB_5"
     }, {
@@ -228,7 +224,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "deviceType",
-      "lastUpdateTs" : 1753283707770,
+      "lastUpdateTs" : 1753284297839,
       "longValue" : null,
       "strValue" : "SLR140C"
     }, {
@@ -252,7 +248,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastFaultTimestamp",
-      "lastUpdateTs" : 1753283707770,
+      "lastUpdateTs" : 1753284297839,
       "longValue" : 1,
       "strValue" : null
     }, {
@@ -260,8 +256,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "ts",
-      "lastUpdateTs" : 1753283707770,
-      "longValue" : 1753283707744,
+      "lastUpdateTs" : 1753284297839,
+      "longValue" : 1753284297824,
       "strValue" : null
     }, {
       "booleanValue" : null,
