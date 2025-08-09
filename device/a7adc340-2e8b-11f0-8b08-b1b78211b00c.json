@@ -2,7 +2,7 @@
   "entityType" : "DEVICE",
   "entity" : {
     "additionalInfo" : {
-      "lastConnectedGateway" : "583bd440-45f7-11f0-8b08-b1b78211b00c"
+      "lastConnectedGateway" : "ce19f0e0-7552-11f0-8b08-b1b78211b00c"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -18,7 +18,7 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "c5d2cf20-4852-11ef-9869-85cbc512a09a"
+      "id" : "348e6e00-9cc3-11ef-8b08-b1b78211b00c"
     },
     "externalId" : {
       "entityType" : "DEVICE",
@@ -32,7 +32,7 @@
     "label" : null,
     "name" : "Meter1",
     "softwareId" : null,
-    "type" : "default"
+    "type" : "3 Phase Meter"
   },
   "credentials" : {
     "credentialsId" : "RpMNpBBcktYF4tXPtWWG",
@@ -42,11 +42,11 @@
   "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1750310072014,
+      "lastUpdateTs" : 1754766099750,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -62,24 +62,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1750309413702,
-      "longValue" : 1750309413425,
+      "lastUpdateTs" : 1754769768689,
+      "longValue" : 1754769765752,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1750308805171,
-      "longValue" : 1750308805171,
+      "lastUpdateTs" : 1754766199930,
+      "longValue" : 1754766199930,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1750309413450,
-      "longValue" : 1750309413450,
+      "lastUpdateTs" : 1754766195229,
+      "longValue" : 1754766195229,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]

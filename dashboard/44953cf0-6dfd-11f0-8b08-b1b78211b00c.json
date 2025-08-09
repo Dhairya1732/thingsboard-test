@@ -5,29 +5,174 @@
     "configuration" : {
       "description" : "",
       "widgets" : {
-        "a8ca8e97-06fb-6832-e73c-53d24d346f54" : {
-          "typeFullFqn" : "system.vertical_cylinder_tank",
+        "6fc66d1d-4d91-2a24-a6eb-e9d507c4654c" : {
+          "typeFullFqn" : "system.alarm_widgets.alarms_table",
+          "type" : "alarm",
+          "sizeX" : 10.5,
+          "sizeY" : 6.5,
+          "config" : {
+            "timewindow" : {
+              "realtime" : {
+                "interval" : 1000,
+                "timewindowMs" : 86400000
+              },
+              "aggregation" : {
+                "type" : "NONE",
+                "limit" : 200
+              }
+            },
+            "showTitle" : true,
+            "backgroundColor" : "rgb(255, 255, 255)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "4px",
+            "settings" : {
+              "enableSelection" : true,
+              "enableSearch" : true,
+              "displayDetails" : true,
+              "allowAcknowledgment" : true,
+              "allowClear" : true,
+              "allowAssign" : true,
+              "displayActivity" : true,
+              "displayPagination" : true,
+              "defaultPageSize" : 10,
+              "defaultSortOrder" : "-createdTime",
+              "enableSelectColumnDisplay" : true,
+              "enableStickyAction" : false,
+              "enableFilter" : true,
+              "entitiesTitle" : null,
+              "alarmsTitle" : "Alarms"
+            },
+            "title" : "Alarms table",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "useDashboardTimewindow" : false,
+            "showLegend" : false,
+            "alarmSource" : {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "49ab164e-b152-fdfc-b092-8b194bb1e059",
+              "dataKeys" : [ {
+                "name" : "createdTime",
+                "type" : "alarm",
+                "label" : "Created time",
+                "color" : "#2196f3",
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.021092237451093787,
+                "funcBody" : null
+              }, {
+                "name" : "originator",
+                "type" : "alarm",
+                "label" : "Originator",
+                "color" : "#4caf50",
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.2780007688856758,
+                "funcBody" : null
+              }, {
+                "name" : "type",
+                "type" : "alarm",
+                "label" : "Type",
+                "color" : "#f44336",
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.7323586880398418,
+                "funcBody" : null
+              }, {
+                "name" : "severity",
+                "type" : "alarm",
+                "label" : "Severity",
+                "color" : "#ffc107",
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "useCellContentFunction" : false
+                },
+                "_hash" : 0.09927019860088193,
+                "funcBody" : null
+              }, {
+                "name" : "status",
+                "type" : "alarm",
+                "label" : "Status",
+                "color" : "#607d8b",
+                "settings" : {
+                  "useCellStyleFunction" : false,
+                  "cellStyleFunction" : "",
+                  "useCellContentFunction" : false,
+                  "cellContentFunction" : ""
+                },
+                "_hash" : 0.6588418951443418,
+                "funcBody" : null
+              }, {
+                "name" : "assignee",
+                "type" : "alarm",
+                "label" : "Assignee",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.5008441077416634,
+                "funcBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            },
+            "alarmsPollingInterval" : 5,
+            "showTitleIcon" : false,
+            "titleIcon" : "warning",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "widgetStyle" : { },
+            "displayTimewindow" : true,
+            "actions" : { },
+            "configMode" : "basic",
+            "alarmFilterConfig" : {
+              "statusList" : [ ],
+              "severityList" : [ ],
+              "typeList" : [ ],
+              "searchPropagatedAlarms" : false
+            },
+            "datasources" : [ ],
+            "titleFont" : null,
+            "titleColor" : null
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "6fc66d1d-4d91-2a24-a6eb-e9d507c4654c"
+        },
+        "2a7ef519-0e1d-5cfc-85fc-7e577bbc6f48" : {
+          "typeFullFqn" : "system.cards.html_value_card",
           "type" : "latest",
-          "sizeX" : 4,
-          "sizeY" : 4,
+          "sizeX" : 7.5,
+          "sizeY" : 3,
           "config" : {
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
               "entityAliasId" : "d1f7c0ae-be7f-2978-236d-12f7f690000e",
               "dataKeys" : [ {
-                "name" : "water_level",
+                "name" : "Water Level",
                 "type" : "timeseries",
-                "label" : "Fuel Level",
+                "label" : "Water Level",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.896227930774215,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
+                "_hash" : 0.22930620483289899
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -47,8 +192,8 @@
                 "interval" : 1000,
                 "timewindowMs" : 60000,
                 "fixedTimewindow" : {
-                  "startTimeMs" : 1753873915264,
-                  "endTimeMs" : 1753960315264
+                  "startTimeMs" : 1754557603923,
+                  "endTimeMs" : 1754644003923
                 },
                 "quickInterval" : "CURRENT_DAY"
               },
@@ -57,254 +202,35 @@
                 "limit" : 25000
               }
             },
-            "showTitle" : true,
+            "showTitle" : false,
             "backgroundColor" : "#fff",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "tankSelectionType" : "static",
-              "selectedShape" : "Vertical Cylinder",
-              "shapeAttributeName" : "tankShape",
-              "tankColor" : {
-                "type" : "range",
-                "color" : "#242770",
-                "colorFunction" : "var percent = value;\nif (typeof percent !== undefined) {\n  if (percent < 20) {\n      return '#E73535DE';\n  }\n}\nreturn '#242770';",
-                "gradient" : {
-                  "advancedMode" : false,
-                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
-                  "gradientAdvanced" : [ {
-                    "source" : {
-                      "type" : "constant"
-                    },
-                    "color" : "rgba(0, 255, 0, 1)"
-                  }, {
-                    "source" : {
-                      "type" : "constant"
-                    },
-                    "color" : "rgba(255, 0, 0, 1)"
-                  } ],
-                  "minValue" : 0,
-                  "maxValue" : 100
-                },
-                "rangeList" : {
-                  "advancedMode" : false,
-                  "range" : [ {
-                    "from" : null,
-                    "to" : 25,
-                    "color" : "#3584E7DE"
-                  }, {
-                    "from" : 25,
-                    "to" : null,
-                    "color" : "#242770"
-                  } ],
-                  "rangeAdvanced" : [ ]
-                }
-              },
-              "datasourceUnits" : "%",
-              "layout" : "percentage",
-              "volumeSource" : "static",
-              "volumeConstant" : 500,
-              "volumeAttributeName" : "volume",
-              "volumeUnitsSource" : "static",
-              "volumeUnits" : "L",
-              "volumeUnitsAttributeName" : "volumeUnits",
-              "volumeFont" : {
-                "family" : "Roboto",
-                "size" : 14,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "500",
-                "lineHeight" : "100%"
-              },
-              "volumeColor" : "rgba(0, 0, 0, 0.18)",
-              "valueFont" : {
-                "family" : "Roboto",
-                "size" : 24,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "500",
-                "lineHeight" : "100%"
-              },
-              "valueColor" : {
-                "type" : "range",
-                "color" : "#000000DE",
-                "colorFunction" : "var percent = value;\nif (typeof percent !== undefined) {\n  if (percent < 20) {\n      return '#FF0000DE';\n  }\n}\nreturn '#000000DE';",
-                "gradient" : {
-                  "advancedMode" : false,
-                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
-                  "gradientAdvanced" : [ {
-                    "source" : {
-                      "type" : "constant"
-                    },
-                    "color" : "rgba(0, 255, 0, 1)"
-                  }, {
-                    "source" : {
-                      "type" : "constant"
-                    },
-                    "color" : "rgba(255, 0, 0, 1)"
-                  } ],
-                  "minValue" : 0,
-                  "maxValue" : 100
-                },
-                "rangeList" : {
-                  "advancedMode" : false,
-                  "range" : [ {
-                    "from" : null,
-                    "to" : 25,
-                    "color" : "#00C0FFDE"
-                  }, {
-                    "from" : 25,
-                    "to" : null,
-                    "color" : "#000000DE"
-                  } ],
-                  "rangeAdvanced" : [ ]
-                }
-              },
-              "units" : "%",
-              "widgetUnitsSource" : "static",
-              "widgetUnitsAttributeName" : "units",
-              "showBackgroundOverlay" : false,
-              "backgroundOverlayColor" : {
-                "type" : "range",
-                "color" : "rgba(255, 255, 255, 0.76)",
-                "colorFunction" : "var percent = value;\nif (typeof percent !== undefined) {\n  if (percent < 20) {\n      return '#FFEFEFDE';\n  }\n}\nreturn '#FFFFFFC2';",
-                "rangeList" : {
-                  "advancedMode" : false,
-                  "range" : [ {
-                    "from" : null,
-                    "to" : 20,
-                    "color" : "#FFEFEFDE"
-                  }, {
-                    "from" : 20,
-                    "to" : null,
-                    "color" : "#FFFFFFC2"
-                  } ]
-                }
-              },
-              "liquidColor" : {
-                "type" : "range",
-                "color" : "#000000",
-                "colorFunction" : "var percent = value;\nif (typeof percent !== undefined) {\n  if (percent < 20) {\n      return '#E27C7CDE';\n  }\n}\nreturn '#7A8BFF';",
-                "gradient" : {
-                  "advancedMode" : false,
-                  "gradient" : [ "rgba(0, 255, 0, 1)", "rgba(255, 0, 0, 1)" ],
-                  "gradientAdvanced" : [ {
-                    "source" : {
-                      "type" : "constant"
-                    },
-                    "color" : "rgba(0, 255, 0, 1)"
-                  }, {
-                    "source" : {
-                      "type" : "constant"
-                    },
-                    "color" : "rgba(255, 0, 0, 1)"
-                  } ],
-                  "minValue" : 0,
-                  "maxValue" : 100
-                },
-                "rangeList" : {
-                  "advancedMode" : false,
-                  "range" : [ {
-                    "from" : null,
-                    "to" : 25,
-                    "color" : "#048AD3"
-                  }, {
-                    "from" : 25,
-                    "to" : null,
-                    "color" : "#7A8BFF"
-                  } ],
-                  "rangeAdvanced" : [ ]
-                }
-              },
-              "background" : {
-                "type" : "color",
-                "color" : "#fff",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                }
-              },
-              "padding" : "12px",
-              "showTooltip" : true,
-              "showTooltipLevel" : true,
-              "tooltipUnits" : "%",
-              "tooltipLevelDecimals" : 0,
-              "tooltipLevelFont" : {
-                "family" : "Roboto",
-                "size" : 13,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "500",
-                "lineHeight" : "100%"
-              },
-              "tooltipLevelColor" : {
-                "type" : "constant",
-                "color" : "rgba(0, 0, 0, 0.76)",
-                "colorFunction" : "var percent = value;\nif (typeof percent !== undefined) {\n  if (percent < 20) {\n      return '#E27C7CDE';\n  }\n}\nreturn '#7A8BFF';",
-                "rangeList" : {
-                  "advancedMode" : false,
-                  "range" : [ ]
-                }
-              },
-              "showTooltipDate" : false,
-              "tooltipDateFormat" : {
-                "format" : null,
-                "lastUpdateAgo" : true,
-                "custom" : false,
-                "auto" : false
-              },
-              "tooltipDateFont" : {
-                "family" : "Roboto",
-                "size" : 13,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "500",
-                "lineHeight" : "100%"
-              },
-              "tooltipDateColor" : "rgba(0, 0, 0, 0.76)",
-              "tooltipBackgroundColor" : "rgba(255, 255, 255, 0.76)",
-              "tooltipBackgroundBlur" : 3
+              "cardHtml" : "<div class='card'>\n    <div class=\"water-level-widget\">\n        <div class=\"water-level\">\n            <div class=\"widget-header\">\n                <div class=\"water-level-label\">WATER LEVEL</div>\n            </div>\n\n            <div class=\"progress-container\">\n                <div class=\"progress-bar\" id=\"progressBar\"></div>\n            </div>\n        </div>\n        <div class=\"current-section\">\n            <div class=\"current-label\">CURRENT</div>\n            <div class=\"current-value\" id=\"currentValue\">74%</div>\n        </div>\n    </div>\n</div>",
+              "cardCss" : ".card {\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;\n    background-color: #f0f0f0;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n    width: 100%;\n    margin: 0;\n    padding-bottom: 6px;\n    box-sizing: border-box;\n}\n\n.water-level-widget {\n    background: white;\n    padding: 20px;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);\n    width: 100%;\n    height: 100%;\n    display: flex;\n    border-radius: 12px;\n}\n\n.water-level {\n    display: flex;\n    flex-direction: column;\n    width: 90%;\n    margin-right: 16px;\n}\n\n.widget-header {\n    justify-content: space-between;\n    align-items: flex-end;\n    margin-bottom: 16px;\n}\n\n.water-level-label {\n    color: #666;\n    font-size: 12px;\n    font-weight: 500;\n    text-transform: uppercase;\n    letter-spacing: 0.5px;\n}\n\n.percentage-range {\n    color: #999;\n    font-size: 11px;\n    font-weight: 400;\n}\n\n.current-section {\n    text-align: right;\n}\n\n.current-label {\n    color: #666;\n    font-size: 12px;\n    font-weight: 500;\n    text-transform: uppercase;\n    letter-spacing: 0.5px;\n    margin-bottom: 2px;\n}\n\n.current-value {\n    color: #333;\n    font-size: 24px;\n    font-weight: 600;\n}\n\n.progress-container {\n    position: relative;\n    height: 12px;\n    background-color: #f5f5f5;\n    border-radius: 6px;\n    overflow: hidden;\n}\n\n.progress-bar {\n    height: 100%;\n    background: linear-gradient(90deg, #ff8c00 0%, #ff6b00 100%);\n    border-radius: 6px;\n    width: 74%;\n    transition: width 0.3s ease;\n}\n"
             },
-            "title" : "Water level",
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true,
-            "configMode" : "advanced",
-            "titleFont" : {
-              "family" : "Roboto",
-              "size" : 16,
-              "sizeUnit" : "px",
-              "style" : "normal",
-              "weight" : "500",
-              "lineHeight" : "1.5"
-            },
-            "titleColor" : "#000000",
-            "showTitleIcon" : true,
-            "titleIcon" : "water_drop",
-            "iconColor" : "#000000",
-            "decimals" : 0,
-            "enableDataExport" : false,
+            "title" : "HTML Value Card",
+            "dropShadow" : false,
             "enableFullscreen" : false,
-            "borderRadius" : "0px",
-            "actions" : { },
-            "iconSize" : "24px",
-            "titleTooltip" : "",
-            "dropShadow" : true,
-            "margin" : "0px",
             "widgetStyle" : { },
-            "widgetCss" : "",
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
             },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
-          "id" : "a8ca8e97-06fb-6832-e73c-53d24d346f54"
+          "id" : "2a7ef519-0e1d-5cfc-85fc-7e577bbc6f48"
         },
-        "78e02323-d9ec-7c7f-07a1-2de67b421ce2" : {
+        "583f4116-da7e-3cec-0b36-29f8e41182a9" : {
           "typeFullFqn" : "system.line_chart",
           "type" : "timeseries",
           "sizeX" : 8,
@@ -315,7 +241,7 @@
               "name" : "",
               "entityAliasId" : "d1f7c0ae-be7f-2978-236d-12f7f690000e",
               "dataKeys" : [ {
-                "name" : "Water_level",
+                "name" : "Level",
                 "type" : "timeseries",
                 "label" : "Water Level",
                 "color" : "#2196f3",
@@ -388,8 +314,8 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.33179300783407106,
-                "units" : "L",
+                "_hash" : 0.7372465711531225,
+                "units" : "%",
                 "decimals" : 0
               } ],
               "alarmFilterConfig" : {
@@ -407,12 +333,12 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "timewindowMs" : 300000,
+                "timewindowMs" : 60000,
                 "quickInterval" : "CURRENT_DAY",
                 "interval" : 1000
               },
               "aggregation" : {
-                "type" : "NONE",
+                "type" : "AVG",
                 "limit" : 25000
               },
               "timezone" : null
@@ -677,13 +603,13 @@
             },
             "title" : "Water Level",
             "dropShadow" : true,
-            "enableFullscreen" : true,
+            "enableFullscreen" : false,
             "titleStyle" : null,
             "configMode" : "basic",
             "actions" : { },
-            "showTitleIcon" : true,
-            "titleIcon" : "water_drop",
-            "iconColor" : "#000000",
+            "showTitleIcon" : false,
+            "titleIcon" : "thermostat",
+            "iconColor" : "#1F6BDD",
             "useDashboardTimewindow" : false,
             "displayTimewindow" : true,
             "titleFont" : {
@@ -694,7 +620,7 @@
               "style" : "normal",
               "lineHeight" : "24px"
             },
-            "titleColor" : "#000000",
+            "titleColor" : "rgba(0, 0, 0, 0.87)",
             "titleTooltip" : "",
             "widgetStyle" : { },
             "widgetCss" : "",
@@ -720,13 +646,13 @@
             },
             "margin" : "0px",
             "borderRadius" : "0px",
-            "iconSize" : "16px"
+            "iconSize" : "0px"
           },
           "row" : 0,
           "col" : 0,
-          "id" : "78e02323-d9ec-7c7f-07a1-2de67b421ce2"
+          "id" : "583f4116-da7e-3cec-0b36-29f8e41182a9"
         },
-        "893c9b25-ab0f-e1c4-8194-a21e3732f2d9" : {
+        "0d3c5b91-7767-bed3-8814-265a129fdc91" : {
           "typeFullFqn" : "system.cards.html_value_card",
           "type" : "latest",
           "sizeX" : 7.5,
@@ -737,19 +663,12 @@
               "name" : "",
               "entityAliasId" : "d1f7c0ae-be7f-2978-236d-12f7f690000e",
               "dataKeys" : [ {
-                "name" : "pump",
+                "name" : "Water Level",
                 "type" : "timeseries",
-                "label" : "pump",
+                "label" : "Water Level",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.36520546614713134
-              }, {
-                "name" : "Water_level",
-                "type" : "timeseries",
-                "label" : "Water_level",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.8451225534043462
+                "_hash" : 0.22930620483289899
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -769,8 +688,8 @@
                 "interval" : 1000,
                 "timewindowMs" : 60000,
                 "fixedTimewindow" : {
-                  "startTimeMs" : 1753874849845,
-                  "endTimeMs" : 1753961249845
+                  "startTimeMs" : 1754557603923,
+                  "endTimeMs" : 1754644003923
                 },
                 "quickInterval" : "CURRENT_DAY"
               },
@@ -784,8 +703,8 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "cardHtml" : "<div class='card'>\n    <div class='item'>\n    <div class='info-row'>Pump: </div>\n    <span id='pump-state'>ON</span>\n    </div>\n    <div class='item'>\n    <div class='info-row'>Tank status: </div>\n    <span id='tank-state'>Drain</span>\n    </div>\n</div>",
-              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   display: flex;\n   flex-direction: column;\n   box-sizing: border-box;\n   align-items: center;\n   justify-content: center;\n   border: 1px gray solid;\n}\n\n.item {\n    display: flex;\n    flex-direction: column;\n    flex: 0;\n    height: 100%;\n    width: 80%;\n    align-items: center;\n    justify-content: center;\n    border: 1px gray solid;\n    margin: 2rem;\n    padding: 2rem 0rem;\n    background-color: #e6e6e6;\n    border-radius: 50%;\n}\n\n.info-row {\n    display: flex;\n    font-size: 2.2rem;\n    padding: 1rem;\n    align-items: center;\n}\n\n#pump-state, #tank-state {\n    font-size: 2.2rem;\n    display: flex;\n    padding: 0rem 1rem;\n    font-weight: 600;\n}\n"
+              "cardHtml" : "<div class='card'>\n    <div class=\"water-level-widget\">\n        <div class=\"water-level\">\n            <div class=\"widget-header\">\n                <div class=\"water-level-label\">Temperature</div>\n            </div>\n\n            <div class=\"progress-container\">\n                <div class=\"progress-bar\" id=\"progressBar\"></div>\n            </div>\n        </div>\n        <div class=\"current-section\">\n            <div class=\"current-label\">CURRENT</div>\n            <div class=\"current-value\" id=\"currentValue\">78.6°C</div>\n        </div>\n    </div>\n</div>",
+              "cardCss" : ".card {\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;\n    background-color: #f0f0f0;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n    width: 100%;\n    margin: 0;\n    padding-bottom: 6px;\n    box-sizing: border-box;\n}\n\n.water-level-widget {\n    background: white;\n    padding: 20px;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);\n    border-radius: 12px;\n    width: 100%;\n    height: 100%;\n    display: flex;\n}\n\n.water-level {\n    display: flex;\n    flex-direction: column;\n    width: 90%;\n    margin-right: 16px;\n}\n\n.widget-header {\n    justify-content: space-between;\n    align-items: flex-end;\n    margin-bottom: 16px;\n}\n\n.water-level-label {\n    color: #666;\n    font-size: 12px;\n    font-weight: 500;\n    text-transform: uppercase;\n    letter-spacing: 0.5px;\n}\n\n.percentage-range {\n    color: #999;\n    font-size: 11px;\n    font-weight: 400;\n}\n\n.current-section {\n    text-align: right;\n}\n\n.current-label {\n    color: #666;\n    font-size: 12px;\n    font-weight: 500;\n    text-transform: uppercase;\n    letter-spacing: 0.5px;\n    margin-bottom: 2px;\n}\n\n.current-value {\n    color: #333;\n    font-size: 24px;\n    font-weight: 600;\n}\n\n.progress-container {\n    position: relative;\n    height: 12px;\n    background-color: #f5f5f5;\n    border-radius: 6px;\n    overflow: hidden;\n}\n\n.progress-bar {\n    height: 100%;\n    background: linear-gradient(90deg, #ff8c00 0%, #ff6b00 100%);\n    border-radius: 6px;\n    width: 74%;\n    transition: width 0.3s ease;\n}\n\n/* Interactive version */\n.interactive-controls {\n    margin-top: 20px;\n    text-align: center;\n    padding-top: 20px;\n    border-top: 1px solid #eee;\n}\n\n.control-button {\n    background: #007bff;\n    color: white;\n    border: none;\n    padding: 8px 16px;\n    border-radius: 6px;\n    font-size: 12px;\n    cursor: pointer;\n    margin: 0 5px;\n    transition: background-color 0.2s ease;\n}\n\n.control-button:hover {\n    background: #0056b3;\n}\n\n.slider-container {\n    margin: 15px 0;\n}\n\n.level-slider {\n    width: 100%;\n    height: 6px;\n    border-radius: 3px;\n    background: #ddd;\n    outline: none;\n    -webkit-appearance: none;\n}\n\n.level-slider::-webkit-slider-thumb {\n    -webkit-appearance: none;\n    appearance: none;\n    width: 18px;\n    height: 18px;\n    border-radius: 50%;\n    background: #ff8c00;\n    cursor: pointer;\n}\n\n.level-slider::-moz-range-thumb {\n    width: 18px;\n    height: 18px;\n    border-radius: 50%;\n    background: #ff8c00;\n    cursor: pointer;\n    border: none;\n}"
             },
             "title" : "HTML Value Card",
             "dropShadow" : false,
@@ -805,9 +724,9 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "893c9b25-ab0f-e1c4-8194-a21e3732f2d9"
+          "id" : "0d3c5b91-7767-bed3-8814-265a129fdc91"
         },
-        "09af5388-b908-f597-ec86-6631409419d2" : {
+        "ad2b547a-6fd7-c0de-7e2e-fcd44e4ba1e2" : {
           "typeFullFqn" : "system.line_chart",
           "type" : "timeseries",
           "sizeX" : 8,
@@ -818,10 +737,10 @@
               "name" : "",
               "entityAliasId" : "a995a413-1a3f-ee83-7aa2-a9d270a1df08",
               "dataKeys" : [ {
-                "name" : "temperature",
+                "name" : "Temp",
                 "type" : "timeseries",
-                "label" : "Coil Temperature",
-                "color" : "#F44336",
+                "label" : "Temperature",
+                "color" : "#F34421",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -891,9 +810,9 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.9419625559182532,
+                "_hash" : 0.5422517964047954,
                 "units" : "°C",
-                "decimals" : 2
+                "decimals" : 0
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -910,12 +829,12 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
-                "timewindowMs" : 300000,
+                "timewindowMs" : 60000,
                 "quickInterval" : "CURRENT_DAY",
                 "interval" : 1000
               },
               "aggregation" : {
-                "type" : "NONE",
+                "type" : "AVG",
                 "limit" : 25000
               },
               "timezone" : null
@@ -1178,15 +1097,15 @@
               },
               "tooltipLabelColor" : "rgba(0, 0, 0, 0.76)"
             },
-            "title" : "Coil Temperature",
+            "title" : "Temperature",
             "dropShadow" : true,
-            "enableFullscreen" : true,
+            "enableFullscreen" : false,
             "titleStyle" : null,
             "configMode" : "basic",
             "actions" : { },
-            "showTitleIcon" : true,
+            "showTitleIcon" : false,
             "titleIcon" : "thermostat",
-            "iconColor" : "#000000",
+            "iconColor" : "#1F6BDD",
             "useDashboardTimewindow" : false,
             "displayTimewindow" : true,
             "titleFont" : {
@@ -1197,7 +1116,7 @@
               "style" : "normal",
               "lineHeight" : "24px"
             },
-            "titleColor" : "#000000",
+            "titleColor" : "rgba(0, 0, 0, 0.87)",
             "titleTooltip" : "",
             "widgetStyle" : { },
             "widgetCss" : "",
@@ -1223,29 +1142,29 @@
             },
             "margin" : "0px",
             "borderRadius" : "0px",
-            "iconSize" : "16px"
+            "iconSize" : "0px"
           },
           "row" : 0,
           "col" : 0,
-          "id" : "09af5388-b908-f597-ec86-6631409419d2"
+          "id" : "ad2b547a-6fd7-c0de-7e2e-fcd44e4ba1e2"
         },
-        "2989f3bb-fd09-5b65-03e6-b8134f1d3001" : {
-          "typeFullFqn" : "system.indoor_temperature_gauge",
+        "d72c8b32-033c-ae88-02bf-f4e18f2cc88b" : {
+          "typeFullFqn" : "system.cards.html_value_card",
           "type" : "latest",
-          "sizeX" : 6,
-          "sizeY" : 5,
+          "sizeX" : 7.5,
+          "sizeY" : 3,
           "config" : {
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "a995a413-1a3f-ee83-7aa2-a9d270a1df08",
+              "entityAliasId" : "d1f7c0ae-be7f-2978-236d-12f7f690000e",
               "dataKeys" : [ {
-                "name" : "temperature",
+                "name" : "Pump",
                 "type" : "timeseries",
-                "label" : "Temperature",
+                "label" : "Pump",
                 "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.35614529638156156
+                "_hash" : 0.05890526865330814
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1265,8 +1184,8 @@
                 "interval" : 1000,
                 "timewindowMs" : 60000,
                 "fixedTimewindow" : {
-                  "startTimeMs" : 1753877399565,
-                  "endTimeMs" : 1753963799565
+                  "startTimeMs" : 1754559159203,
+                  "endTimeMs" : 1754645559203
                 },
                 "quickInterval" : "CURRENT_DAY"
               },
@@ -1275,273 +1194,334 @@
                 "limit" : 25000
               }
             },
-            "showTitle" : true,
-            "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "startAngle" : 45,
-              "ticksAngle" : 270,
-              "needleCircleSize" : 8,
-              "defaultColor" : "#e65100",
-              "minValue" : 0,
-              "maxValue" : 40,
-              "majorTicksCount" : 9,
-              "colorMajorTicks" : "#444",
-              "minorTicks" : 9,
-              "colorMinorTicks" : "#666",
-              "numbersFont" : {
-                "family" : "Roboto",
-                "size" : 18,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "#616161"
-              },
-              "numbersColor" : "#616161",
-              "showUnitTitle" : false,
-              "unitTitle" : "",
-              "titleFont" : {
-                "family" : "Roboto",
-                "size" : 24,
-                "style" : "normal",
-                "weight" : "500",
-                "color" : "#888"
-              },
-              "titleColor" : "#888",
-              "unitsFont" : {
-                "size" : 26,
-                "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "500",
-                "style" : "normal",
-                "color" : "#616161"
-              },
-              "unitsColor" : "#616161",
-              "valueBox" : true,
-              "valueInt" : 3,
-              "valueFont" : {
-                "size" : 27,
-                "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "400",
-                "style" : "normal",
-                "color" : "rgba(0, 0, 0, 0.54)",
-                "shadowColor" : "#FFFFFF01"
-              },
-              "valueColor" : "rgba(0, 0, 0, 0.54)",
-              "valueColorShadow" : "#FFFFFF01",
-              "colorValueBoxRect" : "#88888800",
-              "colorValueBoxRectEnd" : "#66666600",
-              "colorValueBoxBackground" : "rgba(243, 243, 243, 0.54)",
-              "colorValueBoxShadow" : "rgba(0, 0, 0, 0)",
-              "showBorder" : false,
-              "colorPlate" : "#FFFFFF",
-              "colorNeedle" : null,
-              "colorNeedleEnd" : null,
-              "colorNeedleShadowUp" : "rgba(2, 255, 255, 0)",
-              "colorNeedleShadowDown" : "rgba(188,143,143,0.45)",
-              "highlightsWidth" : 15,
-              "highlights" : [ {
-                "from" : null,
-                "to" : 18,
-                "color" : "#224AC2"
-              }, {
-                "from" : 18,
-                "to" : 24,
-                "color" : "#3B911C"
-              }, {
-                "from" : 24,
-                "to" : 40,
-                "color" : "#DE2343"
-              } ],
-              "animation" : true,
-              "animationDuration" : 500,
-              "animationRule" : "cycle"
-            },
-            "title" : "Temperature",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "widgetStyle" : { },
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "decimals" : 0,
-            "noDataDisplayMessage" : "",
-            "configMode" : "basic",
-            "units" : "°C",
-            "titleFont" : {
-              "size" : 16,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : null,
-              "lineHeight" : "24px"
-            },
-            "showTitleIcon" : true,
-            "titleTooltip" : "",
-            "titleIcon" : "device_thermostat",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "useDashboardTimewindow" : true,
-            "displayTimewindow" : true,
-            "actions" : { },
-            "margin" : "0px",
-            "borderRadius" : "0px"
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "2989f3bb-fd09-5b65-03e6-b8134f1d3001"
-        },
-        "85b3492d-a846-f674-71cd-2af1a112a8e3" : {
-          "typeFullFqn" : "system.power_button",
-          "type" : "rpc",
-          "sizeX" : 3.5,
-          "sizeY" : 3.5,
-          "config" : {
-            "showTitle" : true,
-            "backgroundColor" : "#ffffff",
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "initialState" : {
-                "action" : "GET_TIME_SERIES",
-                "defaultValue" : false,
-                "executeRpc" : {
-                  "method" : "getState",
-                  "requestTimeout" : 5000,
-                  "requestPersistent" : false,
-                  "persistentPollingInterval" : 1000
-                },
-                "getAttribute" : {
-                  "scope" : null,
-                  "key" : "state"
-                },
-                "getTimeSeries" : {
-                  "key" : "pump"
-                },
-                "dataToValue" : {
-                  "type" : "NONE",
-                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;",
-                  "compareToValue" : true
-                }
-              },
-              "onUpdateState" : {
-                "action" : "ADD_TIME_SERIES",
-                "executeRpc" : {
-                  "method" : "setState",
-                  "requestTimeout" : 5000,
-                  "requestPersistent" : false,
-                  "persistentPollingInterval" : 1000
-                },
-                "setAttribute" : {
-                  "scope" : "SERVER_SCOPE",
-                  "key" : "state"
-                },
-                "putTimeSeries" : {
-                  "key" : "state"
-                },
-                "valueToData" : {
-                  "type" : "CONSTANT",
-                  "constantValue" : true,
-                  "valueToDataFunction" : "/* Convert input boolean value to RPC parameters or attribute/time-series value */\nreturn value;"
-                }
-              },
-              "offUpdateState" : {
-                "action" : "ADD_TIME_SERIES",
-                "executeRpc" : {
-                  "method" : "setState",
-                  "requestTimeout" : 5000,
-                  "requestPersistent" : false,
-                  "persistentPollingInterval" : 1000
-                },
-                "setAttribute" : {
-                  "scope" : "SERVER_SCOPE",
-                  "key" : "state"
-                },
-                "putTimeSeries" : {
-                  "key" : "state"
-                },
-                "valueToData" : {
-                  "type" : "CONSTANT",
-                  "constantValue" : false,
-                  "valueToDataFunction" : "/* Convert input boolean value to RPC parameters or attribute/time-series value */ \n return value;"
-                }
-              },
-              "disabledState" : {
-                "action" : "DO_NOTHING",
-                "defaultValue" : false,
-                "getAttribute" : {
-                  "key" : "state",
-                  "scope" : null
-                },
-                "getTimeSeries" : {
-                  "key" : "state"
-                },
-                "dataToValue" : {
-                  "type" : "NONE",
-                  "compareToValue" : true,
-                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
-                }
-              },
-              "layout" : "default_volume",
-              "mainColorOn" : "#FFFFFF",
-              "backgroundColorOn" : "#3F52DD",
-              "mainColorOff" : "#FFFFFF",
-              "backgroundColorOff" : "#3F52DD",
-              "mainColorDisabled" : "rgba(0,0,0,0.12)",
-              "backgroundColorDisabled" : "#FFFFFF",
-              "background" : {
-                "type" : "color",
-                "imageUrl" : null,
-                "color" : "#FFFFFF",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                }
-              },
-              "padding" : "12px"
+              "cardHtml" : "<div class='card'>\n    <div class=\"pump-widget\" id=\"pumpWidget\">\n        <div class=\"left-section\">\n            <div class=\"status-indicator\"></div>\n            <span class=\"pump-label\">Pump</span>\n        </div>\n        <span class=\"status-text\" id=\"statusText\">Off</span>\n    </div>\n</div>\n\n",
+              "cardCss" : ".card {\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\n    background-color: #f5f5f5;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n    margin: 0;\n    padding-bottom: 6px;\n}\n\n.pump-widget {\n    background: white;\n    border-radius: 12px;\n    padding: 16px 20px;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    width: 100%;\n    height: 100%;\n    border: 1px solid #e5e5e5;\n}\n\n.left-section {\n    display: flex;\n    align-items: center;\n    gap: 12px;\n}\n\n.status-indicator {\n    width: 12px;\n    height: 12px;\n    border-radius: 50%;\n    background-color: #4ade80;\n    box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.2);\n}\n\n.pump-label {\n    font-size: 15px;\n    font-weight: 500;\n    color: #1f2937;\n    margin: 0;\n}\n\n.status-text {\n    font-size: 14px;\n    color: #6b7280;\n    font-weight: 400;\n}\n\n.pump-widget:hover {\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n    cursor: pointer;\n}\n\n.pump-widget.on .status-indicator {\n    background-color: #22c55e;\n    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.3);\n}\n\n.pump-widget.on .status-text {\n    color: #22c55e;\n}"
             },
-            "title" : "Pump State",
-            "dropShadow" : true,
+            "title" : "HTML Value Card",
+            "dropShadow" : false,
             "enableFullscreen" : false,
             "widgetStyle" : { },
-            "actions" : { },
-            "widgetCss" : "",
-            "noDataDisplayMessage" : "",
-            "titleFont" : {
-              "size" : 16,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : null,
-              "lineHeight" : "1.6"
-            },
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400
             },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "widgetCss" : "",
             "pageSize" : 1024,
-            "titleIcon" : "mdi:lightbulb-outline",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "configMode" : "basic",
-            "targetDevice" : {
-              "type" : "entity",
-              "entityAliasId" : "d1f7c0ae-be7f-2978-236d-12f7f690000e"
-            },
-            "titleColor" : null,
-            "borderRadius" : null,
-            "datasources" : [ ]
+            "units" : null,
+            "noDataDisplayMessage" : ""
           },
           "row" : 0,
           "col" : 0,
-          "id" : "85b3492d-a846-f674-71cd-2af1a112a8e3"
+          "id" : "d72c8b32-033c-ae88-02bf-f4e18f2cc88b"
+        },
+        "51b62a54-1d26-85ca-8857-daad34cc7cd5" : {
+          "typeFullFqn" : "system.cards.html_value_card",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "d1f7c0ae-be7f-2978-236d-12f7f690000e",
+              "dataKeys" : [ {
+                "name" : "Pump",
+                "type" : "timeseries",
+                "label" : "Pump",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.05890526865330814
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1754559159203,
+                  "endTimeMs" : 1754645559203
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\n    <div class=\"pump-widget\" id=\"pumpWidget\">\n        <div class=\"left-section\">\n            <div class=\"status-indicator\"></div>\n            <span class=\"pump-label\">Overflow</span>\n        </div>\n        <span class=\"status-text\" id=\"statusText\">On</span>\n    </div>\n</div>\n\n",
+              "cardCss" : ".card {\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\n    background-color: #f5f5f5;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n    margin: 0;\n    padding-bottom: 6px;\n}\n\n.pump-widget {\n    background: white;\n    border-radius: 12px;\n    padding: 16px 20px;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    width: 100%;\n    height: 100%;\n    border: 1px solid #e5e5e5;\n}\n\n.left-section {\n    display: flex;\n    align-items: center;\n    gap: 12px;\n}\n\n.status-indicator {\n    width: 12px;\n    height: 12px;\n    border-radius: 50%;\n    background-color: #F90028;\n    box-shadow: 0 0 0 2px rgba(249, 0, 40, 0.2);\n}\n\n.pump-label {\n    font-size: 15px;\n    font-weight: 500;\n    color: #1f2937;\n    margin: 0;\n}\n\n.status-text {\n    font-size: 14px;\n    color: #6b7280;\n    font-weight: 400;\n}\n\n.pump-widget:hover {\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n    cursor: pointer;\n}\n\n.pump-widget.on .status-indicator {\n    background-color: #22c55e;\n    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.3);\n}\n\n.pump-widget.on .status-text {\n    color: #22c55e;\n}"
+            },
+            "title" : "HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "units" : null,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "51b62a54-1d26-85ca-8857-daad34cc7cd5"
+        },
+        "8d4d93d2-4486-609a-474f-669a1947325c" : {
+          "typeFullFqn" : "system.cards.html_value_card",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "d1f7c0ae-be7f-2978-236d-12f7f690000e",
+              "dataKeys" : [ {
+                "name" : "Pump",
+                "type" : "timeseries",
+                "label" : "Pump",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.05890526865330814
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1754559159203,
+                  "endTimeMs" : 1754645559203
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\n    <div class=\"pump-widget\" id=\"pumpWidget\">\n        <div class=\"left-section\">\n            <div class=\"status-indicator\"></div>\n            <span class=\"pump-label\">Drain</span>\n        </div>\n        <span class=\"status-text\" id=\"statusText\">Off</span>\n    </div>\n</div>\n\n",
+              "cardCss" : ".card {\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\n    background-color: #f5f5f5;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n    margin: 0;\n    padding-bottom: 6px;\n}\n\n.pump-widget {\n    background: white;\n    border-radius: 12px;\n    padding: 16px 20px;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    width: 100%;\n    height: 100%;\n    border: 1px solid #e5e5e5;\n}\n\n.left-section {\n    display: flex;\n    align-items: center;\n    gap: 12px;\n}\n\n.status-indicator {\n    width: 12px;\n    height: 12px;\n    border-radius: 50%;\n    background-color: #4ade80;\n    box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.2);\n}\n\n.pump-label {\n    font-size: 15px;\n    font-weight: 500;\n    color: #1f2937;\n    margin: 0;\n}\n\n.status-text {\n    font-size: 14px;\n    color: #6b7280;\n    font-weight: 400;\n}\n\n.pump-widget:hover {\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n    cursor: pointer;\n}\n\n.pump-widget.on .status-indicator {\n    background-color: #22c55e;\n    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.3);\n}\n\n.pump-widget.on .status-text {\n    color: #22c55e;\n}"
+            },
+            "title" : "HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "units" : null,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "8d4d93d2-4486-609a-474f-669a1947325c"
+        },
+        "00770c93-d484-4e86-fe8c-16c44c242847" : {
+          "typeFullFqn" : "system.cards.html_value_card",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "d1f7c0ae-be7f-2978-236d-12f7f690000e",
+              "dataKeys" : [ {
+                "name" : "Pump",
+                "type" : "timeseries",
+                "label" : "Pump",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.05890526865330814
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1754559159203,
+                  "endTimeMs" : 1754645559203
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\n    <div class=\"pump-widget\" id=\"pumpWidget\">\n        <div class=\"left-section\">\n            <div class=\"status-indicator\"></div>\n            <span class=\"pump-label\">Heating</span>\n        </div>\n        <span class=\"status-text\" id=\"statusText\">On</span>\n    </div>\n</div>\n\n",
+              "cardCss" : ".card {\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\n    background-color: #f5f5f5;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n    margin: 0;\n    padding-bottom: 6px;\n}\n\n.pump-widget {\n    background: white;\n    border-radius: 12px;\n    padding: 16px 20px;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    width: 100%;\n    height: 100%;\n    border: 1px solid #e5e5e5;\n}\n\n.left-section {\n    display: flex;\n    align-items: center;\n    gap: 12px;\n}\n\n.status-indicator {\n    width: 12px;\n    height: 12px;\n    border-radius: 50%;\n    background-color: #4ade80;\n    box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.2);\n}\n\n.pump-label {\n    font-size: 15px;\n    font-weight: 500;\n    color: #1f2937;\n    margin: 0;\n}\n\n.status-text {\n    font-size: 14px;\n    color: #6b7280;\n    font-weight: 400;\n}\n\n.pump-widget:hover {\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n    cursor: pointer;\n}\n\n.pump-widget.on .status-indicator {\n    background-color: #22c55e;\n    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.3);\n}\n\n.pump-widget.on .status-text {\n    color: #22c55e;\n}"
+            },
+            "title" : "HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "units" : null,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "00770c93-d484-4e86-fe8c-16c44c242847"
+        },
+        "0399beae-02ed-9685-faa2-00d5fc41b058" : {
+          "typeFullFqn" : "system.cards.html_value_card",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "d1f7c0ae-be7f-2978-236d-12f7f690000e",
+              "dataKeys" : [ {
+                "name" : "Pump",
+                "type" : "timeseries",
+                "label" : "Pump",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.05890526865330814
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "timewindow" : {
+              "displayValue" : "",
+              "selectedTab" : 0,
+              "realtime" : {
+                "realtimeType" : 1,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1754559159203,
+                  "endTimeMs" : 1754645559203
+                },
+                "quickInterval" : "CURRENT_DAY"
+              },
+              "aggregation" : {
+                "type" : "AVG",
+                "limit" : 25000
+              }
+            },
+            "showTitle" : false,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class='card'>\n    <div class=\"pump-widget\" id=\"pumpWidget\">\n        <div class=\"left-section\">\n            <div class=\"status-indicator\"></div>\n            <span class=\"pump-label\">Exhaust Fan</span>\n        </div>\n        <span class=\"status-text\" id=\"statusText\">Off</span>\n    </div>\n</div>\n\n",
+              "cardCss" : ".card {\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\n    background-color: #f5f5f5;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    height: 100%;\n    margin: 0;\n    padding-bottom: 6px;\n}\n\n.pump-widget {\n    background: white;\n    border-radius: 12px;\n    padding: 16px 20px;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    width: 100%;\n    height: 100%;\n    border: 1px solid #e5e5e5;\n}\n\n.left-section {\n    display: flex;\n    align-items: center;\n    gap: 12px;\n}\n\n.status-indicator {\n    width: 12px;\n    height: 12px;\n    border-radius: 50%;\n    background-color: #4ade80;\n    box-shadow: 0 0 0 2px rgba(74, 222, 128, 0.2);\n}\n\n.pump-label {\n    font-size: 15px;\n    font-weight: 500;\n    color: #1f2937;\n    margin: 0;\n}\n\n.status-text {\n    font-size: 14px;\n    color: #6b7280;\n    font-weight: 400;\n}\n\n.pump-widget:hover {\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);\n    cursor: pointer;\n}\n\n.pump-widget.on .status-indicator {\n    background-color: #22c55e;\n    box-shadow: 0 0 0 2px rgba(34, 197, 94, 0.3);\n}\n\n.pump-widget.on .status-text {\n    color: #22c55e;\n}"
+            },
+            "title" : "HTML Value Card",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "useDashboardTimewindow" : true,
+            "showLegend" : false,
+            "actions" : { },
+            "displayTimewindow" : true,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "units" : null,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "0399beae-02ed-9685-faa2-00d5fc41b058"
         }
       },
       "states" : {
@@ -1551,41 +1531,65 @@
           "layouts" : {
             "main" : {
               "widgets" : {
-                "a8ca8e97-06fb-6832-e73c-53d24d346f54" : {
-                  "sizeX" : 6,
-                  "sizeY" : 7,
-                  "row" : 0,
-                  "col" : 0
-                },
-                "78e02323-d9ec-7c7f-07a1-2de67b421ce2" : {
-                  "sizeX" : 13,
-                  "sizeY" : 8,
-                  "row" : 7,
-                  "col" : 0
-                },
-                "893c9b25-ab0f-e1c4-8194-a21e3732f2d9" : {
-                  "sizeX" : 6,
+                "6fc66d1d-4d91-2a24-a6eb-e9d507c4654c" : {
+                  "sizeX" : 42,
                   "sizeY" : 10,
-                  "row" : 15,
-                  "col" : 1
+                  "row" : 17,
+                  "col" : 0
                 },
-                "09af5388-b908-f597-ec86-6631409419d2" : {
-                  "sizeX" : 13,
-                  "sizeY" : 8,
-                  "row" : 7,
-                  "col" : 13
-                },
-                "2989f3bb-fd09-5b65-03e6-b8134f1d3001" : {
-                  "sizeX" : 5,
+                "2a7ef519-0e1d-5cfc-85fc-7e577bbc6f48" : {
+                  "sizeX" : 21,
                   "sizeY" : 4,
                   "row" : 0,
-                  "col" : 13
+                  "col" : 0
                 },
-                "85b3492d-a846-f674-71cd-2af1a112a8e3" : {
-                  "sizeX" : 3,
-                  "sizeY" : 3,
+                "583f4116-da7e-3cec-0b36-29f8e41182a9" : {
+                  "sizeX" : 21,
+                  "sizeY" : 11,
+                  "row" : 6,
+                  "col" : 0
+                },
+                "0d3c5b91-7767-bed3-8814-265a129fdc91" : {
+                  "sizeX" : 21,
+                  "sizeY" : 4,
                   "row" : 0,
-                  "col" : 6
+                  "col" : 21
+                },
+                "ad2b547a-6fd7-c0de-7e2e-fcd44e4ba1e2" : {
+                  "sizeX" : 21,
+                  "sizeY" : 11,
+                  "row" : 6,
+                  "col" : 21
+                },
+                "d72c8b32-033c-ae88-02bf-f4e18f2cc88b" : {
+                  "sizeX" : 7,
+                  "sizeY" : 2,
+                  "row" : 4,
+                  "col" : 0
+                },
+                "51b62a54-1d26-85ca-8857-daad34cc7cd5" : {
+                  "sizeX" : 7,
+                  "sizeY" : 2,
+                  "row" : 4,
+                  "col" : 7
+                },
+                "8d4d93d2-4486-609a-474f-669a1947325c" : {
+                  "sizeX" : 7,
+                  "sizeY" : 2,
+                  "row" : 4,
+                  "col" : 14
+                },
+                "00770c93-d484-4e86-fe8c-16c44c242847" : {
+                  "sizeX" : 10,
+                  "sizeY" : 2,
+                  "row" : 4,
+                  "col" : 21
+                },
+                "0399beae-02ed-9685-faa2-00d5fc41b058" : {
+                  "sizeX" : 11,
+                  "sizeY" : 2,
+                  "row" : 4,
+                  "col" : 31
                 }
               },
               "gridSettings" : {
@@ -1608,7 +1612,7 @@
             "resolveMultiple" : false,
             "singleEntity" : {
               "entityType" : "DEVICE",
-              "id" : "ac786450-6dfd-11f0-8b08-b1b78211b00c"
+              "id" : "4ea0ecf0-7553-11f0-8b08-b1b78211b00c"
             }
           }
         },
@@ -1620,8 +1624,18 @@
             "resolveMultiple" : false,
             "singleEntity" : {
               "entityType" : "DEVICE",
-              "id" : "b3560d40-6dfd-11f0-8b08-b1b78211b00c"
+              "id" : "f70b8e40-9c6e-11ef-8b08-b1b78211b00c"
             }
+          }
+        },
+        "49ab164e-b152-fdfc-b092-8b194bb1e059" : {
+          "id" : "49ab164e-b152-fdfc-b092-8b194bb1e059",
+          "alias" : "Water and Coil",
+          "filter" : {
+            "type" : "entityList",
+            "resolveMultiple" : true,
+            "entityType" : "DEVICE",
+            "entityList" : [ "b3560d40-6dfd-11f0-8b08-b1b78211b00c", "ac786450-6dfd-11f0-8b08-b1b78211b00c", "f70b8e40-9c6e-11ef-8b08-b1b78211b00c", "4ea0ecf0-7553-11f0-8b08-b1b78211b00c" ]
           }
         }
       },

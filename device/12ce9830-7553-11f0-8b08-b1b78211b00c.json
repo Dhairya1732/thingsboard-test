@@ -1,0 +1,90 @@
+{
+  "entityType" : "DEVICE",
+  "entity" : {
+    "additionalInfo" : {
+      "gateway" : true,
+      "overwriteActivityTime" : false,
+      "description" : ""
+    },
+    "customerId" : {
+      "entityType" : "CUSTOMER",
+      "id" : "13814000-1dd2-11b2-8080-808080808080"
+    },
+    "deviceData" : {
+      "configuration" : {
+        "type" : "DEFAULT"
+      },
+      "transportConfiguration" : {
+        "type" : "DEFAULT"
+      }
+    },
+    "deviceProfileId" : {
+      "entityType" : "DEVICE_PROFILE",
+      "id" : "c5d2cf20-4852-11ef-9869-85cbc512a09a"
+    },
+    "externalId" : null,
+    "firmwareId" : null,
+    "id" : {
+      "entityType" : "DEVICE",
+      "id" : "12ce9830-7553-11f0-8b08-b1b78211b00c"
+    },
+    "label" : "",
+    "name" : "Meshnet_Gateway_Device_14",
+    "softwareId" : null,
+    "type" : "default"
+  },
+  "credentials" : {
+    "credentialsId" : "6ba5e298f8027f2ef06d9ce79bfc4275b36dafca0bef5b5f42b8efbb635384e3",
+    "credentialsType" : "X509_CERTIFICATE",
+    "credentialsValue" : "MIIEsDCCA5igAwIBAgIHDJYfkqF3WzANBgkqhkiG9w0BAQsFADCB7DEgMB4GA1UEAwwXTWVzaG5ldC1DbGllbnQtYTIwYWI5MWMxHDAaBgNVBAoME01lc2huZXQgRWxlY3Ryb25pY3MxFTATBgNVBAsMDElvVCBTZWN1cml0eTErMCkGCSqGSIb3DQEJARYcbWVzaG5ldGVsZWN0cm9uaWNzQGdtYWlsLmNvbTEOMAwGA1UEBwwFUGFyaXMxFzAVBgNVBAgMDsOObGUtZGUtRnJhbmNlMQswCQYDVQQGEwJGUjEwMC4GCgmSJomT8ixkAQEMIGYyNTBkMjM2MzVkZTRkYzViZDZmNGFiMDA4YjQxNWVhMCAXDTI1MDIxNDA1MDM1NloYDzIxOTIxMjA3MDUwMzU2WjCB7DEgMB4GA1UEAwwXTWVzaG5ldC1DbGllbnQtYTIwYWI5MWMxHDAaBgNVBAoME01lc2huZXQgRWxlY3Ryb25pY3MxFTATBgNVBAsMDElvVCBTZWN1cml0eTErMCkGCSqGSIb3DQEJARYcbWVzaG5ldGVsZWN0cm9uaWNzQGdtYWlsLmNvbTEOMAwGA1UEBwwFUGFyaXMxFzAVBgNVBAgMDsOObGUtZGUtRnJhbmNlMQswCQYDVQQGEwJGUjEwMC4GCgmSJomT8ixkAQEMIGYyNTBkMjM2MzVkZTRkYzViZDZmNGFiMDA4YjQxNWVhMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmWugiIkkZSgp1wxlPGPP8K1iHzeCy76xQJFl1PWw5D4WAcqgaoKLB1L6o6d7aW10qlrPRoEtSr9i9D1Fe5ikEkoyt8uVe7RcxXUjRr8A0DSEIVkEaItZHO5biKudB7Qh3VwCNBS5VM8fWFwJOxh5cSVKOLr1HQ9JQYd0Mqkem6sbK1UoLkAcabSLmsOHxFOnoJiftOeQADAiwg1UDrBW2fNSJsH/TCxoFixtVsBMpuvFNRgO8EI1YIhF1RrZty+5jqRNluby3AgggIk12E9aw/AcwKMW58YJzioGXs7Q3jMRUON4fyMxa1+42s+ROZ85mMAR4jPgcnVyZ1RtidEWsQIDAQABo1MwUTAdBgNVHQ4EFgQU2pidFB4qKW7wC3kBIzj8Eutyu6YwHwYDVR0jBBgwFoAU2pidFB4qKW7wC3kBIzj8Eutyu6YwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAcCzCiEtPWkasPe0B/BuPh0hU2BvU7xkeQUSYGlN3sUjHwrRru8yZG67HTVGtSjs1uwErzzETVbGP8Gaw+3BIrl4RCsVdUdE/HWkjSwenynFYDZYAJljOcDa1KZ3Ye4AI+zSBNTuTqbV3iL3vSqsDYx82CcZYPsXetHWmPirFmNk9GCszl8pNlO//kcRccO1mhsiH32DV6OphubwfJTJ0qb7ULhn35I95UvqJ8t26xUvp2RCJrI/l/H7eifewIkyta1upD8XAKZb1Gk/5nvKFjX06zGVUEFcYxxUiuihbgDnRiQYbXgOjCA6lCSEiROj2WyAYEx3AnvjVkUroXePcrQ=="
+  },
+  "relations" : [ {
+    "additionalInfo" : null,
+    "from" : {
+      "entityType" : "DEVICE",
+      "id" : "12ce9830-7553-11f0-8b08-b1b78211b00c"
+    },
+    "to" : {
+      "entityType" : "DEVICE",
+      "id" : "4ea0ecf0-7553-11f0-8b08-b1b78211b00c"
+    },
+    "type" : "Created",
+    "typeGroup" : "COMMON"
+  } ],
+  "attributes" : {
+    "SERVER_SCOPE" : [ {
+      "booleanValue" : true,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "active",
+      "lastUpdateTs" : 1754766108427,
+      "longValue" : null,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastActivityTime",
+      "lastUpdateTs" : 1754769777694,
+      "longValue" : 1754769776804,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastConnectTime",
+      "lastUpdateTs" : 1754769635062,
+      "longValue" : 1754769635062,
+      "strValue" : null
+    }, {
+      "booleanValue" : null,
+      "doubleValue" : null,
+      "jsonValue" : null,
+      "key" : "lastDisconnectTime",
+      "lastUpdateTs" : 1754769377995,
+      "longValue" : 1754769377995,
+      "strValue" : null
+    } ],
+    "SHARED_SCOPE" : [ ]
+  }
+}

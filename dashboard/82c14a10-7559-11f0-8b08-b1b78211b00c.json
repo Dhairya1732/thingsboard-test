@@ -1,7 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "assignedCustomers" : [ ],
+    "assignedCustomers" : null,
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -1774,45 +1774,6 @@
           "col" : 0,
           "id" : "b21d2664-809e-6c71-6d1e-62d95c1aeddc"
         },
-        "6e5d59fd-bb05-cc4b-a7cd-c902cc2f350e" : {
-          "typeFullFqn" : "system.cards.html_card",
-          "type" : "static",
-          "sizeX" : 7.5,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "static",
-              "name" : "function",
-              "dataKeys" : [ {
-                "name" : "f(x)",
-                "type" : "function",
-                "label" : "Random",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.15479322438769105,
-                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
-              } ]
-            } ],
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "cardHtml" : "<div class=\"image-container\">\r\n    <img src=\"https://stelmec.com/wp-content/uploads/2025/02/Atria-new-branding-7-e1739964755907.png\" alt=\"Stelmec Logo\">\r\n</div>",
-              "cardCss" : "html, body {\n    width: 100%;\n    height: 100%;\n    margin: 0;\n}\n\nbody {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-color: #f5f5f5;\n}\n\n.image-container {\n    width: 100%;\n    height: 100%;\n    background: #ffffff;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 0.5rem;\n}\n\nimg {\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n    /* Maintains aspect ratio without clipping */\n}"
-            },
-            "title" : "HTML Card",
-            "dropShadow" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "6e5d59fd-bb05-cc4b-a7cd-c902cc2f350e"
-        },
         "b6594af6-16a4-e4ed-097e-e4e7af7700da" : {
           "typeFullFqn" : "system.cards.html_value_card",
           "type" : "latest",
@@ -1934,14 +1895,8 @@
                   "row" : 3,
                   "col" : 28
                 },
-                "6e5d59fd-bb05-cc4b-a7cd-c902cc2f350e" : {
-                  "sizeX" : 8,
-                  "sizeY" : 3,
-                  "row" : 0,
-                  "col" : 26
-                },
                 "b6594af6-16a4-e4ed-097e-e4e7af7700da" : {
-                  "sizeX" : 26,
+                  "sizeX" : 34,
                   "sizeY" : 3,
                   "row" : 0,
                   "col" : 0
@@ -2001,19 +1956,16 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "externalId" : {
-      "entityType" : "DASHBOARD",
-      "id" : "dbe171c0-9c4b-11ef-8b08-b1b78211b00c"
-    },
+    "externalId" : null,
     "id" : {
       "entityType" : "DASHBOARD",
-      "id" : "dbe171c0-9c4b-11ef-8b08-b1b78211b00c"
+      "id" : "82c14a10-7559-11f0-8b08-b1b78211b00c"
     },
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
-    "name" : "Relay_SLR140C_Dashboard",
-    "title" : "Relay_SLR140C_Dashboard"
+    "name" : "(Meshnet) Relay_SLR140C_Dashboard",
+    "title" : "(Meshnet) Relay_SLR140C_Dashboard"
   },
   "relations" : [ ],
   "attributes" : {

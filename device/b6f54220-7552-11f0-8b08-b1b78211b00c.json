@@ -2,9 +2,6 @@
   "entityType" : "DEVICE",
   "entity" : {
     "additionalInfo" : {
-      "gateway" : false,
-      "overwriteActivityTime" : false,
-      "description" : "",
       "lastConnectedGateway" : "8b0230b0-7552-11f0-8b08-b1b78211b00c"
     },
     "customerId" : {
@@ -21,38 +18,35 @@
     },
     "deviceProfileId" : {
       "entityType" : "DEVICE_PROFILE",
-      "id" : "65b32610-9cc3-11ef-8b08-b1b78211b00c"
+      "id" : "c5d2cf20-4852-11ef-9869-85cbc512a09a"
     },
-    "externalId" : {
-      "entityType" : "DEVICE",
-      "id" : "5fe79630-490d-11ef-9869-85cbc512a09a"
-    },
+    "externalId" : null,
     "firmwareId" : null,
     "id" : {
       "entityType" : "DEVICE",
-      "id" : "5fe79630-490d-11ef-9869-85cbc512a09a"
+      "id" : "b6f54220-7552-11f0-8b08-b1b78211b00c"
     },
-    "label" : "AQI",
-    "name" : "AQI Indicator",
+    "label" : null,
+    "name" : "relay_module",
     "softwareId" : null,
-    "type" : "AQI"
+    "type" : "default"
   },
   "credentials" : {
-    "credentialsId" : "MqVclQ4HmXOrlUwnBUvQ",
+    "credentialsId" : "C81zt1bE15pXDjTFcfgW",
     "credentialsType" : "ACCESS_TOKEN",
     "credentialsValue" : null
   },
   "relations" : [ {
     "additionalInfo" : null,
     "from" : {
-      "entityType" : "ASSET",
-      "id" : "a04f2530-e958-11ef-8b08-b1b78211b00c"
+      "entityType" : "DEVICE",
+      "id" : "8b0230b0-7552-11f0-8b08-b1b78211b00c"
     },
     "to" : {
       "entityType" : "DEVICE",
-      "id" : "5fe79630-490d-11ef-9869-85cbc512a09a"
+      "id" : "b6f54220-7552-11f0-8b08-b1b78211b00c"
     },
-    "type" : "Contains",
+    "type" : "Created",
     "typeGroup" : "COMMON"
   } ],
   "attributes" : {
@@ -61,32 +55,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1754765854590,
+      "lastUpdateTs" : 1754765856612,
       "longValue" : null,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
-      "key" : "inactivityAlarmTime",
-      "lastUpdateTs" : 1750310072014,
-      "longValue" : 1750310072014,
-      "strValue" : null
-    }, {
-      "booleanValue" : null,
-      "doubleValue" : null,
-      "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1754769777686,
-      "longValue" : 1754769777280,
+      "lastUpdateTs" : 1754769777694,
+      "longValue" : 1754769776280,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1754768076178,
-      "longValue" : 1754768076178,
+      "lastUpdateTs" : 1754768078190,
+      "longValue" : 1754768078190,
       "strValue" : null
     }, {
       "booleanValue" : null,

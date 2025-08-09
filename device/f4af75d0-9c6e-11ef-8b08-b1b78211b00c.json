@@ -2,7 +2,7 @@
   "entityType" : "DEVICE",
   "entity" : {
     "additionalInfo" : {
-      "lastConnectedGateway" : "583bd440-45f7-11f0-8b08-b1b78211b00c"
+      "lastConnectedGateway" : "ce19f0e0-7552-11f0-8b08-b1b78211b00c"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -54,11 +54,11 @@
   } ],
   "attributes" : {
     "SERVER_SCOPE" : [ {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1750310012013,
+      "lastUpdateTs" : 1754766098745,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -74,24 +74,24 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1750309401705,
-      "longValue" : 1750309401403,
+      "lastUpdateTs" : 1754769777694,
+      "longValue" : 1754769775792,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1750308800167,
-      "longValue" : 1750308800167,
+      "lastUpdateTs" : 1754766198925,
+      "longValue" : 1754766198925,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1750309401428,
-      "longValue" : 1750309401428,
+      "lastUpdateTs" : 1754766195254,
+      "longValue" : 1754766195254,
       "strValue" : null
     } ],
     "SHARED_SCOPE" : [ ]

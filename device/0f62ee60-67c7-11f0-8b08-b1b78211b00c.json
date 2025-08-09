@@ -2,7 +2,7 @@
   "entityType" : "DEVICE",
   "entity" : {
     "additionalInfo" : {
-      "lastConnectedGateway" : "c51ee580-67c5-11f0-8b08-b1b78211b00c"
+      "lastConnectedGateway" : "ce19f0e0-7552-11f0-8b08-b1b78211b00c"
     },
     "customerId" : {
       "entityType" : "CUSTOMER",
@@ -55,15 +55,15 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Reset",
-      "lastUpdateTs" : 1753285540829,
+      "lastUpdateTs" : 1754766196943,
       "longValue" : null,
       "strValue" : null
     }, {
-      "booleanValue" : false,
+      "booleanValue" : true,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "active",
-      "lastUpdateTs" : 1753285540791,
+      "lastUpdateTs" : 1754766096758,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -71,7 +71,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "deviceName",
-      "lastUpdateTs" : 1753285540829,
+      "lastUpdateTs" : 1754766196943,
       "longValue" : null,
       "strValue" : "VCB_2"
     }, {
@@ -79,7 +79,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "deviceType",
-      "lastUpdateTs" : 1753285540829,
+      "lastUpdateTs" : 1754766196943,
       "longValue" : null,
       "strValue" : "SLR140"
     }, {
@@ -111,31 +111,31 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastActivityTime",
-      "lastUpdateTs" : 1753284891686,
-      "longValue" : 1753284888685,
+      "lastUpdateTs" : 1754769759688,
+      "longValue" : 1754769758992,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastConnectTime",
-      "lastUpdateTs" : 1753284088623,
-      "longValue" : 1753284088623,
+      "lastUpdateTs" : 1754766196914,
+      "longValue" : 1754766196914,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastDisconnectTime",
-      "lastUpdateTs" : 1753284888692,
-      "longValue" : 1753284888692,
+      "lastUpdateTs" : 1754766195230,
+      "longValue" : 1754766195230,
       "strValue" : null
     }, {
       "booleanValue" : null,
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastFaultTimestamp",
-      "lastUpdateTs" : 1753285540829,
+      "lastUpdateTs" : 1754766196943,
       "longValue" : 1,
       "strValue" : null
     }, {
@@ -143,7 +143,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "scope",
-      "lastUpdateTs" : 1753285540829,
+      "lastUpdateTs" : 1754766196943,
       "longValue" : null,
       "strValue" : "SERVER_SCOPE"
     }, {
@@ -159,8 +159,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "ts",
-      "lastUpdateTs" : 1753284286761,
-      "longValue" : 1753284286739,
+      "lastUpdateTs" : 1754769759002,
+      "longValue" : 1754769758992,
       "strValue" : null
     }, {
       "booleanValue" : null,
@@ -208,7 +208,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "Reset",
-      "lastUpdateTs" : 1753284286761,
+      "lastUpdateTs" : 1754769759002,
       "longValue" : null,
       "strValue" : null
     }, {
@@ -216,7 +216,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "deviceName",
-      "lastUpdateTs" : 1753284286761,
+      "lastUpdateTs" : 1754769759002,
       "longValue" : null,
       "strValue" : "VCB_2"
     }, {
@@ -224,7 +224,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "deviceType",
-      "lastUpdateTs" : 1753284286761,
+      "lastUpdateTs" : 1754769759002,
       "longValue" : null,
       "strValue" : "SLR140"
     }, {
@@ -248,7 +248,7 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "lastFaultTimestamp",
-      "lastUpdateTs" : 1753284286761,
+      "lastUpdateTs" : 1754769759002,
       "longValue" : 1,
       "strValue" : null
     }, {
@@ -256,8 +256,8 @@
       "doubleValue" : null,
       "jsonValue" : null,
       "key" : "ts",
-      "lastUpdateTs" : 1753284286761,
-      "longValue" : 1753284286739,
+      "lastUpdateTs" : 1754769759002,
+      "longValue" : 1754769758992,
       "strValue" : null
     }, {
       "booleanValue" : null,

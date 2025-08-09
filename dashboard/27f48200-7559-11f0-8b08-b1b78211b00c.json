@@ -1,7 +1,7 @@
 {
   "entityType" : "DASHBOARD",
   "entity" : {
-    "assignedCustomers" : [ ],
+    "assignedCustomers" : null,
     "configuration" : {
       "description" : "",
       "widgets" : {
@@ -14,10 +14,10 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "deviceId" : "469c25b0-9070-11ef-8b08-b1b78211b00c",
-              "entityAliasId" : "d3e5dcc9-3421-d0ea-6fff-88ce416ccc3b",
+              "deviceId" : "46040460-9070-11ef-8b08-b1b78211b00c",
+              "entityAliasId" : "0df20127-4849-dab6-fc9d-6201452d51f9",
               "dataKeys" : [ {
-                "name" : "PR PH",
+                "name" : "Primary Current R",
                 "type" : "timeseries",
                 "label" : "Primary Current (R)",
                 "color" : "#F44336",
@@ -90,15 +90,11 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.27179129854188666,
+                "_hash" : 0.05320419791431408,
                 "units" : "A",
-                "decimals" : 2,
-                "aggregationType" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value.toString().padStart(4, '0');"
+                "decimals" : 2
               }, {
-                "name" : "PY PH",
+                "name" : "Primary Current Y",
                 "type" : "timeseries",
                 "label" : "Primary Current (Y)",
                 "color" : "#F5DD00",
@@ -171,15 +167,11 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.21305376761421746,
-                "units" : "A",
+                "_hash" : 0.09429857326897828,
                 "decimals" : 2,
-                "aggregationType" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value.toString().padStart(4, '0');"
+                "units" : "A"
               }, {
-                "name" : "PB PH",
+                "name" : "Primary Current B",
                 "type" : "timeseries",
                 "label" : "Primary Current (B)",
                 "color" : "#048AD3",
@@ -252,15 +244,11 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.16390903405823898,
+                "_hash" : 0.14226589454857996,
                 "units" : "A",
-                "decimals" : 2,
-                "aggregationType" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value.toString().padStart(4, '0');"
+                "decimals" : 2
               }, {
-                "name" : "PE PH",
+                "name" : "Primary Current E",
                 "type" : "timeseries",
                 "label" : "Primary Current (E)",
                 "color" : "#000000",
@@ -333,13 +321,9 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.21413276811215676,
+                "_hash" : 0.8958501877583913,
                 "units" : "A",
-                "decimals" : 2,
-                "aggregationType" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value.toString().padStart(4, '0');"
+                "decimals" : 2
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -355,7 +339,7 @@
                 "realtimeType" : 0,
                 "timewindowMs" : 300000,
                 "quickInterval" : "CURRENT_HOUR",
-                "interval" : 15000
+                "interval" : 120000
               },
               "aggregation" : {
                 "type" : "NONE",
@@ -405,7 +389,7 @@
               "yAxes" : {
                 "default" : {
                   "units" : "A",
-                  "decimals" : 2,
+                  "decimals" : 3,
                   "show" : true,
                   "label" : "",
                   "labelFont" : {
@@ -437,7 +421,7 @@
                   "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
                   "id" : "default",
                   "order" : 0,
-                  "min" : 0,
+                  "min" : null,
                   "max" : null,
                   "ticksGenerator" : null,
                   "interval" : null,
@@ -597,11 +581,11 @@
               },
               "padding" : "12px"
             },
-            "title" : "Primary Phase Current",
+            "title" : "Primary Current",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
@@ -657,16 +641,16 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "deviceId" : "469c25b0-9070-11ef-8b08-b1b78211b00c",
-              "entityAliasId" : "d3e5dcc9-3421-d0ea-6fff-88ce416ccc3b",
+              "deviceId" : "46040460-9070-11ef-8b08-b1b78211b00c",
+              "entityAliasId" : "0df20127-4849-dab6-fc9d-6201452d51f9",
               "filterId" : null,
               "dataKeys" : [ {
                 "name" : "Fault1 Timestamp",
                 "type" : "timeseries",
                 "label" : "Fault Timestamp",
-                "color" : "#2196f3",
+                "color" : "#8bc34a",
                 "settings" : { },
-                "_hash" : 0.7315145580566509,
+                "_hash" : 0.22584523926775502,
                 "aggregationType" : null,
                 "units" : null,
                 "decimals" : null,
@@ -677,61 +661,35 @@
                 "name" : "Fault1 Trigger",
                 "type" : "timeseries",
                 "label" : "Fault Trigger",
-                "color" : "#8bc34a",
+                "color" : "#9c27b0",
                 "settings" : { },
-                "_hash" : 0.0987984874699237,
+                "_hash" : 0.9081404948723353,
+                "decimals" : null,
                 "aggregationType" : null,
                 "units" : null,
-                "decimals" : null,
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
                 "name" : "Fault1 Group",
                 "type" : "timeseries",
-                "label" : "Fault Group",
-                "color" : "#4caf50",
+                "label" : "Group",
+                "color" : "#2196f3",
                 "settings" : { },
-                "_hash" : 0.5635507543636886,
-                "aggregationType" : null,
-                "units" : null,
+                "_hash" : 0.5635207899300276,
+                "units" : "",
                 "decimals" : 0,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "Fault1 R Phase",
-                "type" : "timeseries",
-                "label" : "Fault R Phase (A)",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.2739384282615138,
                 "aggregationType" : null,
-                "units" : "A",
-                "decimals" : 2,
                 "funcBody" : null,
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
-                "name" : "Fault1 Y Phase",
+                "name" : "Fault1 R %",
                 "type" : "timeseries",
-                "label" : "Fault Y Phase (A)",
-                "color" : "#9c27b0",
-                "settings" : { },
-                "_hash" : 0.9837784340009792,
-                "aggregationType" : null,
-                "units" : "A",
-                "decimals" : 2,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null
-              }, {
-                "name" : "Fault1 B Phase",
-                "type" : "timeseries",
-                "label" : "Fault B Phase (A)",
+                "label" : "Fault Current R (A)",
                 "color" : "#ffc107",
                 "settings" : { },
-                "_hash" : 0.3019236959864091,
+                "_hash" : 0.33213911577839905,
                 "aggregationType" : null,
                 "units" : "A",
                 "decimals" : 2,
@@ -739,12 +697,38 @@
                 "usePostProcessing" : null,
                 "postFuncBody" : null
               }, {
-                "name" : "Fault1 E Phase",
+                "name" : "Fault1 Y %",
                 "type" : "timeseries",
-                "label" : "Fault E Phase (A)",
+                "label" : "Fault Current Y (A)",
                 "color" : "#607d8b",
                 "settings" : { },
-                "_hash" : 0.07360435730824588,
+                "_hash" : 0.7504971330694128,
+                "aggregationType" : null,
+                "units" : "A",
+                "decimals" : 2,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "Fault1 B %",
+                "type" : "timeseries",
+                "label" : "Fault Current B (A)",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.39445318064153323,
+                "aggregationType" : null,
+                "units" : "A",
+                "decimals" : 2,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              }, {
+                "name" : "Fault1 E %",
+                "type" : "timeseries",
+                "label" : "Fault Current E (A)",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.7938640638613499,
                 "aggregationType" : null,
                 "units" : "A",
                 "decimals" : 2,
@@ -764,13 +748,30 @@
               "selectedTab" : 0,
               "realtime" : {
                 "realtimeType" : 0,
+                "interval" : 1000,
                 "timewindowMs" : 1800000,
                 "quickInterval" : "CURRENT_DAY",
-                "interval" : 1000
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideQuickInterval" : false
+              },
+              "history" : {
+                "historyType" : 0,
+                "interval" : 1000,
+                "timewindowMs" : 60000,
+                "fixedTimewindow" : {
+                  "startTimeMs" : 1753272475033,
+                  "endTimeMs" : 1753358875033
+                },
+                "quickInterval" : "CURRENT_DAY",
+                "hideInterval" : false,
+                "hideLastInterval" : false,
+                "hideFixedInterval" : false,
+                "hideQuickInterval" : false
               },
               "aggregation" : {
                 "type" : "NONE",
-                "limit" : 200
+                "limit" : 50000
               },
               "timezone" : null
             },
@@ -813,7 +814,7 @@
             "iconColor" : "rgba(0, 0, 0, 0.87)",
             "iconSize" : "24px",
             "displayTimewindow" : true,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "titleFont" : null,
             "titleColor" : null,
             "titleIcon" : null,
@@ -835,9 +836,16 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "deviceId" : null,
-              "entityAliasId" : "d3e5dcc9-3421-d0ea-6fff-88ce416ccc3b",
-              "dataKeys" : [ ],
+              "deviceId" : "f9160580-9953-11ef-8b08-b1b78211b00c",
+              "entityAliasId" : "0df20127-4849-dab6-fc9d-6201452d51f9",
+              "dataKeys" : [ {
+                "name" : "manufacturer_name",
+                "type" : "timeseries",
+                "label" : "manufacturer_name",
+                "color" : "#2196f3",
+                "settings" : { },
+                "_hash" : 0.6674480675198582
+              } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               }
@@ -872,7 +880,7 @@
             "padding" : "0px",
             "settings" : {
               "cardHtml" : "<center>\n    <div class='card'>\n        <div class=\"info-row\">\n            <p class=\"relay-title\">Profile: Relay</p>\n            <p class=\"manufacturer-name\">Manufacturer: Stelmec Ltd.</p>\n        </div>\n    </div>\n</center>",
-              "cardCss" : "@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); /* Clean futuristic font */\n\nbody {\n    font-family: 'Times New Roman',Times New Roman;\n    background-color: #fff; /* Dark background for contrast */\n    margin: 0;\n    height: 100%; /* Take full viewport height */\n    display: flex;\n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n}\n\n.card {\n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n    background-color: #fff; /* Simplified dark card background */\n    color: #ffffff;\n    width: 100%;\n    height: 100%; /* Adjusted height for the horizontal layout */\n    padding-left: 50px;\n    padding-right: 50px;\n    border-radius: 16px; /* Slightly more rounded corners for a modern look */\n    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */\n}\n\n.info-row {\n    padding-top:15px;\n    display: flex;\n    justify-content: space-between;\n    width: 100%; /* Occupy the full width of the card */\n    align-items: center; /* Align the items in the center vertically */\n    align-content: center;\n    height: 50px;\n}\n\n.relay-title {\n    font-size: 22px;\n    font-weight: 600;\n    color: #305680; \n    flex: 1; /* Ensure the title takes up one-third of the width */\n    text-align: left;\n}\n\n.manufacturer-name {\n    align-items: center;\n    align-content: center;\n    font-size: 22px;\n    color: #305680;\n    font-weight: 600;\n    flex: 1;\n    text-align: right; \n}"
+              "cardCss" : "@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap'); /* Clean futuristic font */\n\nbody {\n    font-family: 'Times New Roman',Times New Roman;\n    background-color: #fff; /* Dark background for contrast */\n    margin: 0;\n    display: flex;\n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n}\n\n.card {\n    \n    justify-content: center; /* Center horizontally */\n    align-items: center; /* Center vertically */\n    background-color: #fff; /* Simplified dark card background */\n    color: #ffffff;\n    width: 100%;\n    height: 100%; /* Adjusted height for the horizontal layout */\n    padding-left: 50px;\n    padding-right: 50px;\n    border-radius: 16px; /* Slightly more rounded corners for a modern look */\n    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */\n}\n\n.info-row {\n    padding-top:15px;\n    display: flex;\n    justify-content: space-between;\n    width: 100%; /* Occupy the full width of the card */\n    align-items: center; /* Align the items in the center vertically */\n    align-content: center;\n    height: 50px;\n    \n}\n\n.relay-title {\n    font-size: 22px;\n    font-weight: 600;\n    color: #305680; \n    flex: 1; /* Ensure the title takes up one-third of the width */\n    text-align: left;\n}\n\n.serial-number {\n    font-weight: 600;\n    font-size: 22px;\n    color: #305680;\n    flex: 1;\n    text-align: right; /* Center the serial number */\n}\n\n.manufacturer-name {\n    font-size: 22px;\n    color: #305680;\n    font-weight: 600;\n    flex: 1;\n    text-align: right; /* Align the manufacturer name to the right */\n}"
             },
             "title" : "HTML Value Card",
             "dropShadow" : false,
@@ -891,7 +899,7 @@
           "col" : 0,
           "id" : "d07b8e58-2352-471c-5305-12644d3eb930"
         },
-        "7b6f28a3-11b1-349d-424e-ded5f5e4f418" : {
+        "d76b1276-b504-87f6-d945-45112eff6795" : {
           "typeFullFqn" : "system.line_chart",
           "type" : "timeseries",
           "sizeX" : 8,
@@ -900,10 +908,10 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "deviceId" : "469c25b0-9070-11ef-8b08-b1b78211b00c",
-              "entityAliasId" : "d3e5dcc9-3421-d0ea-6fff-88ce416ccc3b",
+              "deviceId" : "46040460-9070-11ef-8b08-b1b78211b00c",
+              "entityAliasId" : "0df20127-4849-dab6-fc9d-6201452d51f9",
               "dataKeys" : [ {
-                "name" : "SR PH",
+                "name" : "Secondary Current R",
                 "type" : "timeseries",
                 "label" : "Secondary Current (r)",
                 "color" : "#F44336",
@@ -976,15 +984,11 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.3859303787178405,
-                "units" : "A",
+                "_hash" : 0.8800389664836736,
                 "decimals" : 2,
-                "aggregationType" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return `${String(Math.floor(value)).padStart(2, '0')}.${String(Math.floor((value % 1) * 100)).padStart(2, '0')}`;\r\n"
+                "units" : "A"
               }, {
-                "name" : "SY PH",
+                "name" : "Secondary Current Y",
                 "type" : "timeseries",
                 "label" : "Secondary Current (y)",
                 "color" : "#F5DD00",
@@ -1057,18 +1061,14 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.8157239452478304,
-                "units" : "A",
+                "_hash" : 0.49583218328359013,
                 "decimals" : 2,
-                "aggregationType" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return `${String(Math.floor(value)).padStart(2, '0')}.${String(Math.floor((value % 1) * 100)).padStart(2, '0')}`;"
+                "units" : "A"
               }, {
-                "name" : "SB PH",
+                "name" : "Secondary Current B",
                 "type" : "timeseries",
                 "label" : "Secondary Current (b)",
-                "color" : "#4CAF50",
+                "color" : "#048AD3",
                 "settings" : {
                   "yAxisId" : "default",
                   "showInLegend" : true,
@@ -1138,15 +1138,11 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.9510840364838735,
-                "units" : "A",
+                "_hash" : 0.7548540698298956,
                 "decimals" : 2,
-                "aggregationType" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return `${String(Math.floor(value)).padStart(2, '0')}.${String(Math.floor((value % 1) * 100)).padStart(2, '0')}`;\r\n"
+                "units" : "A"
               }, {
-                "name" : "SE PH",
+                "name" : "Secondary Current E",
                 "type" : "timeseries",
                 "label" : "Secondary Current (e)",
                 "color" : "#000000",
@@ -1219,18 +1215,18 @@
                     "color" : ""
                   }
                 },
-                "_hash" : 0.2632720579514767,
+                "_hash" : 0.7727774001604235,
                 "units" : "A",
                 "decimals" : 2,
                 "aggregationType" : null,
                 "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return `${String(Math.floor(value)).padStart(2, '0')}.${String(Math.floor((value % 1) * 100)).padStart(2, '0')}`;\r\n"
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
               },
-              "latestDataKeys" : [ ]
+              "latestDataKeys" : null
             } ],
             "timewindow" : {
               "hideAggregation" : false,
@@ -1241,7 +1237,7 @@
                 "realtimeType" : 0,
                 "timewindowMs" : 300000,
                 "quickInterval" : "CURRENT_HOUR",
-                "interval" : 15000
+                "interval" : 300000
               },
               "aggregation" : {
                 "type" : "NONE",
@@ -1291,7 +1287,7 @@
               "yAxes" : {
                 "default" : {
                   "units" : "A",
-                  "decimals" : 2,
+                  "decimals" : 3,
                   "show" : true,
                   "label" : "",
                   "labelFont" : {
@@ -1323,7 +1319,7 @@
                   "splitLinesColor" : "rgba(0, 0, 0, 0.12)",
                   "id" : "default",
                   "order" : 0,
-                  "min" : 0,
+                  "min" : null,
                   "max" : null,
                   "ticksGenerator" : null,
                   "interval" : null,
@@ -1483,11 +1479,11 @@
               },
               "padding" : "12px"
             },
-            "title" : "Secondary Phase Current",
+            "title" : "Secondary Current",
             "dropShadow" : true,
             "enableFullscreen" : true,
             "titleStyle" : null,
-            "configMode" : "basic",
+            "configMode" : "advanced",
             "actions" : { },
             "showTitleIcon" : false,
             "titleIcon" : "thermostat",
@@ -1532,9 +1528,9 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "7b6f28a3-11b1-349d-424e-ded5f5e4f418"
+          "id" : "d76b1276-b504-87f6-d945-45112eff6795"
         },
-        "aa371308-d860-03ac-682e-30ce867ba631" : {
+        "8507eecd-2afa-d48a-5adb-f31c445ef23b" : {
           "typeFullFqn" : "system.cards.html_value_card",
           "type" : "latest",
           "sizeX" : 7.5,
@@ -1544,80 +1540,86 @@
               "type" : "entity",
               "name" : "",
               "deviceId" : "469c25b0-9070-11ef-8b08-b1b78211b00c",
-              "entityAliasId" : "d3e5dcc9-3421-d0ea-6fff-88ce416ccc3b",
+              "entityAliasId" : "0df20127-4849-dab6-fc9d-6201452d51f9",
               "dataKeys" : [ {
-                "name" : "Fault1 B Phase",
-                "type" : "timeseries",
-                "label" : "Fault1 B Phase",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.47283353706248277,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value.toString().padStart(4, '0');"
-              }, {
-                "name" : "Fault1 E Phase",
-                "type" : "timeseries",
-                "label" : "Fault1 E Phase",
-                "color" : "#4caf50",
-                "settings" : { },
-                "_hash" : 0.6498030242473083,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value.toString().padStart(4, '0');"
-              }, {
-                "name" : "Fault1 R Phase",
-                "type" : "timeseries",
-                "label" : "Fault1 R Phase",
-                "color" : "#f44336",
-                "settings" : { },
-                "_hash" : 0.183539829188887,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value.toString().padStart(4, '0');"
-              }, {
-                "name" : "Fault1 Y Phase",
-                "type" : "timeseries",
-                "label" : "Fault1 Y Phase",
-                "color" : "#ffc107",
-                "settings" : { },
-                "_hash" : 0.5966645437004363,
-                "aggregationType" : "NONE",
-                "units" : null,
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return value.toString().padStart(4, '0');"
-              }, {
                 "name" : "Fault1 Trigger",
                 "type" : "timeseries",
                 "label" : "Fault1 Trigger",
                 "color" : "#9c27b0",
                 "settings" : { },
-                "_hash" : 0.009295608789920085
+                "_hash" : 0.6552079135570146,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               }, {
                 "name" : "Fault1 Date",
                 "type" : "timeseries",
                 "label" : "Fault1 Date",
                 "color" : "#9c27b0",
                 "settings" : { },
-                "_hash" : 0.9970488479052428
+                "_hash" : 0.6452167162739944
               }, {
                 "name" : "Fault1 Time",
                 "type" : "timeseries",
                 "label" : "Fault1 Time",
                 "color" : "#8bc34a",
                 "settings" : { },
-                "_hash" : 0.3695372628112712
+                "_hash" : 0.22125062836249576
+              }, {
+                "name" : "Fault1 R %",
+                "type" : "timeseries",
+                "label" : "Fault1 R %",
+                "color" : "#ffc107",
+                "settings" : { },
+                "_hash" : 0.6509528460699903,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value.toString().padStart(4, '0');"
+              }, {
+                "name" : "Fault1 Y %",
+                "type" : "timeseries",
+                "label" : "Fault1 Y %",
+                "color" : "#607d8b",
+                "settings" : { },
+                "_hash" : 0.1787348667160542,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value.toString().padStart(4, '0');"
+              }, {
+                "name" : "Fault1 B %",
+                "type" : "timeseries",
+                "label" : "Fault1 B %",
+                "color" : "#9c27b0",
+                "settings" : { },
+                "_hash" : 0.42081595033527375,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value.toString().padStart(4, '0');"
+              }, {
+                "name" : "Fault1 E %",
+                "type" : "timeseries",
+                "label" : "Fault1 E %",
+                "color" : "#8bc34a",
+                "settings" : { },
+                "_hash" : 0.4684419862769158,
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : true,
+                "postFuncBody" : "return value.toString().padStart(4, '0');"
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -1652,7 +1654,7 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "cardHtml" : "<center>\n    <div class=\"card\">\n        <h6><u><b>Fault Data</b></u></h6>\n        <div class=\"trip-condition\">\n            <p><strong>Trip Condition:</strong> ${Fault1 Trigger}</p>\n        </div>\n        <div class=\"info-grid\">\n            <div class=\"info-item\">\n                <p><strong>R:</strong> ${Fault1 R Phase} A</p>\n            </div>\n            <div class=\"info-item\">\n                <p><strong>Y:</strong> ${Fault1 Y Phase} A</p>\n            </div>\n            <div class=\"info-item\">\n                <p><strong>B:</strong> ${Fault1 B Phase} A</p>\n            </div>\n            <div class=\"info-item\">\n                <p><strong>E:</strong> ${Fault1 E Phase} A</p>\n            </div>\n        </div>\n        <br>\n        <div class=\"time-date-row\">\n            <p><strong>Fault Time: </strong>${Fault1 Time}</p>\n            <p><strong>Fault Date: </strong>${Fault1 Date}</p>\n        </div>\n    </div>\n</center>",
+              "cardHtml" : "<center>\n    <div class=\"card\">\n        <h6><u><b>Fault Data</b></u></h6>\n        <div class=\"trip-condition\">\n            <p><strong>Trip Condition:</strong> ${Fault1 Trigger}</p>\n        </div>\n        <div class=\"info-grid\">\n            <div class=\"info-item\">\n                <p><strong>R:</strong> ${Fault1 R %} A</p>\n            </div>\n            <div class=\"info-item\">\n                <p><strong>Y:</strong> ${Fault1 Y %} A</p>\n            </div>\n            <div class=\"info-item\">\n                <p><strong>B:</strong> ${Fault1 B %} A</p>\n            </div>\n            <div class=\"info-item\">\n                <p><strong>E:</strong> ${Fault1 E %} A</p>\n            </div>\n        </div>\n        <br>\n        <div class=\"time-date-row\">\n            <p><strong>Fault Time:</strong> ${Fault1 Time}</p>\n            <p><strong>Fault Date:</strong> ${Fault1 Date}</p>\n        </div>\n    </div>\n</center>",
               "cardCss" : "html, body {\n    margin: 0;\n    padding: 0;\n    height: 100%;\n}\n\n/* Card container inside the widget */\n.card {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    background-color: #fff;\n    width: 100%;\n    padding: 0px;\n    box-sizing: border-box;\n    overflow: auto;\n    margin: 0px;\n}\n\n/* Centered trip condition */\n.trip-condition {\n    text-align: center;\n    height: 75px;\n}\n\n/* Grid format for R, Y, B, E phases */\n.info-grid {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr); /* Two columns per row */\n    column-gap: 5px;  /* Slight horizontal space between items */\n    width: 100%;\n    text-align: center;\n    padding: 0;\n    margin: 0;\n}\n\n.info-item {\n    padding: 0px;\n    margin: 0px;\n    font-size: 10px;\n}\n\n.info-item p{\n    padding: 0px;\n    margin: 0px;\n}\n\n/* Centered time and date */\n.time-date-row {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    width: 100%;\n    padding: 0px;\n    margin: 0px;\n}\n\n.time-date-row p{\n    margin: 0px;\n    font-size: 25px;\n}"
             },
             "title" : "HTML Value Card",
@@ -1670,9 +1672,9 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "aa371308-d860-03ac-682e-30ce867ba631"
+          "id" : "8507eecd-2afa-d48a-5adb-f31c445ef23b"
         },
-        "a50c539d-51ad-bcbf-64cc-3144db45f1f6" : {
+        "eb3316fd-387a-4a15-f0bb-1f2eea0577f6" : {
           "typeFullFqn" : "system.control_widgets.led_indicator",
           "type" : "rpc",
           "sizeX" : 2.5,
@@ -1686,12 +1688,12 @@
             "settings" : {
               "title" : "Circuit Breaker Off",
               "ledColor" : "#08835E",
-              "initialValue" : true,
+              "initialValue" : false,
               "performCheckStatus" : false,
               "retrieveValueMethod" : "timeseries",
               "checkStatusMethod" : "checkStatus",
               "valueAttribute" : "Circuit Breaker",
-              "parseValueFunction" : "return !data;",
+              "parseValueFunction" : "return !data || data === 'false';",
               "requestTimeout" : 500,
               "requestPersistent" : false,
               "persistentPollingInterval" : 5000
@@ -1701,8 +1703,10 @@
             "enableFullscreen" : false,
             "widgetStyle" : { },
             "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
+              "display" : "flex",
+              "justifyContent" : "center",
+              "alignItems" : "center",
+              "width" : "100%"
             },
             "useDashboardTimewindow" : true,
             "showLegend" : false,
@@ -1711,19 +1715,28 @@
             "datasources" : [ ],
             "targetDevice" : {
               "type" : "entity",
-              "entityAliasId" : "d3e5dcc9-3421-d0ea-6fff-88ce416ccc3b"
+              "entityAliasId" : "0df20127-4849-dab6-fc9d-6201452d51f9"
             },
             "showTitleIcon" : false,
             "titleTooltip" : "",
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleFont" : {
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : "bold",
+              "style" : null
+            }
           },
           "row" : 0,
           "col" : 0,
-          "id" : "a50c539d-51ad-bcbf-64cc-3144db45f1f6"
+          "id" : "eb3316fd-387a-4a15-f0bb-1f2eea0577f6"
         },
-        "b21d2664-809e-6c71-6d1e-62d95c1aeddc" : {
+        "dd1724a5-0ff5-0b13-64b5-1cdadce1e90d" : {
           "typeFullFqn" : "system.control_widgets.led_indicator",
           "type" : "rpc",
           "sizeX" : 2.5,
@@ -1735,14 +1748,14 @@
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
-              "title" : "Circuit Breaker On",
+              "title" : " Circuit Breaker On",
               "ledColor" : "#850E1B",
-              "initialValue" : true,
+              "initialValue" : false,
               "performCheckStatus" : false,
               "retrieveValueMethod" : "timeseries",
               "checkStatusMethod" : "checkStatus",
               "valueAttribute" : "Circuit Breaker",
-              "parseValueFunction" : "return data === true;",
+              "parseValueFunction" : "return data || data ==='true';",
               "requestTimeout" : 500,
               "requestPersistent" : false,
               "persistentPollingInterval" : 5000
@@ -1752,8 +1765,10 @@
             "enableFullscreen" : false,
             "widgetStyle" : { },
             "titleStyle" : {
+              "display" : "flex",
               "fontSize" : "16px",
-              "fontWeight" : 400
+              "fontWeight" : 400,
+              "justify-content" : "center"
             },
             "useDashboardTimewindow" : true,
             "showLegend" : false,
@@ -1762,58 +1777,28 @@
             "datasources" : [ ],
             "targetDevice" : {
               "type" : "entity",
-              "entityAliasId" : "d3e5dcc9-3421-d0ea-6fff-88ce416ccc3b"
+              "entityAliasId" : "0df20127-4849-dab6-fc9d-6201452d51f9"
             },
             "showTitleIcon" : false,
             "titleTooltip" : "",
             "widgetCss" : "",
             "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
+            "noDataDisplayMessage" : "",
+            "titleIcon" : "",
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleFont" : {
+              "sizeUnit" : "px",
+              "family" : null,
+              "weight" : "bold",
+              "style" : null
+            }
           },
           "row" : 0,
           "col" : 0,
-          "id" : "b21d2664-809e-6c71-6d1e-62d95c1aeddc"
+          "id" : "dd1724a5-0ff5-0b13-64b5-1cdadce1e90d"
         },
-        "6e5d59fd-bb05-cc4b-a7cd-c902cc2f350e" : {
-          "typeFullFqn" : "system.cards.html_card",
-          "type" : "static",
-          "sizeX" : 7.5,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "static",
-              "name" : "function",
-              "dataKeys" : [ {
-                "name" : "f(x)",
-                "type" : "function",
-                "label" : "Random",
-                "color" : "#2196f3",
-                "settings" : { },
-                "_hash" : 0.15479322438769105,
-                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
-              } ]
-            } ],
-            "timewindow" : {
-              "realtime" : {
-                "timewindowMs" : 60000
-              }
-            },
-            "showTitle" : false,
-            "backgroundColor" : "rgb(255, 255, 255)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "8px",
-            "settings" : {
-              "cardHtml" : "<div class=\"image-container\">\r\n    <img src=\"https://stelmec.com/wp-content/uploads/2025/02/Atria-new-branding-7-e1739964755907.png\" alt=\"Stelmec Logo\">\r\n</div>",
-              "cardCss" : "html, body {\n    width: 100%;\n    height: 100%;\n    margin: 0;\n}\n\nbody {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    background-color: #f5f5f5;\n}\n\n.image-container {\n    width: 100%;\n    height: 100%;\n    background: #ffffff;\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 0.5rem;\n}\n\nimg {\n    width: 100%;\n    height: 100%;\n    object-fit: contain;\n    /* Maintains aspect ratio without clipping */\n}"
-            },
-            "title" : "HTML Card",
-            "dropShadow" : true
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "6e5d59fd-bb05-cc4b-a7cd-c902cc2f350e"
-        },
-        "b6594af6-16a4-e4ed-097e-e4e7af7700da" : {
+        "5c454b6c-5290-e365-9d21-f3033a5afa99" : {
           "typeFullFqn" : "system.cards.html_value_card",
           "type" : "latest",
           "sizeX" : 7.5,
@@ -1822,7 +1807,7 @@
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
-              "entityAliasId" : "d3e5dcc9-3421-d0ea-6fff-88ce416ccc3b",
+              "entityAliasId" : "0df20127-4849-dab6-fc9d-6201452d51f9",
               "dataKeys" : [ {
                 "name" : "deviceName",
                 "type" : "attribute",
@@ -1882,7 +1867,7 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "b6594af6-16a4-e4ed-097e-e4e7af7700da"
+          "id" : "5c454b6c-5290-e365-9d21-f3033a5afa99"
         }
       },
       "states" : {
@@ -1910,38 +1895,32 @@
                   "row" : 3,
                   "col" : 0
                 },
-                "7b6f28a3-11b1-349d-424e-ded5f5e4f418" : {
+                "d76b1276-b504-87f6-d945-45112eff6795" : {
                   "sizeX" : 11,
                   "sizeY" : 14,
                   "row" : 5,
                   "col" : 11
                 },
-                "aa371308-d860-03ac-682e-30ce867ba631" : {
+                "8507eecd-2afa-d48a-5adb-f31c445ef23b" : {
                   "sizeX" : 12,
                   "sizeY" : 12,
                   "row" : 7,
                   "col" : 22
                 },
-                "a50c539d-51ad-bcbf-64cc-3144db45f1f6" : {
+                "eb3316fd-387a-4a15-f0bb-1f2eea0577f6" : {
                   "sizeX" : 6,
                   "sizeY" : 4,
                   "row" : 3,
                   "col" : 22
                 },
-                "b21d2664-809e-6c71-6d1e-62d95c1aeddc" : {
+                "dd1724a5-0ff5-0b13-64b5-1cdadce1e90d" : {
                   "sizeX" : 6,
                   "sizeY" : 4,
                   "row" : 3,
                   "col" : 28
                 },
-                "6e5d59fd-bb05-cc4b-a7cd-c902cc2f350e" : {
-                  "sizeX" : 8,
-                  "sizeY" : 3,
-                  "row" : 0,
-                  "col" : 26
-                },
-                "b6594af6-16a4-e4ed-097e-e4e7af7700da" : {
-                  "sizeX" : 26,
+                "5c454b6c-5290-e365-9d21-f3033a5afa99" : {
+                  "sizeX" : 34,
                   "sizeY" : 3,
                   "row" : 0,
                   "col" : 0
@@ -1960,15 +1939,15 @@
         }
       },
       "entityAliases" : {
-        "d3e5dcc9-3421-d0ea-6fff-88ce416ccc3b" : {
-          "id" : "d3e5dcc9-3421-d0ea-6fff-88ce416ccc3b",
-          "alias" : "RelaySLR140C",
+        "0df20127-4849-dab6-fc9d-6201452d51f9" : {
+          "id" : "0df20127-4849-dab6-fc9d-6201452d51f9",
+          "alias" : "RelaySLR140",
           "filter" : {
             "type" : "singleEntity",
             "resolveMultiple" : false,
             "singleEntity" : {
               "entityType" : "DEVICE",
-              "id" : "0e092ac0-67c7-11f0-8b08-b1b78211b00c"
+              "id" : "0f62ee60-67c7-11f0-8b08-b1b78211b00c"
             }
           }
         }
@@ -1983,7 +1962,7 @@
           "realtimeType" : 0,
           "timewindowMs" : 1000,
           "quickInterval" : "CURRENT_DAY",
-          "interval" : 3600000
+          "interval" : 1000
         },
         "aggregation" : {
           "type" : "NONE",
@@ -2001,19 +1980,16 @@
         "toolbarAlwaysOpen" : true
       }
     },
-    "externalId" : {
-      "entityType" : "DASHBOARD",
-      "id" : "dbe171c0-9c4b-11ef-8b08-b1b78211b00c"
-    },
+    "externalId" : null,
     "id" : {
       "entityType" : "DASHBOARD",
-      "id" : "dbe171c0-9c4b-11ef-8b08-b1b78211b00c"
+      "id" : "27f48200-7559-11f0-8b08-b1b78211b00c"
     },
     "image" : null,
     "mobileHide" : false,
     "mobileOrder" : null,
-    "name" : "Relay_SLR140C_Dashboard",
-    "title" : "Relay_SLR140C_Dashboard"
+    "name" : "(Meshnet) Relay_SLR140_Dashboard",
+    "title" : "(Meshnet) Relay_SLR140_Dashboard"
   },
   "relations" : [ ],
   "attributes" : {
